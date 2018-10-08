@@ -1,0 +1,538 @@
+GAS LISTING /tmp/cc1oAvIw.s 			page 1
+
+
+   1               		.file	"minuterie.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/usagers/alvux/Bureau/inf1995-4754/projet/",100,0,4,.Ltext0
+   8               		.stabs	"minuterie.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/cc1oAvIw.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,121,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,122,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,123,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,124,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,125,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,126,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,128,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,129,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,142,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,147,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,159,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,164,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,169,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,174,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,179,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,184,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,192,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,199,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,213,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,218,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,223,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,228,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,233,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,238,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,246,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,253,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,273,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,278,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
+ 104               		.stabs	"Minuterie:Tt(0,89)=s4minuterieExpiree_:/0(0,90)=B(0,59),0,8;duree_:/0(0,61),8,16;boutonPou
+ 105               		.stabs	"_ZN9MinuterieC2Ev:F(0,4)",36,0,114,_ZN9MinuterieC2Ev
+ 106               		.stabs	"this:P(0,99)=k(0,92)",64,0,114,24
+ 107               	.global	_ZN9MinuterieC2Ev
+ 108               		.type	_ZN9MinuterieC2Ev, @function
+ 109               	_ZN9MinuterieC2Ev:
+ 110               		.stabd	46,0,0
+   1:minuterie.cpp **** /*
+   2:minuterie.cpp **** Fichier: TP3-2.cpp
+   3:minuterie.cpp **** Auteur(s): Alexandre Vu, Louis-Philippe Chouinard
+   4:minuterie.cpp **** Date de creation: 26 janvier 2016
+GAS LISTING /tmp/cc1oAvIw.s 			page 3
+
+
+   5:minuterie.cpp **** Date de modification: 26 janvier 2016
+   6:minuterie.cpp **** Description: Programme permettant l'implementation de la machine a etat demandee dans le probleme 2
+   7:minuterie.cpp **** */
+   8:minuterie.cpp **** /* 
+   9:minuterie.cpp ****  *                  TABLE D'ETATS
+  10:minuterie.cpp ****  *
+  11:minuterie.cpp ****  *Etat present    Entree(bouton)  Etat suivant    Sortie(DELL)
+  12:minuterie.cpp ****  *  INIT            0               INIT            Rouge(0x01)
+  13:minuterie.cpp ****  *  INIT            1               EA              Rouge(0x01)
+  14:minuterie.cpp ****  *  EA              0               EB              Ambre(alternance entre 0x01 et 0x02)
+  15:minuterie.cpp ****  *  EA              1               EA              Ambre(alternance entre 0x01 et 0x02)
+  16:minuterie.cpp ****  *  EB              0               EB              Vert(0x02)
+  17:minuterie.cpp ****  *  EB              1               EC              Vert(0x02)     
+  18:minuterie.cpp ****  *  EC              0               ED              Rouge(0x01)
+  19:minuterie.cpp ****  *  EC              1               EC              Rouge(0x01)
+  20:minuterie.cpp ****  *  ED              0               ED              Eteint(0x00)
+  21:minuterie.cpp ****  *  ED              1               EE              Eteint(0x00)
+  22:minuterie.cpp ****  *  EE              0               INIT            Vert(0x02)
+  23:minuterie.cpp ****  *  EE              1               EE              Vert(0x02)
+  24:minuterie.cpp ****  */
+  25:minuterie.cpp **** #define F_CPU 8000000L
+  26:minuterie.cpp **** 
+  27:minuterie.cpp **** #include <avr/io.h>
+  28:minuterie.cpp **** #include <util/delay.h>
+  29:minuterie.cpp **** #include <avr/interrupt.h>
+  30:minuterie.cpp **** #include "minuterie.h"
+  31:minuterie.cpp **** 
+  32:minuterie.cpp **** 
+  33:minuterie.cpp **** 
+  34:minuterie.cpp **** //volatile uint8_t minuterieExpiree;
+  35:minuterie.cpp **** //volatile uint8_t boutonPoussoir; 
+  36:minuterie.cpp **** 
+  37:minuterie.cpp **** //
+  38:minuterie.cpp **** //
+  39:minuterie.cpp **** //ISR (INT0_vect) 
+  40:minuterie.cpp **** //{
+  41:minuterie.cpp **** //    _delay_ms(10);
+  42:minuterie.cpp **** //    
+  43:minuterie.cpp **** //    if(PIND & 0x04)
+  44:minuterie.cpp **** //        boutonPoussoir = 1;
+  45:minuterie.cpp **** //
+  46:minuterie.cpp **** //    // anti-rebond
+  47:minuterie.cpp **** //}
+  48:minuterie.cpp **** 
+  49:minuterie.cpp **** //void initialisation ( void ) 
+  50:minuterie.cpp **** //{
+  51:minuterie.cpp **** //
+  52:minuterie.cpp **** //    // cli est une routine qui bloque toutes les interruptions. Il serait bien mauvais d'etre int
+  53:minuterie.cpp **** //    cli ();
+  54:minuterie.cpp **** //
+  55:minuterie.cpp **** //
+  56:minuterie.cpp **** //    // configurer et choisir les ports pour les entrees et les sorties. DDRx... Initialisez bien 
+  57:minuterie.cpp **** //
+  58:minuterie.cpp **** //    DDRB = 0x03; // Sortie      
+  59:minuterie.cpp **** //    PORTD = 0x01;   // Precision de l'entree
+  60:minuterie.cpp **** //    PORTB = 0x00;  // Initialisation de la sortie
+  61:minuterie.cpp **** //    boutonPoussoir = 0;
+GAS LISTING /tmp/cc1oAvIw.s 			page 4
+
+
+  62:minuterie.cpp **** //    minuterieExpiree = 0;
+  63:minuterie.cpp **** //    // cette procédure ajuste le registre EIMSK de ATmega324PA pour permettre les interruption ex
+  64:minuterie.cpp **** //
+  65:minuterie.cpp **** //    EIMSK |= _BV(INT0);
+  66:minuterie.cpp **** //
+  67:minuterie.cpp **** //
+  68:minuterie.cpp **** //    // il faut sensibiliser les interruptions externes aux changements de niveau du bouton-pousso
+  69:minuterie.cpp **** //
+  70:minuterie.cpp **** //    EICRA |= _BV(ISC00) ;
+  71:minuterie.cpp **** //
+  72:minuterie.cpp **** //    // sei permet de recevoir a nouveau des interruptions.
+  73:minuterie.cpp **** //    sei ();
+  74:minuterie.cpp **** //}
+  75:minuterie.cpp **** 
+  76:minuterie.cpp **** //int main()
+  77:minuterie.cpp **** //{
+  78:minuterie.cpp **** //
+  79:minuterie.cpp **** //  
+  80:minuterie.cpp **** //    // Initialisation de l'etat
+  81:minuterie.cpp **** //    initialisation();
+  82:minuterie.cpp **** //   
+  83:minuterie.cpp **** //    _delay_ms(2000);
+  84:minuterie.cpp **** //    PORTB = 0x01;
+  85:minuterie.cpp **** //    _delay_ms(100);
+  86:minuterie.cpp **** //    PORTB = 0x00;
+  87:minuterie.cpp **** //    partirMinuterie(7812);
+  88:minuterie.cpp **** //    
+  89:minuterie.cpp **** //    boutonPoussoir = 0;
+  90:minuterie.cpp **** //    do 
+  91:minuterie.cpp **** //    {
+  92:minuterie.cpp **** //       
+  93:minuterie.cpp **** //    } while (minuterieExpiree == 0 && boutonPoussoir == 0 );
+  94:minuterie.cpp **** //
+  95:minuterie.cpp **** //    // Une interruption s'est produite. Arreter tout
+  96:minuterie.cpp **** //
+  97:minuterie.cpp **** //    // forme d'interruption. Une seule reponse suffit.
+  98:minuterie.cpp **** //
+  99:minuterie.cpp **** //    cli ();
+ 100:minuterie.cpp **** //
+ 101:minuterie.cpp **** //    // Verifier la reponse
+ 102:minuterie.cpp **** //
+ 103:minuterie.cpp **** //    
+ 104:minuterie.cpp **** //    if(boutonPoussoir == 1)
+ 105:minuterie.cpp **** //         PORTB = 0x02;
+ 106:minuterie.cpp **** //
+ 107:minuterie.cpp **** //    else
+ 108:minuterie.cpp **** //         PORTB = 0x01;
+ 109:minuterie.cpp **** //}
+ 110:minuterie.cpp **** 
+ 111:minuterie.cpp **** 
+ 112:minuterie.cpp **** 
+ 113:minuterie.cpp **** 
+ 114:minuterie.cpp **** Minuterie::Minuterie()
+ 111               		.stabn	68,0,114,.LM0-.LFBB1
+ 112               	.LM0:
+ 113               	.LFBB1:
+ 114               	/* prologue: function */
+GAS LISTING /tmp/cc1oAvIw.s 			page 5
+
+
+ 115               	/* frame size = 0 */
+ 116               	/* stack size = 0 */
+ 117               	.L__stack_usage = 0
+ 118               	.LBB2:
+ 115:minuterie.cpp **** {
+ 116:minuterie.cpp **** 	
+ 117:minuterie.cpp **** 
+ 118:minuterie.cpp **** 	DDRB = 0x03; // Sortie      
+ 119               		.stabn	68,0,118,.LM1-.LFBB1
+ 120               	.LM1:
+ 121 0000 23E0      		ldi r18,lo8(3)
+ 122 0002 24B9      		out 0x4,r18
+ 119:minuterie.cpp **** 	PORTD = 0x01;   // Precision de l'entree
+ 123               		.stabn	68,0,119,.LM2-.LFBB1
+ 124               	.LM2:
+ 125 0004 21E0      		ldi r18,lo8(1)
+ 126 0006 2BB9      		out 0xb,r18
+ 120:minuterie.cpp **** 	PORTB = 0x00;  // Initialisation de la sortie
+ 127               		.stabn	68,0,120,.LM3-.LFBB1
+ 128               	.LM3:
+ 129 0008 15B8      		out 0x5,__zero_reg__
+ 121:minuterie.cpp **** 	boutonPoussoir_ = 0;
+ 130               		.stabn	68,0,121,.LM4-.LFBB1
+ 131               	.LM4:
+ 132 000a FC01      		movw r30,r24
+ 133 000c 1382      		std Z+3,__zero_reg__
+ 122:minuterie.cpp **** 	minuterieExpiree_ = 0;
+ 134               		.stabn	68,0,122,.LM5-.LFBB1
+ 135               	.LM5:
+ 136 000e 1082      		st Z,__zero_reg__
+ 123:minuterie.cpp **** 	// cette procédure ajuste le registre EIMSK de ATmega324PA pour permettre les interruption externe
+ 124:minuterie.cpp **** 
+ 125:minuterie.cpp **** 	EIMSK |= _BV(INT0);
+ 137               		.stabn	68,0,125,.LM6-.LFBB1
+ 138               	.LM6:
+ 139 0010 E89A      		sbi 0x1d,0
+ 126:minuterie.cpp **** 
+ 127:minuterie.cpp **** 
+ 128:minuterie.cpp **** 	// il faut sensibiliser les interruptions externes aux changements de niveau du bouton-poussoir en
+ 129:minuterie.cpp **** 
+ 130:minuterie.cpp **** 	EICRA |= _BV(ISC00);
+ 140               		.stabn	68,0,130,.LM7-.LFBB1
+ 141               	.LM7:
+ 142 0012 E9E6      		ldi r30,lo8(105)
+ 143 0014 F0E0      		ldi r31,0
+ 144 0016 8081      		ld r24,Z
+ 145 0018 8160      		ori r24,lo8(1)
+ 146 001a 8083      		st Z,r24
+ 131:minuterie.cpp **** 
+ 132:minuterie.cpp **** 	// sei permet de recevoir a nouveau des interruptions.
+ 133:minuterie.cpp **** 	sei();
+ 147               		.stabn	68,0,133,.LM8-.LFBB1
+ 148               	.LM8:
+ 149               	/* #APP */
+ 150               	 ;  133 "minuterie.cpp" 1
+ 151 001c 7894      		sei
+ 152               	 ;  0 "" 2
+GAS LISTING /tmp/cc1oAvIw.s 			page 6
+
+
+ 153               	/* #NOAPP */
+ 154 001e 0895      		ret
+ 155               	.LBE2:
+ 156               		.size	_ZN9MinuterieC2Ev, .-_ZN9MinuterieC2Ev
+ 157               	.Lscope1:
+ 158               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 159               		.stabd	78,0,0
+ 160               	.global	_ZN9MinuterieC1Ev
+ 161               		.set	_ZN9MinuterieC1Ev,_ZN9MinuterieC2Ev
+ 162               		.stabs	"_ZN9Minuterie15partirMinuterieEj:F(0,4)",36,0,137,_ZN9Minuterie15partirMinuterieEj
+ 163               		.stabs	"this:P(0,99)",64,0,137,24
+ 164               		.stabs	"duree:P(0,61)",64,0,137,22
+ 165               	.global	_ZN9Minuterie15partirMinuterieEj
+ 166               		.type	_ZN9Minuterie15partirMinuterieEj, @function
+ 167               	_ZN9Minuterie15partirMinuterieEj:
+ 168               		.stabd	46,0,0
+ 134:minuterie.cpp **** }
+ 135:minuterie.cpp **** 
+ 136:minuterie.cpp **** 
+ 137:minuterie.cpp **** void Minuterie::partirMinuterie (uint16_t duree) 
+ 138:minuterie.cpp **** {
+ 169               		.stabn	68,0,138,.LM9-.LFBB2
+ 170               	.LM9:
+ 171               	.LFBB2:
+ 172               	/* prologue: function */
+ 173               	/* frame size = 0 */
+ 174               	/* stack size = 0 */
+ 175               	.L__stack_usage = 0
+ 139:minuterie.cpp **** 
+ 140:minuterie.cpp ****     minuterieExpiree_ = 0;
+ 176               		.stabn	68,0,140,.LM10-.LFBB2
+ 177               	.LM10:
+ 178 0020 FC01      		movw r30,r24
+ 179 0022 1082      		st Z,__zero_reg__
+ 141:minuterie.cpp **** 
+ 142:minuterie.cpp ****     // mode CTC du timer 1 avec horloge divisee par 1024
+ 143:minuterie.cpp **** 
+ 144:minuterie.cpp ****     // interruption apres la duree specifiee
+ 145:minuterie.cpp **** 
+ 146:minuterie.cpp ****     TCNT1 = 0;
+ 180               		.stabn	68,0,146,.LM11-.LFBB2
+ 181               	.LM11:
+ 182 0024 1092 8500 		sts 132+1,__zero_reg__
+ 183 0028 1092 8400 		sts 132,__zero_reg__
+ 147:minuterie.cpp **** 
+ 148:minuterie.cpp ****     OCR1A = duree;
+ 184               		.stabn	68,0,148,.LM12-.LFBB2
+ 185               	.LM12:
+ 186 002c 7093 8900 		sts 136+1,r23
+ 187 0030 6093 8800 		sts 136,r22
+ 149:minuterie.cpp **** 
+ 150:minuterie.cpp ****     TCCR1A = (1 << WGM12);
+ 188               		.stabn	68,0,150,.LM13-.LFBB2
+ 189               	.LM13:
+ 190 0034 88E0      		ldi r24,lo8(8)
+ 191 0036 8093 8000 		sts 128,r24
+ 151:minuterie.cpp **** 
+GAS LISTING /tmp/cc1oAvIw.s 			page 7
+
+
+ 152:minuterie.cpp ****     TCCR1B = (1 << CS12 | 1<<CS10 );
+ 192               		.stabn	68,0,152,.LM14-.LFBB2
+ 193               	.LM14:
+ 194 003a 85E0      		ldi r24,lo8(5)
+ 195 003c 8093 8100 		sts 129,r24
+ 153:minuterie.cpp **** 
+ 154:minuterie.cpp ****     TCCR1C = 0;
+ 196               		.stabn	68,0,154,.LM15-.LFBB2
+ 197               	.LM15:
+ 198 0040 1092 8200 		sts 130,__zero_reg__
+ 155:minuterie.cpp **** 
+ 156:minuterie.cpp ****     TIMSK1 = (1 << OCIE1A) ;
+ 199               		.stabn	68,0,156,.LM16-.LFBB2
+ 200               	.LM16:
+ 201 0044 82E0      		ldi r24,lo8(2)
+ 202 0046 8093 6F00 		sts 111,r24
+ 203 004a 0895      		ret
+ 204               		.size	_ZN9Minuterie15partirMinuterieEj, .-_ZN9Minuterie15partirMinuterieEj
+ 205               	.Lscope2:
+ 206               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 207               		.stabd	78,0,0
+ 208               		.stabs	"_ZN9Minuterie8setDureeEj:F(0,4)",36,0,160,_ZN9Minuterie8setDureeEj
+ 209               		.stabs	"this:P(0,99)",64,0,160,24
+ 210               		.stabs	"duree:P(0,61)",64,0,160,22
+ 211               	.global	_ZN9Minuterie8setDureeEj
+ 212               		.type	_ZN9Minuterie8setDureeEj, @function
+ 213               	_ZN9Minuterie8setDureeEj:
+ 214               		.stabd	46,0,0
+ 157:minuterie.cpp **** 
+ 158:minuterie.cpp **** }
+ 159:minuterie.cpp **** 
+ 160:minuterie.cpp **** void Minuterie::setDuree(uint16_t duree)
+ 161:minuterie.cpp **** {
+ 215               		.stabn	68,0,161,.LM17-.LFBB3
+ 216               	.LM17:
+ 217               	.LFBB3:
+ 218               	/* prologue: function */
+ 219               	/* frame size = 0 */
+ 220               	/* stack size = 0 */
+ 221               	.L__stack_usage = 0
+ 162:minuterie.cpp **** 	duree_ = duree;
+ 222               		.stabn	68,0,162,.LM18-.LFBB3
+ 223               	.LM18:
+ 224 004c FC01      		movw r30,r24
+ 225 004e 7283      		std Z+2,r23
+ 226 0050 6183      		std Z+1,r22
+ 227 0052 0895      		ret
+ 228               		.size	_ZN9Minuterie8setDureeEj, .-_ZN9Minuterie8setDureeEj
+ 229               	.Lscope3:
+ 230               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 231               		.stabd	78,0,0
+ 232               		.stabs	"_ZNK9Minuterie8getDureeEv:F(0,61)",36,0,166,_ZNK9Minuterie8getDureeEv
+ 233               		.stabs	"this:P(0,100)=k(0,94)",64,0,166,24
+ 234               	.global	_ZNK9Minuterie8getDureeEv
+ 235               		.type	_ZNK9Minuterie8getDureeEv, @function
+ 236               	_ZNK9Minuterie8getDureeEv:
+ 237               		.stabd	46,0,0
+GAS LISTING /tmp/cc1oAvIw.s 			page 8
+
+
+ 163:minuterie.cpp **** }
+ 164:minuterie.cpp **** 
+ 165:minuterie.cpp **** 
+ 166:minuterie.cpp **** uint16_t Minuterie::getDuree() const
+ 167:minuterie.cpp **** {
+ 238               		.stabn	68,0,167,.LM19-.LFBB4
+ 239               	.LM19:
+ 240               	.LFBB4:
+ 241               	/* prologue: function */
+ 242               	/* frame size = 0 */
+ 243               	/* stack size = 0 */
+ 244               	.L__stack_usage = 0
+ 168:minuterie.cpp **** 	return duree_;
+ 169:minuterie.cpp **** 
+ 170:minuterie.cpp **** }
+ 245               		.stabn	68,0,170,.LM20-.LFBB4
+ 246               	.LM20:
+ 247 0054 FC01      		movw r30,r24
+ 248 0056 8181      		ldd r24,Z+1
+ 249 0058 9281      		ldd r25,Z+2
+ 250 005a 0895      		ret
+ 251               		.size	_ZNK9Minuterie8getDureeEv, .-_ZNK9Minuterie8getDureeEv
+ 252               	.Lscope4:
+ 253               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 254               		.stabd	78,0,0
+ 255               		.stabs	"_ZN9Minuterie10estExpireeEv:F(0,54)",36,0,173,_ZN9Minuterie10estExpireeEv
+ 256               		.stabs	"this:P(0,99)",64,0,173,24
+ 257               	.global	_ZN9Minuterie10estExpireeEv
+ 258               		.type	_ZN9Minuterie10estExpireeEv, @function
+ 259               	_ZN9Minuterie10estExpireeEv:
+ 260               		.stabd	46,0,0
+ 171:minuterie.cpp **** 
+ 172:minuterie.cpp **** 
+ 173:minuterie.cpp **** bool Minuterie::estExpiree()
+ 174:minuterie.cpp **** {
+ 261               		.stabn	68,0,174,.LM21-.LFBB5
+ 262               	.LM21:
+ 263               	.LFBB5:
+ 264               	/* prologue: function */
+ 265               	/* frame size = 0 */
+ 266               	/* stack size = 0 */
+ 267               	.L__stack_usage = 0
+ 175:minuterie.cpp **** 	if (minuterieExpiree_ == 1)
+ 268               		.stabn	68,0,175,.LM22-.LFBB5
+ 269               	.LM22:
+ 270 005c FC01      		movw r30,r24
+ 271 005e 9081      		ld r25,Z
+ 272 0060 81E0      		ldi r24,lo8(1)
+ 273 0062 9130      		cpi r25,lo8(1)
+ 274 0064 01F0      		breq .L6
+ 275 0066 80E0      		ldi r24,0
+ 276               	.L6:
+ 176:minuterie.cpp **** 		return true;
+ 177:minuterie.cpp **** 	return false;
+ 178:minuterie.cpp **** 
+ 179:minuterie.cpp **** }
+ 277               		.stabn	68,0,179,.LM23-.LFBB5
+GAS LISTING /tmp/cc1oAvIw.s 			page 9
+
+
+ 278               	.LM23:
+ 279 0068 0895      		ret
+ 280               		.size	_ZN9Minuterie10estExpireeEv, .-_ZN9Minuterie10estExpireeEv
+ 281               	.Lscope5:
+ 282               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 283               		.stabd	78,0,0
+ 284               		.stabs	"_ZN9Minuterie10setExpireeEh:F(0,4)",36,0,181,_ZN9Minuterie10setExpireeEh
+ 285               		.stabs	"this:P(0,99)",64,0,181,24
+ 286               		.stabs	"valeur:P(0,59)",64,0,181,22
+ 287               	.global	_ZN9Minuterie10setExpireeEh
+ 288               		.type	_ZN9Minuterie10setExpireeEh, @function
+ 289               	_ZN9Minuterie10setExpireeEh:
+ 290               		.stabd	46,0,0
+ 180:minuterie.cpp **** 
+ 181:minuterie.cpp **** void Minuterie::setExpiree(uint8_t valeur)
+ 182:minuterie.cpp **** {
+ 291               		.stabn	68,0,182,.LM24-.LFBB6
+ 292               	.LM24:
+ 293               	.LFBB6:
+ 294               	/* prologue: function */
+ 295               	/* frame size = 0 */
+ 296               	/* stack size = 0 */
+ 297               	.L__stack_usage = 0
+ 183:minuterie.cpp ****     minuterieExpiree_ = valeur;
+ 298               		.stabn	68,0,183,.LM25-.LFBB6
+ 299               	.LM25:
+ 300 006a FC01      		movw r30,r24
+ 301 006c 6083      		st Z,r22
+ 302 006e 0895      		ret
+ 303               		.size	_ZN9Minuterie10setExpireeEh, .-_ZN9Minuterie10setExpireeEh
+ 304               	.Lscope6:
+ 305               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 306               		.stabd	78,0,0
+ 307               		.stabs	"",100,0,0,.Letext0
+ 308               	.Letext0:
+ 309               		.ident	"GCC: (Fedora 4.9.2-1.fc22) 4.9.2"
+GAS LISTING /tmp/cc1oAvIw.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 minuterie.cpp
+     /tmp/cc1oAvIw.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cc1oAvIw.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cc1oAvIw.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cc1oAvIw.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cc1oAvIw.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cc1oAvIw.s:109    .text:0000000000000000 _ZN9MinuterieC2Ev
+     /tmp/cc1oAvIw.s:109    .text:0000000000000000 _ZN9MinuterieC1Ev
+     /tmp/cc1oAvIw.s:167    .text:0000000000000020 _ZN9Minuterie15partirMinuterieEj
+     /tmp/cc1oAvIw.s:213    .text:000000000000004c _ZN9Minuterie8setDureeEj
+     /tmp/cc1oAvIw.s:236    .text:0000000000000054 _ZNK9Minuterie8getDureeEv
+     /tmp/cc1oAvIw.s:259    .text:000000000000005c _ZN9Minuterie10estExpireeEv
+     /tmp/cc1oAvIw.s:289    .text:000000000000006a _ZN9Minuterie10setExpireeEh
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,22 @@
+#ifndef PWM_H
+#define PWM_H
+#include <avr/interrupt.h>
+#include <avr/io.h> 
+
+
+class Pwm
+{
+public:
+
+	Pwm(uint8_t timer);
+	~Pwm();
+	void Avance(unsigned int pwm);
+	void Tourner_Gauche(unsigned int pwm);
+	void Tourner_Droite(unsigned int pwm);
+
+private:
+	uint8_t timer_;
+};
+
+#endif
+

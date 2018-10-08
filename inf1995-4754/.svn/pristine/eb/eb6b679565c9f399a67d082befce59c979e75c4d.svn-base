@@ -1,0 +1,3708 @@
+GAS LISTING /tmp/cccQHSrn.s 			page 1
+
+
+   1               		.file	"main.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/olstob/Documents/inf1995-4754/projet/",100,0,4,.Ltext0
+   8               		.stabs	"main.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/cccQHSrn.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,121,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,122,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,123,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,124,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,125,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,126,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,128,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,129,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,142,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,147,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,159,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,164,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,169,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,174,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,179,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,184,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,192,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,199,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,213,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,218,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,223,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,228,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,233,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,238,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,246,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,253,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,273,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,278,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
+ 104               		.stabs	"Memoire24CXXX:Tt(0,89)=s1m_adresse_peripherique:/0(0,59):_ZN13Memoire24CXXX22m_adresse_per
+ 105               		.stabs	"Del:Tt(0,98)=s1__base_ctor ::(0,99)=#(0,98),(0,4),(0,100)=*(0,98),(0,4);:_ZN3DelC2Ev;2A.;_
+ 106               		.stabs	"Moteur:Tt(0,102)=s1__base_ctor ::(0,103)=#(0,102),(0,4),(0,104)=*(0,102),(0,4);:_ZN6Moteur
+ 107               		.stabs	"can:Tt(0,105)=s1__base_ctor ::(0,106)=#(0,105),(0,4),(0,107)=*(0,105),(0,4);:_ZN3canC2Ev;2
+ 108               		.stabs	"Minuterie:Tt(0,109)=s4minuterieExpiree_:/0(0,110)=B(0,59),0,8;duree_:/0(0,61),8,16;boutonP
+ 109               		.stabs	"PwmSon:Tt(0,119)=s1__base_ctor ::(0,120)=#(0,119),(0,4),(0,121)=*(0,119),(0,4);:_ZN6PwmSon
+ 110               		.stabs	"Pwm:Tt(0,123)=s1__base_ctor ::(0,124)=#(0,123),(0,4),(0,125)=*(0,123),(0,4);:_ZN3PwmC2Ev;2
+ 111               	.global	__floatunsisf
+ 112               	.global	__divsf3
+ 113               	.global	__mulsf3
+ 114               	.global	__fixunssfsi
+GAS LISTING /tmp/cccQHSrn.s 			page 3
+
+
+ 115               		.stabs	"_Z8faireSonj.part.1:f(0,4)",36,0,40,_Z8faireSonj.part.1
+ 116               		.stabs	"pwm:P(0,12)",64,0,40,24
+ 117               		.type	_Z8faireSonj.part.1, @function
+ 118               	_Z8faireSonj.part.1:
+ 119               		.stabd	46,0,0
+   1:main.cpp      **** 
+   2:main.cpp      **** /*
+   3:main.cpp      **** NOTE IMPORTANTE: Tous les commentaires de la forme <1 1 1 1 1> indiquent le comportement du robot q
+   4:main.cpp      **** */
+   5:main.cpp      **** #include "Memoire24CXXX.h"
+   6:main.cpp      **** #include "delControl.h" 
+   7:main.cpp      **** #include "Moteur.h" 
+   8:main.cpp      **** #include "can.h"
+   9:main.cpp      **** #include "minuterie.h" 
+  10:main.cpp      **** #include "Memoire24CXXX.h" 
+  11:main.cpp      **** #include "PwmSon.h"
+  12:main.cpp      **** #include "PWM.h"
+  13:main.cpp      **** #include <avr/io.h>
+  14:main.cpp      **** #include <avr/interrupt.h> 
+  15:main.cpp      **** #define F_CPU 8000000
+  16:main.cpp      **** #include <util/delay.h>
+  17:main.cpp      **** using namespace std;
+  18:main.cpp      ****     
+  19:main.cpp      **** bool bit1 = false, bit2 = false, bit3 = false, bit4 = false, bit5 = false, 
+  20:main.cpp      ****     enfonceGauche = false, enfonceDroit = false, aFaitTriangle = false, devraitFinir = false;
+  21:main.cpp      **** uint8_t compteur = 0, petitSkip = 0, rapport = 0, nbCarre =0;
+  22:main.cpp      **** char directions[3] = {};
+  23:main.cpp      **** Del del;
+  24:main.cpp      **** Pwm moteur;
+  25:main.cpp      **** can intensite;
+  26:main.cpp      **** 
+  27:main.cpp      **** void verifierLuminosite() //Fonction qui permet d'allumer les DELS si le robot passe dans le tunnel
+  28:main.cpp      **** {
+  29:main.cpp      ****     rapport = intensite.lecture(6) >> 2; 
+  30:main.cpp      ****     if(rapport < 80 )
+  31:main.cpp      ****     {
+  32:main.cpp      ****         PORTA = 0b1100;
+  33:main.cpp      ****     }
+  34:main.cpp      ****     else
+  35:main.cpp      ****     {
+  36:main.cpp      ****       PORTA = 0x00;
+  37:main.cpp      ****     }
+  38:main.cpp      **** }
+  39:main.cpp      **** 
+  40:main.cpp      **** void faireSon(unsigned int pwm) //Fonction qui fait du son selon la valeur passée en paramètres.
+ 120               		.stabn	68,0,40,.LM0-.LFBB1
+ 121               	.LM0:
+ 122               	.LFBB1:
+ 123               	/* prologue: function */
+ 124               	/* frame size = 0 */
+ 125               	/* stack size = 0 */
+ 126               	.L__stack_usage = 0
+  41:main.cpp      **** {
+  42:main.cpp      ****     if(pwm > 45)
+  43:main.cpp      ****     {
+  44:main.cpp      ****         TCCR0A = (1 << WGM01) | (1 << COM0A0);
+ 127               		.stabn	68,0,44,.LM1-.LFBB1
+GAS LISTING /tmp/cccQHSrn.s 			page 4
+
+
+ 128               	.LM1:
+ 129 0000 22E4      		ldi r18,lo8(66)
+ 130 0002 24BD      		out 0x24,r18
+  45:main.cpp      **** 	
+  46:main.cpp      **** 	TCCR0B = 0x04 ;
+ 131               		.stabn	68,0,46,.LM2-.LFBB1
+ 132               	.LM2:
+ 133 0004 24E0      		ldi r18,lo8(4)
+ 134 0006 25BD      		out 0x25,r18
+  47:main.cpp      **** 		
+  48:main.cpp      **** 	OCR0A = 15625.0/(110.0 * pow(2, (pwm-45)/12.0));
+ 135               		.stabn	68,0,48,.LM3-.LFBB1
+ 136               	.LM3:
+ 137 0008 8D97      		sbiw r24,45
+ 138 000a BC01      		movw r22,r24
+ 139 000c 80E0      		ldi r24,0
+ 140 000e 90E0      		ldi r25,0
+ 141 0010 0E94 0000 		call __floatunsisf
+ 142 0014 20E0      		ldi r18,0
+ 143 0016 30E0      		ldi r19,0
+ 144 0018 40E4      		ldi r20,lo8(64)
+ 145 001a 51E4      		ldi r21,lo8(65)
+ 146 001c 0E94 0000 		call __divsf3
+ 147 0020 9B01      		movw r18,r22
+ 148 0022 AC01      		movw r20,r24
+ 149 0024 60E0      		ldi r22,0
+ 150 0026 70E0      		ldi r23,0
+ 151 0028 80E0      		ldi r24,0
+ 152 002a 90E4      		ldi r25,lo8(64)
+ 153 002c 0E94 0000 		call pow
+ 154 0030 20E0      		ldi r18,0
+ 155 0032 30E0      		ldi r19,0
+ 156 0034 4CED      		ldi r20,lo8(-36)
+ 157 0036 52E4      		ldi r21,lo8(66)
+ 158 0038 0E94 0000 		call __mulsf3
+ 159 003c 9B01      		movw r18,r22
+ 160 003e AC01      		movw r20,r24
+ 161 0040 60E0      		ldi r22,0
+ 162 0042 74E2      		ldi r23,lo8(36)
+ 163 0044 84E7      		ldi r24,lo8(116)
+ 164 0046 96E4      		ldi r25,lo8(70)
+ 165 0048 0E94 0000 		call __divsf3
+ 166 004c 0E94 0000 		call __fixunssfsi
+ 167 0050 67BD      		out 0x27,r22
+ 168 0052 0895      		ret
+ 169               		.size	_Z8faireSonj.part.1, .-_Z8faireSonj.part.1
+ 170               	.Lscope1:
+ 171               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 172               		.stabd	78,0,0
+ 173               		.stabs	"_Z18verifierLuminositev:F(0,4)",36,0,27,_Z18verifierLuminositev
+ 174               	.global	_Z18verifierLuminositev
+ 175               		.type	_Z18verifierLuminositev, @function
+ 176               	_Z18verifierLuminositev:
+ 177               		.stabd	46,0,0
+  28:main.cpp      ****     rapport = intensite.lecture(6) >> 2; 
+ 178               		.stabn	68,0,28,.LM4-.LFBB2
+ 179               	.LM4:
+GAS LISTING /tmp/cccQHSrn.s 			page 5
+
+
+ 180               	.LFBB2:
+ 181               	/* prologue: function */
+ 182               	/* frame size = 0 */
+ 183               	/* stack size = 0 */
+ 184               	.L__stack_usage = 0
+  29:main.cpp      ****     if(rapport < 80 )
+ 185               		.stabn	68,0,29,.LM5-.LFBB2
+ 186               	.LM5:
+ 187 0054 66E0      		ldi r22,lo8(6)
+ 188 0056 80E0      		ldi r24,lo8(intensite)
+ 189 0058 90E0      		ldi r25,hi8(intensite)
+ 190 005a 0E94 0000 		call _ZN3can7lectureEh
+ 191 005e 9695      		lsr r25
+ 192 0060 8795      		ror r24
+ 193 0062 9695      		lsr r25
+ 194 0064 8795      		ror r24
+ 195 0066 8093 0000 		sts rapport,r24
+  30:main.cpp      ****     {
+ 196               		.stabn	68,0,30,.LM6-.LFBB2
+ 197               	.LM6:
+ 198 006a 8035      		cpi r24,lo8(80)
+ 199 006c 00F4      		brsh .L3
+  32:main.cpp      ****     }
+ 200               		.stabn	68,0,32,.LM7-.LFBB2
+ 201               	.LM7:
+ 202 006e 8CE0      		ldi r24,lo8(12)
+ 203 0070 82B9      		out 0x2,r24
+ 204 0072 0895      		ret
+ 205               	.L3:
+  36:main.cpp      ****     }
+ 206               		.stabn	68,0,36,.LM8-.LFBB2
+ 207               	.LM8:
+ 208 0074 12B8      		out 0x2,__zero_reg__
+ 209 0076 0895      		ret
+ 210               		.size	_Z18verifierLuminositev, .-_Z18verifierLuminositev
+ 211               	.Lscope2:
+ 212               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 213               		.stabd	78,0,0
+ 214               		.stabs	"_Z8faireSonj:F(0,4)",36,0,40,_Z8faireSonj
+ 215               		.stabs	"pwm:P(0,12)",64,0,40,24
+ 216               	.global	_Z8faireSonj
+ 217               		.type	_Z8faireSonj, @function
+ 218               	_Z8faireSonj:
+ 219               		.stabd	46,0,0
+  41:main.cpp      ****     if(pwm > 45)
+ 220               		.stabn	68,0,41,.LM9-.LFBB3
+ 221               	.LM9:
+ 222               	.LFBB3:
+ 223               	/* prologue: function */
+ 224               	/* frame size = 0 */
+ 225               	/* stack size = 0 */
+ 226               	.L__stack_usage = 0
+  42:main.cpp      ****     {
+ 227               		.stabn	68,0,42,.LM10-.LFBB3
+ 228               	.LM10:
+ 229 0078 8E32      		cpi r24,46
+ 230 007a 9105      		cpc r25,__zero_reg__
+GAS LISTING /tmp/cccQHSrn.s 			page 6
+
+
+ 231 007c 00F0      		brlo .L7
+ 232 007e 0C94 0000 		jmp _Z8faireSonj.part.1
+ 233               	.L7:
+  49:main.cpp      ****     }
+  50:main.cpp      ****     else
+  51:main.cpp      ****     {
+  52:main.cpp      ****         TCCR0B &= 0x00;
+ 234               		.stabn	68,0,52,.LM11-.LFBB3
+ 235               	.LM11:
+ 236 0082 85B5      		in r24,0x25
+ 237 0084 15BC      		out 0x25,__zero_reg__
+ 238 0086 0895      		ret
+ 239               		.size	_Z8faireSonj, .-_Z8faireSonj
+ 240               	.Lscope3:
+ 241               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 242               		.stabd	78,0,0
+ 243               		.stabs	"_Z13lireDirectionv:F(0,4)",36,0,56,_Z13lireDirectionv
+ 244               	.global	_Z13lireDirectionv
+ 245               		.type	_Z13lireDirectionv, @function
+ 246               	_Z13lireDirectionv:
+ 247               		.stabd	46,0,0
+  53:main.cpp      ****     }
+  54:main.cpp      **** }
+  55:main.cpp      **** 
+  56:main.cpp      **** void lireDirection() //Fonction permettant de stocker les valeurs lues par le capteur dans les vari
+  57:main.cpp      **** {
+ 248               		.stabn	68,0,57,.LM12-.LFBB4
+ 249               	.LM12:
+ 250               	.LFBB4:
+ 251               	/* prologue: function */
+ 252               	/* frame size = 0 */
+ 253               	/* stack size = 0 */
+ 254               	.L__stack_usage = 0
+  58:main.cpp      ****         bit1 = PINC & 0b00000001; // capteur_gauche
+ 255               		.stabn	68,0,58,.LM13-.LFBB4
+ 256               	.LM13:
+ 257 0088 86B1      		in r24,0x6
+ 258 008a 8170      		andi r24,lo8(1)
+ 259 008c 8093 0000 		sts bit1,r24
+  59:main.cpp      ****         bit2 = PINC & 0b00000010; // capteur centre gauche
+ 260               		.stabn	68,0,59,.LM14-.LFBB4
+ 261               	.LM14:
+ 262 0090 86B1      		in r24,0x6
+ 263 0092 8695      		lsr r24
+ 264 0094 8170      		andi r24,1
+ 265 0096 8093 0000 		sts bit2,r24
+  60:main.cpp      ****         bit3 = PINC & 0b00000100; // capteur centre 
+ 266               		.stabn	68,0,60,.LM15-.LFBB4
+ 267               	.LM15:
+ 268 009a 86B1      		in r24,0x6
+ 269 009c 82FB      		bst r24,2
+ 270 009e 8827      		clr r24
+ 271 00a0 80F9      		bld r24,0
+ 272 00a2 8093 0000 		sts bit3,r24
+  61:main.cpp      ****         bit4 = PINC & 0b00001000; // centre centre droit 
+ 273               		.stabn	68,0,61,.LM16-.LFBB4
+ 274               	.LM16:
+GAS LISTING /tmp/cccQHSrn.s 			page 7
+
+
+ 275 00a6 86B1      		in r24,0x6
+ 276 00a8 83FB      		bst r24,3
+ 277 00aa 8827      		clr r24
+ 278 00ac 80F9      		bld r24,0
+ 279 00ae 8093 0000 		sts bit4,r24
+  62:main.cpp      ****         bit5 = PINC & 0b00010000; // capteur_droit
+ 280               		.stabn	68,0,62,.LM17-.LFBB4
+ 281               	.LM17:
+ 282 00b2 86B1      		in r24,0x6
+ 283 00b4 8295      		swap r24
+ 284 00b6 8170      		andi r24,1
+ 285 00b8 8093 0000 		sts bit5,r24
+ 286 00bc 0895      		ret
+ 287               		.size	_Z13lireDirectionv, .-_Z13lireDirectionv
+ 288               	.Lscope4:
+ 289               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 290               		.stabd	78,0,0
+ 291               		.stabs	"_Z15fairePointillesv:F(0,4)",36,0,66,_Z15fairePointillesv
+ 292               	.global	_Z15fairePointillesv
+ 293               		.type	_Z15fairePointillesv, @function
+ 294               	_Z15fairePointillesv:
+ 295               		.stabd	46,0,0
+  63:main.cpp      **** }
+  64:main.cpp      **** 
+  65:main.cpp      **** 
+  66:main.cpp      **** void fairePointilles() //Fonction/état durant laquelle le robot gère la section pointillée
+  67:main.cpp      **** {
+ 296               		.stabn	68,0,67,.LM18-.LFBB5
+ 297               	.LM18:
+ 298               	.LFBB5:
+ 299               	/* prologue: function */
+ 300               	/* frame size = 0 */
+ 301               	/* stack size = 0 */
+ 302               	.L__stack_usage = 0
+ 303               	.L10:
+  68:main.cpp      **** 	while(true)
+  69:main.cpp      **** 	{
+  70:main.cpp      **** 		while(bit1 || bit2 || bit3 || bit4 || bit5)	
+ 304               		.stabn	68,0,70,.LM19-.LFBB5
+ 305               	.LM19:
+ 306 00be 8091 0000 		lds r24,bit1
+ 307 00c2 8823      		tst r24
+ 308 00c4 01F4      		brne .+2
+ 309 00c6 00C0      		rjmp .L77
+ 310               	.L23:
+  71:main.cpp      **** 		{
+  72:main.cpp      ****                             lireDirection();
+ 311               		.stabn	68,0,72,.LM20-.LFBB5
+ 312               	.LM20:
+ 313 00c8 0E94 0000 		call _Z13lireDirectionv
+  73:main.cpp      ****                             if(bit1 && bit2 && !bit3 && !bit4 && !bit5) // 1 1 0 0 0
+ 314               		.stabn	68,0,73,.LM21-.LFBB5
+ 315               	.LM21:
+ 316 00cc 2091 0000 		lds r18,bit1
+ 317 00d0 9091 0000 		lds r25,bit2
+ 318 00d4 8091 0000 		lds r24,bit3
+ 319 00d8 2223      		tst r18
+GAS LISTING /tmp/cccQHSrn.s 			page 8
+
+
+ 320 00da 01F0      		breq .L11
+ 321               		.stabn	68,0,73,.LM22-.LFBB5
+ 322               	.LM22:
+ 323 00dc 9923      		tst r25
+ 324 00de 01F0      		breq .L12
+ 325               		.stabn	68,0,73,.LM23-.LFBB5
+ 326               	.LM23:
+ 327 00e0 8111      		cpse r24,__zero_reg__
+ 328 00e2 00C0      		rjmp .L13
+ 329               		.stabn	68,0,73,.LM24-.LFBB5
+ 330               	.LM24:
+ 331 00e4 8091 0000 		lds r24,bit4
+ 332 00e8 8111      		cpse r24,__zero_reg__
+ 333 00ea 00C0      		rjmp .L13
+ 334               	.L75:
+ 335               		.stabn	68,0,73,.LM25-.LFBB5
+ 336               	.LM25:
+ 337 00ec 8091 0000 		lds r24,bit5
+ 338 00f0 8111      		cpse r24,__zero_reg__
+ 339 00f2 00C0      		rjmp .L13
+ 340               	.L15:
+  74:main.cpp      ****                                     moteur.Tourner_Gauche(95);
+ 341               		.stabn	68,0,74,.LM26-.LFBB5
+ 342               	.LM26:
+ 343 00f4 6FE5      		ldi r22,lo8(95)
+ 344 00f6 70E0      		ldi r23,0
+ 345 00f8 80E0      		ldi r24,lo8(moteur)
+ 346 00fa 90E0      		ldi r25,hi8(moteur)
+ 347 00fc 0E94 0000 		call _ZN3Pwm14Tourner_GaucheEj
+ 348 0100 00C0      		rjmp .L13
+ 349               	.L12:
+  75:main.cpp      ****             
+  76:main.cpp      ****                             else if(bit1 && !bit2 && !bit3 && !bit4 && !bit5) //1 0 0 0 0
+ 350               		.stabn	68,0,76,.LM27-.LFBB5
+ 351               	.LM27:
+ 352 0102 8111      		cpse r24,__zero_reg__
+ 353 0104 00C0      		rjmp .L13
+ 354               		.stabn	68,0,76,.LM28-.LFBB5
+ 355               	.LM28:
+ 356 0106 8091 0000 		lds r24,bit4
+ 357 010a 8111      		cpse r24,__zero_reg__
+ 358 010c 00C0      		rjmp .L13
+ 359               		.stabn	68,0,76,.LM29-.LFBB5
+ 360               	.LM29:
+ 361 010e 8091 0000 		lds r24,bit5
+ 362 0112 8111      		cpse r24,__zero_reg__
+ 363 0114 00C0      		rjmp .L13
+  77:main.cpp      ****                                     moteur.pivotGauche(95);
+ 364               		.stabn	68,0,77,.LM30-.LFBB5
+ 365               	.LM30:
+ 366 0116 6FE5      		ldi r22,lo8(95)
+ 367 0118 70E0      		ldi r23,0
+ 368 011a 80E0      		ldi r24,lo8(moteur)
+ 369 011c 90E0      		ldi r25,hi8(moteur)
+ 370 011e 0E94 0000 		call _ZN3Pwm11pivotGaucheEj
+ 371 0122 00C0      		rjmp .L13
+ 372               	.L11:
+GAS LISTING /tmp/cccQHSrn.s 			page 9
+
+
+  78:main.cpp      ****         
+  79:main.cpp      ****                             else if(!bit1 && bit2 && !bit3 && !bit4 && !bit5) // 0 1 0 0 0
+ 373               		.stabn	68,0,79,.LM31-.LFBB5
+ 374               	.LM31:
+ 375 0124 9923      		tst r25
+ 376 0126 01F0      		breq .L14
+ 377               		.stabn	68,0,79,.LM32-.LFBB5
+ 378               	.LM32:
+ 379 0128 8111      		cpse r24,__zero_reg__
+ 380 012a 00C0      		rjmp .L14
+ 381               		.stabn	68,0,79,.LM33-.LFBB5
+ 382               	.LM33:
+ 383 012c 8091 0000 		lds r24,bit4
+ 384 0130 8111      		cpse r24,__zero_reg__
+ 385 0132 00C0      		rjmp .L16
+ 386               		.stabn	68,0,79,.LM34-.LFBB5
+ 387               	.LM34:
+ 388 0134 8091 0000 		lds r24,bit5
+ 389 0138 8111      		cpse r24,__zero_reg__
+ 390 013a 00C0      		rjmp .L16
+ 391 013c 00C0      		rjmp .L15
+ 392               	.L14:
+  80:main.cpp      ****                                     moteur.Tourner_Gauche(95);
+  81:main.cpp      ****                             
+  82:main.cpp      ****                             else if((!bit1 && !bit2 && bit3 && bit4 && bit5) || (!bit1 && bit2 && b
+ 393               		.stabn	68,0,82,.LM35-.LFBB5
+ 394               	.LM35:
+ 395 013e 8823      		tst r24
+ 396 0140 01F0      		breq .L16
+ 397               		.stabn	68,0,82,.LM36-.LFBB5
+ 398               	.LM36:
+ 399 0142 2091 0000 		lds r18,bit4
+ 400 0146 2223      		tst r18
+ 401 0148 01F4      		brne .+2
+ 402 014a 00C0      		rjmp .L17
+ 403               		.stabn	68,0,82,.LM37-.LFBB5
+ 404               	.LM37:
+ 405 014c 3091 0000 		lds r19,bit5
+ 406 0150 3323      		tst r19
+ 407 0152 01F4      		brne .+2
+ 408 0154 00C0      		rjmp .L17
+ 409 0156 00C0      		rjmp .L76
+ 410               	.L16:
+  83:main.cpp      ****                             {
+  84:main.cpp      ****                                     faireSon(0);
+  85:main.cpp      ****                                     aFaitTriangle = false;
+  86:main.cpp      ****                                     del.eteindreDel();
+  87:main.cpp      ****                                     return;
+  88:main.cpp      ****                             }
+  89:main.cpp      ****                             
+  90:main.cpp      ****                             else if (!bit1 && !bit2 && !bit3 && !bit4 && bit5) //0 0 0 0 1
+ 411               		.stabn	68,0,90,.LM38-.LFBB5
+ 412               	.LM38:
+ 413 0158 9111      		cpse r25,__zero_reg__
+ 414 015a 00C0      		rjmp .L13
+ 415               		.stabn	68,0,90,.LM39-.LFBB5
+ 416               	.LM39:
+GAS LISTING /tmp/cccQHSrn.s 			page 10
+
+
+ 417 015c 8091 0000 		lds r24,bit4
+ 418 0160 8111      		cpse r24,__zero_reg__
+ 419 0162 00C0      		rjmp .L20
+ 420               		.stabn	68,0,90,.LM40-.LFBB5
+ 421               	.LM40:
+ 422 0164 8091 0000 		lds r24,bit5
+ 423 0168 8823      		tst r24
+ 424 016a 01F0      		breq .L13
+  91:main.cpp      ****                                     moteur.pivotDroit(95);
+ 425               		.stabn	68,0,91,.LM41-.LFBB5
+ 426               	.LM41:
+ 427 016c 6FE5      		ldi r22,lo8(95)
+ 428 016e 70E0      		ldi r23,0
+ 429 0170 80E0      		ldi r24,lo8(moteur)
+ 430 0172 90E0      		ldi r25,hi8(moteur)
+ 431 0174 0E94 0000 		call _ZN3Pwm10pivotDroitEj
+ 432               	.L13:
+  92:main.cpp      ****         
+  93:main.cpp      ****                             else if (!bit1 && !bit2 && !bit3 && bit4 && bit5) //0 0 0 1 1
+  94:main.cpp      ****                                     moteur.Tourner_Droite(95);
+  95:main.cpp      ****     
+  96:main.cpp      ****                             else if (!bit1 && !bit2 && !bit3 && bit4 && !(bit5)) // 0 0 0 1 0
+  97:main.cpp      ****                                     moteur.Tourner_Droite(95);
+  98:main.cpp      ****             
+  99:main.cpp      ****                             else if (!(bit1) && !(bit2) && bit3 && !bit4 && !bit5) // 0 0 1 0 0
+ 100:main.cpp      ****                                     moteur.Avance(95);
+ 101:main.cpp      **** 
+ 102:main.cpp      ****                             else if (!bit1 && bit2 && bit3 && !bit4 && !bit5) //0 1 1 0 0
+ 103:main.cpp      ****                                     moteur.Tourner_Gauche(95);
+ 104:main.cpp      ****             
+ 105:main.cpp      ****                             else if (!bit1 && !bit2 && bit3 && bit4 && !bit5) // 0 0 1 1 0
+ 106:main.cpp      ****                                     moteur.Tourner_Droite(95);
+ 107:main.cpp      **** 
+ 108:main.cpp      ****                             if(!bit1 && !bit2 && !bit3 && !bit4 && !bit5)
+ 433               		.stabn	68,0,108,.LM42-.LFBB5
+ 434               	.LM42:
+ 435 0178 8091 0000 		lds r24,bit1
+ 436 017c 8111      		cpse r24,__zero_reg__
+ 437 017e 00C0      		rjmp .L10
+ 438               		.stabn	68,0,108,.LM43-.LFBB5
+ 439               	.LM43:
+ 440 0180 8091 0000 		lds r24,bit2
+ 441 0184 8111      		cpse r24,__zero_reg__
+ 442 0186 00C0      		rjmp .L10
+ 443               		.stabn	68,0,108,.LM44-.LFBB5
+ 444               	.LM44:
+ 445 0188 8091 0000 		lds r24,bit3
+ 446 018c 8111      		cpse r24,__zero_reg__
+ 447 018e 00C0      		rjmp .L10
+ 448               		.stabn	68,0,108,.LM45-.LFBB5
+ 449               	.LM45:
+ 450 0190 8091 0000 		lds r24,bit4
+ 451 0194 8111      		cpse r24,__zero_reg__
+ 452 0196 00C0      		rjmp .L10
+ 453               		.stabn	68,0,108,.LM46-.LFBB5
+ 454               	.LM46:
+ 455 0198 8091 0000 		lds r24,bit5
+GAS LISTING /tmp/cccQHSrn.s 			page 11
+
+
+ 456 019c 8111      		cpse r24,__zero_reg__
+ 457 019e 00C0      		rjmp .L10
+ 458               	.LBB90:
+ 459               	.LBB91:
+ 460               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext1
+ 461               	.Ltext1:
+   1:/usr/avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:/usr/avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   4:/usr/avr/include/util/delay.h ****    All rights reserved.
+   5:/usr/avr/include/util/delay.h **** 
+   6:/usr/avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:/usr/avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:/usr/avr/include/util/delay.h **** 
+   9:/usr/avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+  10:/usr/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:/usr/avr/include/util/delay.h **** 
+  12:/usr/avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:/usr/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:/usr/avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  15:/usr/avr/include/util/delay.h ****      distribution.
+  16:/usr/avr/include/util/delay.h **** 
+  17:/usr/avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:/usr/avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  19:/usr/avr/include/util/delay.h ****      from this software without specific prior written permission.
+  20:/usr/avr/include/util/delay.h **** 
+  21:/usr/avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:/usr/avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:/usr/avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:/usr/avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:/usr/avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:/usr/avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:/usr/avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:/usr/avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:/usr/avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:/usr/avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:/usr/avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:/usr/avr/include/util/delay.h **** 
+  33:/usr/avr/include/util/delay.h **** /* $Id: delay.h.in 2251 2011-09-14 08:20:33Z joerg_wunsch $ */
+  34:/usr/avr/include/util/delay.h **** 
+  35:/usr/avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  36:/usr/avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+  37:/usr/avr/include/util/delay.h **** 
+  38:/usr/avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
+  39:/usr/avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 1
+  40:/usr/avr/include/util/delay.h **** #endif
+  41:/usr/avr/include/util/delay.h **** 
+  42:/usr/avr/include/util/delay.h **** #include <inttypes.h>
+  43:/usr/avr/include/util/delay.h **** #include <util/delay_basic.h>
+  44:/usr/avr/include/util/delay.h **** #include <math.h>
+  45:/usr/avr/include/util/delay.h **** 
+  46:/usr/avr/include/util/delay.h **** /** \file */
+  47:/usr/avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  48:/usr/avr/include/util/delay.h ****     \code
+  49:/usr/avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  50:/usr/avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  51:/usr/avr/include/util/delay.h ****     #include <util/delay.h>
+GAS LISTING /tmp/cccQHSrn.s 			page 12
+
+
+  52:/usr/avr/include/util/delay.h ****     \endcode
+  53:/usr/avr/include/util/delay.h **** 
+  54:/usr/avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  55:/usr/avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  56:/usr/avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  57:/usr/avr/include/util/delay.h ****     used.
+  58:/usr/avr/include/util/delay.h **** 
+  59:/usr/avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  60:/usr/avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  61:/usr/avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+  62:/usr/avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  63:/usr/avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  64:/usr/avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  65:/usr/avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  66:/usr/avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  67:/usr/avr/include/util/delay.h **** 
+  68:/usr/avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  69:/usr/avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  70:/usr/avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+  71:/usr/avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  72:/usr/avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  73:/usr/avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  74:/usr/avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  75:/usr/avr/include/util/delay.h ****     routines linked into the application.
+  76:/usr/avr/include/util/delay.h **** 
+  77:/usr/avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  78:/usr/avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  79:/usr/avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  80:/usr/avr/include/util/delay.h **** 
+  81:/usr/avr/include/util/delay.h **** */
+  82:/usr/avr/include/util/delay.h **** 
+  83:/usr/avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  84:/usr/avr/include/util/delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
+  85:/usr/avr/include/util/delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
+  86:/usr/avr/include/util/delay.h **** #endif
+  87:/usr/avr/include/util/delay.h **** 
+  88:/usr/avr/include/util/delay.h **** #ifndef F_CPU
+  89:/usr/avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  90:/usr/avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  91:/usr/avr/include/util/delay.h **** # define F_CPU 1000000UL
+  92:/usr/avr/include/util/delay.h **** #endif
+  93:/usr/avr/include/util/delay.h **** 
+  94:/usr/avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+  95:/usr/avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+  96:/usr/avr/include/util/delay.h **** #endif
+  97:/usr/avr/include/util/delay.h **** 
+  98:/usr/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+  99:/usr/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 100:/usr/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 101:/usr/avr/include/util/delay.h **** #  include <math.h>
+ 102:/usr/avr/include/util/delay.h **** #endif
+ 103:/usr/avr/include/util/delay.h **** 
+ 104:/usr/avr/include/util/delay.h **** /**
+ 105:/usr/avr/include/util/delay.h ****    \ingroup util_delay
+ 106:/usr/avr/include/util/delay.h **** 
+ 107:/usr/avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 108:/usr/avr/include/util/delay.h **** 
+GAS LISTING /tmp/cccQHSrn.s 			page 13
+
+
+ 109:/usr/avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 110:/usr/avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 111:/usr/avr/include/util/delay.h **** 
+ 112:/usr/avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 113:/usr/avr/include/util/delay.h **** 
+ 114:/usr/avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 115:/usr/avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 116:/usr/avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 117:/usr/avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 118:/usr/avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+ 119:/usr/avr/include/util/delay.h **** 
+ 120:/usr/avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 121:/usr/avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 122:/usr/avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 123:/usr/avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 124:/usr/avr/include/util/delay.h **** 
+ 125:/usr/avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 126:/usr/avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 127:/usr/avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+ 128:/usr/avr/include/util/delay.h **** 
+ 129:/usr/avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 130:/usr/avr/include/util/delay.h ****    to round down and round to closest integer.
+ 131:/usr/avr/include/util/delay.h **** 
+ 132:/usr/avr/include/util/delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
+ 133:/usr/avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
+ 134:/usr/avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 135:/usr/avr/include/util/delay.h ****    Also, the backward compatible
+ 136:/usr/avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 137:/usr/avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 138:/usr/avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
+ 139:/usr/avr/include/util/delay.h **** 
+ 140:/usr/avr/include/util/delay.h ****  */
+ 141:/usr/avr/include/util/delay.h **** void
+ 142:/usr/avr/include/util/delay.h **** _delay_ms(double __ms)
+ 143:/usr/avr/include/util/delay.h **** {
+ 144:/usr/avr/include/util/delay.h **** 	uint16_t __ticks;
+ 145:/usr/avr/include/util/delay.h **** 	double __tmp ; 
+ 146:/usr/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 147:/usr/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 148:/usr/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 149:/usr/avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 150:/usr/avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 151:/usr/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 152:/usr/avr/include/util/delay.h **** 
+ 153:/usr/avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 154:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 155:/usr/avr/include/util/delay.h **** 
+ 156:/usr/avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 157:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 158:/usr/avr/include/util/delay.h **** 
+ 159:/usr/avr/include/util/delay.h **** 	#else
+ 160:/usr/avr/include/util/delay.h **** 		//round up by default
+ 161:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 162:/usr/avr/include/util/delay.h **** 	#endif
+ 163:/usr/avr/include/util/delay.h **** 
+ 164:/usr/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 462               		.stabn	68,0,164,.LM47-.LFBB5
+GAS LISTING /tmp/cccQHSrn.s 			page 14
+
+
+ 463               	.LM47:
+ 464 01a0 2FEF      		ldi r18,lo8(159999)
+ 465 01a2 80E7      		ldi r24,hi8(159999)
+ 466 01a4 92E0      		ldi r25,hlo8(159999)
+ 467 01a6 2150      		1: subi r18,1
+ 468 01a8 8040      		sbci r24,0
+ 469 01aa 9040      		sbci r25,0
+ 470 01ac 01F4      		brne 1b
+ 471 01ae 00C0      		rjmp .
+ 472 01b0 0000      		nop
+ 473               	.LBE91:
+ 474               	.LBE90:
+ 475               		.stabs	"main.cpp",132,0,0,.Ltext2
+ 476               	.Ltext2:
+ 109:main.cpp      ****                             {
+ 110:main.cpp      ****                                 _delay_ms(100);
+ 111:main.cpp      ****                                 lireDirection();
+ 477               		.stabn	68,0,111,.LM48-.LFBB5
+ 478               	.LM48:
+ 479 01b2 0E94 0000 		call _Z13lireDirectionv
+ 480 01b6 00C0      		rjmp .L10
+ 481               	.L77:
+  70:main.cpp      **** 		{
+ 482               		.stabn	68,0,70,.LM49-.LFBB5
+ 483               	.LM49:
+ 484 01b8 8091 0000 		lds r24,bit2
+ 485 01bc 8111      		cpse r24,__zero_reg__
+ 486 01be 00C0      		rjmp .L23
+  70:main.cpp      **** 		{
+ 487               		.stabn	68,0,70,.LM50-.LFBB5
+ 488               	.LM50:
+ 489 01c0 8091 0000 		lds r24,bit3
+ 490 01c4 8111      		cpse r24,__zero_reg__
+ 491 01c6 00C0      		rjmp .L23
+  70:main.cpp      **** 		{
+ 492               		.stabn	68,0,70,.LM51-.LFBB5
+ 493               	.LM51:
+ 494 01c8 8091 0000 		lds r24,bit4
+ 495 01cc 8111      		cpse r24,__zero_reg__
+ 496 01ce 00C0      		rjmp .L23
+  70:main.cpp      **** 		{
+ 497               		.stabn	68,0,70,.LM52-.LFBB5
+ 498               	.LM52:
+ 499 01d0 8091 0000 		lds r24,bit5
+ 500 01d4 8111      		cpse r24,__zero_reg__
+ 501 01d6 00C0      		rjmp .L23
+ 112:main.cpp      ****                             }
+ 113:main.cpp      **** 		}			
+ 114:main.cpp      **** 		if(petitSkip > 2)	//son si on passe le 3e pointilles
+ 502               		.stabn	68,0,114,.LM53-.LFBB5
+ 503               	.LM53:
+ 504 01d8 8091 0000 		lds r24,petitSkip
+ 505 01dc 8330      		cpi r24,lo8(3)
+ 506 01de 00F0      		brlo .L24
+ 507               	.LBB92:
+ 508               	.LBB93:
+ 509 01e0 86E4      		ldi r24,lo8(70)
+GAS LISTING /tmp/cccQHSrn.s 			page 15
+
+
+ 510 01e2 90E0      		ldi r25,0
+ 511 01e4 0E94 0000 		call _Z8faireSonj.part.1
+ 512               	.L24:
+ 513               	.LBE93:
+ 514               	.LBE92:
+ 115:main.cpp      ****                     faireSon(70);
+ 116:main.cpp      **** 			
+ 117:main.cpp      **** 		if(petitSkip == 6)
+ 515               		.stabn	68,0,117,.LM54-.LFBB5
+ 516               	.LM54:
+ 517 01e8 8091 0000 		lds r24,petitSkip
+ 518 01ec 8630      		cpi r24,lo8(6)
+ 519 01ee 01F4      		brne .L58
+ 520               	.L76:
+ 521               	.LBB94:
+ 522               	.LBB95:
+  52:main.cpp      ****     }
+ 523               		.stabn	68,0,52,.LM55-.LFBB5
+ 524               	.LM55:
+ 525 01f0 85B5      		in r24,0x25
+ 526 01f2 15BC      		out 0x25,__zero_reg__
+ 527               	.LBE95:
+ 528               	.LBE94:
+ 118:main.cpp      **** 		{
+ 119:main.cpp      **** 			faireSon(0);
+ 120:main.cpp      **** 			aFaitTriangle = false;
+ 529               		.stabn	68,0,120,.LM56-.LFBB5
+ 530               	.LM56:
+ 531 01f4 1092 0000 		sts aFaitTriangle,__zero_reg__
+ 121:main.cpp      **** 			del.eteindreDel();
+ 532               		.stabn	68,0,121,.LM57-.LFBB5
+ 533               	.LM57:
+ 534 01f8 80E0      		ldi r24,lo8(del)
+ 535 01fa 90E0      		ldi r25,hi8(del)
+ 536 01fc 0C94 0000 		jmp _ZN3Del11eteindreDelEv
+ 537               	.L78:
+ 122:main.cpp      ****                         return;
+ 123:main.cpp      **** 		}
+ 124:main.cpp      **** 							
+ 125:main.cpp      **** 		while (!bit1 && !bit2 && !bit3 && !bit4 && !bit5)	
+ 538               		.stabn	68,0,125,.LM58-.LFBB5
+ 539               	.LM58:
+ 540 0200 8091 0000 		lds r24,bit2
+ 541 0204 8111      		cpse r24,__zero_reg__
+ 542 0206 00C0      		rjmp .L28
+ 543               		.stabn	68,0,125,.LM59-.LFBB5
+ 544               	.LM59:
+ 545 0208 8091 0000 		lds r24,bit3
+ 546 020c 8111      		cpse r24,__zero_reg__
+ 547 020e 00C0      		rjmp .L28
+ 548               		.stabn	68,0,125,.LM60-.LFBB5
+ 549               	.LM60:
+ 550 0210 8091 0000 		lds r24,bit4
+ 551 0214 8111      		cpse r24,__zero_reg__
+ 552 0216 00C0      		rjmp .L28
+ 553               		.stabn	68,0,125,.LM61-.LFBB5
+ 554               	.LM61:
+GAS LISTING /tmp/cccQHSrn.s 			page 16
+
+
+ 555 0218 8091 0000 		lds r24,bit5
+ 556 021c 8111      		cpse r24,__zero_reg__
+ 557 021e 00C0      		rjmp .L28
+ 126:main.cpp      **** 		{	
+ 127:main.cpp      ****                         lireDirection();
+ 558               		.stabn	68,0,127,.LM62-.LFBB5
+ 559               	.LM62:
+ 560 0220 0E94 0000 		call _Z13lireDirectionv
+ 128:main.cpp      **** 			moteur.Avance(95);
+ 561               		.stabn	68,0,128,.LM63-.LFBB5
+ 562               	.LM63:
+ 563 0224 6FE5      		ldi r22,lo8(95)
+ 564 0226 70E0      		ldi r23,0
+ 565 0228 80E0      		ldi r24,lo8(moteur)
+ 566 022a 90E0      		ldi r25,hi8(moteur)
+ 567 022c 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 129:main.cpp      ****                         if(bit1 || bit2 || bit3 || bit4 || bit5)
+ 568               		.stabn	68,0,129,.LM64-.LFBB5
+ 569               	.LM64:
+ 570 0230 8091 0000 		lds r24,bit1
+ 571 0234 8111      		cpse r24,__zero_reg__
+ 572 0236 00C0      		rjmp .L26
+ 573               		.stabn	68,0,129,.LM65-.LFBB5
+ 574               	.LM65:
+ 575 0238 8091 0000 		lds r24,bit2
+ 576 023c 8111      		cpse r24,__zero_reg__
+ 577 023e 00C0      		rjmp .L26
+ 578               		.stabn	68,0,129,.LM66-.LFBB5
+ 579               	.LM66:
+ 580 0240 8091 0000 		lds r24,bit3
+ 581 0244 8111      		cpse r24,__zero_reg__
+ 582 0246 00C0      		rjmp .L26
+ 583               		.stabn	68,0,129,.LM67-.LFBB5
+ 584               	.LM67:
+ 585 0248 8091 0000 		lds r24,bit4
+ 586 024c 8111      		cpse r24,__zero_reg__
+ 587 024e 00C0      		rjmp .L26
+ 588               		.stabn	68,0,129,.LM68-.LFBB5
+ 589               	.LM68:
+ 590 0250 8091 0000 		lds r24,bit5
+ 591 0254 8111      		cpse r24,__zero_reg__
+ 592 0256 00C0      		rjmp .L26
+ 593               	.L58:
+ 125:main.cpp      **** 		{	
+ 594               		.stabn	68,0,125,.LM69-.LFBB5
+ 595               	.LM69:
+ 596 0258 8091 0000 		lds r24,bit1
+ 597 025c 8823      		tst r24
+ 598 025e 01F0      		breq .L78
+ 599 0260 00C0      		rjmp .L28
+ 600               	.L26:
+ 601               	.LBB96:
+ 602               	.LBB97:
+ 603               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext3
+ 604               	.Ltext3:
+ 605               		.stabn	68,0,164,.LM70-.LFBB5
+ 606               	.LM70:
+GAS LISTING /tmp/cccQHSrn.s 			page 17
+
+
+ 607 0262 2FEF      		ldi r18,lo8(159999)
+ 608 0264 80E7      		ldi r24,hi8(159999)
+ 609 0266 92E0      		ldi r25,hlo8(159999)
+ 610 0268 2150      		1: subi r18,1
+ 611 026a 8040      		sbci r24,0
+ 612 026c 9040      		sbci r25,0
+ 613 026e 01F4      		brne 1b
+ 614 0270 00C0      		rjmp .
+ 615 0272 0000      		nop
+ 616               	.LBE97:
+ 617               	.LBE96:
+ 618               		.stabs	"main.cpp",132,0,0,.Ltext4
+ 619               	.Ltext4:
+ 130:main.cpp      ****                         {
+ 131:main.cpp      ****                             _delay_ms(100);
+ 132:main.cpp      ****                             lireDirection();
+ 620               		.stabn	68,0,132,.LM71-.LFBB5
+ 621               	.LM71:
+ 622 0274 0E94 0000 		call _Z13lireDirectionv
+ 623 0278 00C0      		rjmp .L58
+ 624               	.L28:
+ 133:main.cpp      ****                         }
+ 134:main.cpp      **** 		}
+ 135:main.cpp      **** 		petitSkip++;
+ 625               		.stabn	68,0,135,.LM72-.LFBB5
+ 626               	.LM72:
+ 627 027a 8091 0000 		lds r24,petitSkip
+ 628 027e 8F5F      		subi r24,lo8(-(1))
+ 629 0280 8093 0000 		sts petitSkip,r24
+  70:main.cpp      **** 		{
+ 630               		.stabn	68,0,70,.LM73-.LFBB5
+ 631               	.LM73:
+ 632 0284 00C0      		rjmp .L10
+ 633               	.L17:
+  90:main.cpp      ****                                     moteur.pivotDroit(95);
+ 634               		.stabn	68,0,90,.LM74-.LFBB5
+ 635               	.LM74:
+ 636 0286 9111      		cpse r25,__zero_reg__
+ 637 0288 00C0      		rjmp .L32
+  99:main.cpp      ****                                     moteur.Avance(95);
+ 638               		.stabn	68,0,99,.LM75-.LFBB5
+ 639               	.LM75:
+ 640 028a 8091 0000 		lds r24,bit5
+ 641 028e 2223      		tst r18
+ 642 0290 01F0      		breq .L79
+ 105:main.cpp      ****                                     moteur.Tourner_Droite(95);
+ 643               		.stabn	68,0,105,.LM76-.LFBB5
+ 644               	.LM76:
+ 645 0292 8111      		cpse r24,__zero_reg__
+ 646 0294 00C0      		rjmp .L13
+ 647               	.L20:
+  94:main.cpp      ****     
+ 648               		.stabn	68,0,94,.LM77-.LFBB5
+ 649               	.LM77:
+ 650 0296 6FE5      		ldi r22,lo8(95)
+ 651 0298 70E0      		ldi r23,0
+ 652 029a 80E0      		ldi r24,lo8(moteur)
+GAS LISTING /tmp/cccQHSrn.s 			page 18
+
+
+ 653 029c 90E0      		ldi r25,hi8(moteur)
+ 654 029e 0E94 0000 		call _ZN3Pwm14Tourner_DroiteEj
+ 655 02a2 00C0      		rjmp .L13
+ 656               	.L79:
+  99:main.cpp      ****                                     moteur.Avance(95);
+ 657               		.stabn	68,0,99,.LM78-.LFBB5
+ 658               	.LM78:
+ 659 02a4 8111      		cpse r24,__zero_reg__
+ 660 02a6 00C0      		rjmp .L13
+ 100:main.cpp      **** 
+ 661               		.stabn	68,0,100,.LM79-.LFBB5
+ 662               	.LM79:
+ 663 02a8 6FE5      		ldi r22,lo8(95)
+ 664 02aa 70E0      		ldi r23,0
+ 665 02ac 80E0      		ldi r24,lo8(moteur)
+ 666 02ae 90E0      		ldi r25,hi8(moteur)
+ 667 02b0 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 668 02b4 00C0      		rjmp .L13
+ 669               	.L32:
+ 102:main.cpp      ****                                     moteur.Tourner_Gauche(95);
+ 670               		.stabn	68,0,102,.LM80-.LFBB5
+ 671               	.LM80:
+ 672 02b6 8823      		tst r24
+ 673 02b8 01F4      		brne .+2
+ 674 02ba 00C0      		rjmp .L13
+ 102:main.cpp      ****                                     moteur.Tourner_Gauche(95);
+ 675               		.stabn	68,0,102,.LM81-.LFBB5
+ 676               	.LM81:
+ 677 02bc 2111      		cpse r18,__zero_reg__
+ 678 02be 00C0      		rjmp .L13
+ 679 02c0 00C0      		rjmp .L75
+ 680               		.size	_Z15fairePointillesv, .-_Z15fairePointillesv
+ 681               	.Lscope5:
+ 682               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 683               		.stabd	78,0,0
+ 684               		.stabs	"_Z17faireIntersectionv:F(0,4)",36,0,142,_Z17faireIntersectionv
+ 685               	.global	_Z17faireIntersectionv
+ 686               		.type	_Z17faireIntersectionv, @function
+ 687               	_Z17faireIntersectionv:
+ 688               		.stabd	46,0,0
+ 136:main.cpp      **** 	}
+ 137:main.cpp      **** 	faireSon(0);
+ 138:main.cpp      **** 	aFaitTriangle = false;
+ 139:main.cpp      **** 	del.eteindreDel();
+ 140:main.cpp      **** }
+ 141:main.cpp      **** 
+ 142:main.cpp      **** void faireIntersection() // Fonction permettant au robot de gérer les deux inteserctions en cloche
+ 143:main.cpp      **** {
+ 689               		.stabn	68,0,143,.LM82-.LFBB6
+ 690               	.LM82:
+ 691               	.LFBB6:
+ 692               	/* prologue: function */
+ 693               	/* frame size = 0 */
+ 694               	/* stack size = 0 */
+ 695               	.L__stack_usage = 0
+ 144:main.cpp      ****     if (directions[compteur] == 'd')
+ 696               		.stabn	68,0,144,.LM83-.LFBB6
+GAS LISTING /tmp/cccQHSrn.s 			page 19
+
+
+ 697               	.LM83:
+ 698 02c2 E091 0000 		lds r30,compteur
+ 699 02c6 F0E0      		ldi r31,0
+ 700 02c8 E050      		subi r30,lo8(-(directions))
+ 701 02ca F040      		sbci r31,hi8(-(directions))
+ 702 02cc 8081      		ld r24,Z
+ 703 02ce 8436      		cpi r24,lo8(100)
+ 704 02d0 01F0      		breq .+2
+ 705 02d2 00C0      		rjmp .L81
+ 145:main.cpp      ****     {
+ 146:main.cpp      **** 	moteur.pivotDroit(95);
+ 706               		.stabn	68,0,146,.LM84-.LFBB6
+ 707               	.LM84:
+ 708 02d4 6FE5      		ldi r22,lo8(95)
+ 709 02d6 70E0      		ldi r23,0
+ 710 02d8 80E0      		ldi r24,lo8(moteur)
+ 711 02da 90E0      		ldi r25,hi8(moteur)
+ 712 02dc 0E94 0000 		call _ZN3Pwm10pivotDroitEj
+ 713               	.LBB98:
+ 714               	.LBB99:
+ 715               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext5
+ 716               	.Ltext5:
+ 717               		.stabn	68,0,164,.LM85-.LFBB6
+ 718               	.LM85:
+ 719 02e0 2FEF      		ldi r18,lo8(799999)
+ 720 02e2 84E3      		ldi r24,hi8(799999)
+ 721 02e4 9CE0      		ldi r25,hlo8(799999)
+ 722 02e6 2150      		1: subi r18,1
+ 723 02e8 8040      		sbci r24,0
+ 724 02ea 9040      		sbci r25,0
+ 725 02ec 01F4      		brne 1b
+ 726 02ee 00C0      		rjmp .
+ 727 02f0 0000      		nop
+ 728               	.LBE99:
+ 729               	.LBE98:
+ 730               		.stabs	"main.cpp",132,0,0,.Ltext6
+ 731               	.Ltext6:
+ 147:main.cpp      **** 	_delay_ms(500);
+ 148:main.cpp      **** 	moteur.Avance(95);
+ 732               		.stabn	68,0,148,.LM86-.LFBB6
+ 733               	.LM86:
+ 734 02f2 6FE5      		ldi r22,lo8(95)
+ 735 02f4 70E0      		ldi r23,0
+ 736 02f6 80E0      		ldi r24,lo8(moteur)
+ 737 02f8 90E0      		ldi r25,hi8(moteur)
+ 738 02fa 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 739               	.L82:
+ 149:main.cpp      **** 	while(!bit2)
+ 740               		.stabn	68,0,149,.LM87-.LFBB6
+ 741               	.LM87:
+ 742 02fe 8091 0000 		lds r24,bit2
+ 743 0302 8111      		cpse r24,__zero_reg__
+ 744 0304 00C0      		rjmp .L111
+ 150:main.cpp      ****             lireDirection();	
+ 745               		.stabn	68,0,150,.LM88-.LFBB6
+ 746               	.LM88:
+ 747 0306 0E94 0000 		call _Z13lireDirectionv
+GAS LISTING /tmp/cccQHSrn.s 			page 20
+
+
+ 748 030a 00C0      		rjmp .L82
+ 749               	.L92:
+ 151:main.cpp      ****     
+ 152:main.cpp      **** 	while(!bit5)
+ 153:main.cpp      **** 	{
+ 154:main.cpp      **** 		lireDirection();
+ 750               		.stabn	68,0,154,.LM89-.LFBB6
+ 751               	.LM89:
+ 752 030c 0E94 0000 		call _Z13lireDirectionv
+ 155:main.cpp      **** 		if(!bit1 && bit2 && !bit3)	// 0 1 0 X X
+ 753               		.stabn	68,0,155,.LM90-.LFBB6
+ 754               	.LM90:
+ 755 0310 8091 0000 		lds r24,bit1
+ 756 0314 9091 0000 		lds r25,bit2
+ 757 0318 8111      		cpse r24,__zero_reg__
+ 758 031a 00C0      		rjmp .L85
+ 759               		.stabn	68,0,155,.LM91-.LFBB6
+ 760               	.LM91:
+ 761 031c 9923      		tst r25
+ 762 031e 01F0      		breq .L86
+ 763               	.L89:
+ 156:main.cpp      ****                     moteur.Avance(95);
+ 764               		.stabn	68,0,156,.LM92-.LFBB6
+ 765               	.LM92:
+ 766 0320 6FE5      		ldi r22,lo8(95)
+ 767 0322 70E0      		ldi r23,0
+ 768 0324 80E0      		ldi r24,lo8(moteur)
+ 769 0326 90E0      		ldi r25,hi8(moteur)
+ 770 0328 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 771               	.L111:
+ 152:main.cpp      **** 	{
+ 772               		.stabn	68,0,152,.LM93-.LFBB6
+ 773               	.LM93:
+ 774 032c 8091 0000 		lds r24,bit5
+ 775 0330 8823      		tst r24
+ 776 0332 01F0      		breq .L92
+ 777 0334 00C0      		rjmp .L121
+ 778               	.L85:
+ 779 0336 8091 0000 		lds r24,bit3
+ 157:main.cpp      **** 
+ 158:main.cpp      **** 		else if (bit1 && !bit2 && !bit3) // 1 0 0 X X
+ 780               		.stabn	68,0,158,.LM94-.LFBB6
+ 781               	.LM94:
+ 782 033a 9111      		cpse r25,__zero_reg__
+ 783 033c 00C0      		rjmp .L88
+ 784               		.stabn	68,0,158,.LM95-.LFBB6
+ 785               	.LM95:
+ 786 033e 8111      		cpse r24,__zero_reg__
+ 787 0340 00C0      		rjmp .L89
+ 159:main.cpp      ****                     moteur.Tourner_GaucheInt(95);
+ 788               		.stabn	68,0,159,.LM96-.LFBB6
+ 789               	.LM96:
+ 790 0342 6FE5      		ldi r22,lo8(95)
+ 791 0344 70E0      		ldi r23,0
+ 792 0346 80E0      		ldi r24,lo8(moteur)
+ 793 0348 90E0      		ldi r25,hi8(moteur)
+ 794 034a 0E94 0000 		call _ZN3Pwm17Tourner_GaucheIntEj
+GAS LISTING /tmp/cccQHSrn.s 			page 21
+
+
+ 795 034e 00C0      		rjmp .L111
+ 796               	.L86:
+ 160:main.cpp      **** 
+ 161:main.cpp      **** 		else if (!bit1 && !bit2 && bit3) // 0 0 1 X X
+ 797               		.stabn	68,0,161,.LM97-.LFBB6
+ 798               	.LM97:
+ 799 0350 8091 0000 		lds r24,bit3
+ 800 0354 8823      		tst r24
+ 801 0356 01F0      		breq .L90
+ 802               	.L91:
+ 162:main.cpp      ****                     moteur.Tourner_Droite(95);
+ 803               		.stabn	68,0,162,.LM98-.LFBB6
+ 804               	.LM98:
+ 805 0358 6FE5      		ldi r22,lo8(95)
+ 806 035a 70E0      		ldi r23,0
+ 807 035c 80E0      		ldi r24,lo8(moteur)
+ 808 035e 90E0      		ldi r25,hi8(moteur)
+ 809 0360 0E94 0000 		call _ZN3Pwm14Tourner_DroiteEj
+ 810 0364 00C0      		rjmp .L111
+ 811               	.L88:
+ 163:main.cpp      **** 	
+ 164:main.cpp      **** 		else if (bit1 && bit2 && !bit3) // 1 1 0 X X
+ 812               		.stabn	68,0,164,.LM99-.LFBB6
+ 813               	.LM99:
+ 814 0366 8111      		cpse r24,__zero_reg__
+ 815 0368 00C0      		rjmp .L89
+ 165:main.cpp      ****                     moteur.Tourner_Gauche(95);
+ 816               		.stabn	68,0,165,.LM100-.LFBB6
+ 817               	.LM100:
+ 818 036a 6FE5      		ldi r22,lo8(95)
+ 819 036c 70E0      		ldi r23,0
+ 820 036e 80E0      		ldi r24,lo8(moteur)
+ 821 0370 90E0      		ldi r25,hi8(moteur)
+ 822 0372 0E94 0000 		call _ZN3Pwm14Tourner_GaucheEj
+ 823 0376 00C0      		rjmp .L111
+ 824               	.L90:
+ 166:main.cpp      **** 
+ 167:main.cpp      **** 		else if (!bit1 && !bit2 && !bit3 && bit4)
+ 825               		.stabn	68,0,167,.LM101-.LFBB6
+ 826               	.LM101:
+ 827 0378 8091 0000 		lds r24,bit4
+ 828 037c 8823      		tst r24
+ 829 037e 01F0      		breq .L89
+ 830 0380 00C0      		rjmp .L91
+ 831               	.L121:
+ 168:main.cpp      ****                     moteur.Tourner_Droite(95);	// 0 0 0 1 X
+ 169:main.cpp      **** 		else
+ 170:main.cpp      ****                     moteur.Avance(95);
+ 171:main.cpp      **** 	}
+ 172:main.cpp      ****         moteur.pivotDroit(95);
+ 832               		.stabn	68,0,172,.LM102-.LFBB6
+ 833               	.LM102:
+ 834 0382 6FE5      		ldi r22,lo8(95)
+ 835 0384 70E0      		ldi r23,0
+ 836 0386 80E0      		ldi r24,lo8(moteur)
+ 837 0388 90E0      		ldi r25,hi8(moteur)
+ 838 038a 0E94 0000 		call _ZN3Pwm10pivotDroitEj
+GAS LISTING /tmp/cccQHSrn.s 			page 22
+
+
+ 839 038e 00C0      		rjmp .L120
+ 840               	.L81:
+ 173:main.cpp      ****         _delay_ms(100); 
+ 174:main.cpp      ****         moteur.Avance(95);
+ 175:main.cpp      ****         _delay_ms(100);
+ 176:main.cpp      ****     }
+ 177:main.cpp      ****     else if (directions[compteur] == 'g')
+ 841               		.stabn	68,0,177,.LM103-.LFBB6
+ 842               	.LM103:
+ 843 0390 8736      		cpi r24,lo8(103)
+ 844 0392 01F0      		breq .+2
+ 845 0394 00C0      		rjmp .L93
+ 178:main.cpp      ****     {
+ 179:main.cpp      **** 	moteur.pivotGauche(95);
+ 846               		.stabn	68,0,179,.LM104-.LFBB6
+ 847               	.LM104:
+ 848 0396 6FE5      		ldi r22,lo8(95)
+ 849 0398 70E0      		ldi r23,0
+ 850 039a 80E0      		ldi r24,lo8(moteur)
+ 851 039c 90E0      		ldi r25,hi8(moteur)
+ 852 039e 0E94 0000 		call _ZN3Pwm11pivotGaucheEj
+ 853               	.LBB100:
+ 854               	.LBB101:
+ 855               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext7
+ 856               	.Ltext7:
+ 857               		.stabn	68,0,164,.LM105-.LFBB6
+ 858               	.LM105:
+ 859 03a2 2FEF      		ldi r18,lo8(1119999)
+ 860 03a4 86E1      		ldi r24,hi8(1119999)
+ 861 03a6 91E1      		ldi r25,hlo8(1119999)
+ 862 03a8 2150      		1: subi r18,1
+ 863 03aa 8040      		sbci r24,0
+ 864 03ac 9040      		sbci r25,0
+ 865 03ae 01F4      		brne 1b
+ 866 03b0 00C0      		rjmp .
+ 867 03b2 0000      		nop
+ 868               	.LBE101:
+ 869               	.LBE100:
+ 870               		.stabs	"main.cpp",132,0,0,.Ltext8
+ 871               	.Ltext8:
+ 180:main.cpp      **** 	_delay_ms(700);	
+ 181:main.cpp      **** 	moteur.Avance(95);
+ 872               		.stabn	68,0,181,.LM106-.LFBB6
+ 873               	.LM106:
+ 874 03b4 6FE5      		ldi r22,lo8(95)
+ 875 03b6 70E0      		ldi r23,0
+ 876 03b8 80E0      		ldi r24,lo8(moteur)
+ 877 03ba 90E0      		ldi r25,hi8(moteur)
+ 878 03bc 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 879               	.L94:
+ 182:main.cpp      **** 	while(!bit4)
+ 880               		.stabn	68,0,182,.LM107-.LFBB6
+ 881               	.LM107:
+ 882 03c0 8091 0000 		lds r24,bit4
+ 883 03c4 8111      		cpse r24,__zero_reg__
+ 884 03c6 00C0      		rjmp .L112
+ 183:main.cpp      **** 	{
+GAS LISTING /tmp/cccQHSrn.s 			page 23
+
+
+ 184:main.cpp      ****             lireDirection();			
+ 885               		.stabn	68,0,184,.LM108-.LFBB6
+ 886               	.LM108:
+ 887 03c8 0E94 0000 		call _Z13lireDirectionv
+ 888 03cc 00C0      		rjmp .L94
+ 889               	.L104:
+ 185:main.cpp      **** 	}	
+ 186:main.cpp      **** 	
+ 187:main.cpp      **** 	while(!bit1)
+ 188:main.cpp      **** 	{
+ 189:main.cpp      ****             lireDirection();
+ 890               		.stabn	68,0,189,.LM109-.LFBB6
+ 891               	.LM109:
+ 892 03ce 0E94 0000 		call _Z13lireDirectionv
+ 190:main.cpp      ****             if(!bit3 && bit4 && !bit5)	// X X 0 1 0
+ 893               		.stabn	68,0,190,.LM110-.LFBB6
+ 894               	.LM110:
+ 895 03d2 2091 0000 		lds r18,bit3
+ 896 03d6 9091 0000 		lds r25,bit4
+ 897 03da 8091 0000 		lds r24,bit5
+ 898 03de 2111      		cpse r18,__zero_reg__
+ 899 03e0 00C0      		rjmp .L97
+ 900               		.stabn	68,0,190,.LM111-.LFBB6
+ 901               	.LM111:
+ 902 03e2 9923      		tst r25
+ 903 03e4 01F0      		breq .L98
+ 904               	.L119:
+ 905               		.stabn	68,0,190,.LM112-.LFBB6
+ 906               	.LM112:
+ 907 03e6 8111      		cpse r24,__zero_reg__
+ 908 03e8 00C0      		rjmp .L99
+ 909               	.L102:
+ 191:main.cpp      **** 		moteur.Avance(95);
+ 910               		.stabn	68,0,191,.LM113-.LFBB6
+ 911               	.LM113:
+ 912 03ea 6FE5      		ldi r22,lo8(95)
+ 913 03ec 70E0      		ldi r23,0
+ 914 03ee 80E0      		ldi r24,lo8(moteur)
+ 915 03f0 90E0      		ldi r25,hi8(moteur)
+ 916 03f2 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 917               	.L112:
+ 187:main.cpp      **** 	{
+ 918               		.stabn	68,0,187,.LM114-.LFBB6
+ 919               	.LM114:
+ 920 03f6 8091 0000 		lds r24,bit1
+ 921 03fa 8823      		tst r24
+ 922 03fc 01F0      		breq .L104
+ 923 03fe 00C0      		rjmp .L122
+ 924               	.L97:
+ 192:main.cpp      **** 		
+ 193:main.cpp      ****             else if (bit3 && !bit4 && !bit5) // X X 1 0 0
+ 925               		.stabn	68,0,193,.LM115-.LFBB6
+ 926               	.LM115:
+ 927 0400 9111      		cpse r25,__zero_reg__
+ 928 0402 00C0      		rjmp .L101
+ 929 0404 00C0      		rjmp .L119
+ 930               	.L98:
+GAS LISTING /tmp/cccQHSrn.s 			page 24
+
+
+ 194:main.cpp      **** 		moteur.Avance(95); 
+ 195:main.cpp      **** 		
+ 196:main.cpp      ****             else if (!bit3 && !bit4 && bit5) // X X 0 0 1
+ 931               		.stabn	68,0,196,.LM116-.LFBB6
+ 932               	.LM116:
+ 933 0406 8823      		tst r24
+ 934 0408 01F0      		breq .L99
+ 935               	.L103:
+ 197:main.cpp      **** 		moteur.Tourner_DroiteInt(95);
+ 936               		.stabn	68,0,197,.LM117-.LFBB6
+ 937               	.LM117:
+ 938 040a 6FE5      		ldi r22,lo8(95)
+ 939 040c 70E0      		ldi r23,0
+ 940 040e 80E0      		ldi r24,lo8(moteur)
+ 941 0410 90E0      		ldi r25,hi8(moteur)
+ 942 0412 0E94 0000 		call _ZN3Pwm17Tourner_DroiteIntEj
+ 943 0416 00C0      		rjmp .L112
+ 944               	.L101:
+ 198:main.cpp      **** 				
+ 199:main.cpp      ****             else if (bit3 && bit4 && !bit5) // X X 1 1 0
+ 945               		.stabn	68,0,199,.LM118-.LFBB6
+ 946               	.LM118:
+ 947 0418 8823      		tst r24
+ 948 041a 01F0      		breq .L103
+ 949               	.L99:
+ 200:main.cpp      **** 		moteur.Tourner_DroiteInt(95);
+ 201:main.cpp      **** 
+ 202:main.cpp      ****             else if (bit2 && !bit3 && !bit4 && !bit5)	// X 1 0 0 0
+ 950               		.stabn	68,0,202,.LM119-.LFBB6
+ 951               	.LM119:
+ 952 041c 3091 0000 		lds r19,bit2
+ 953 0420 3323      		tst r19
+ 954 0422 01F0      		breq .L102
+ 955               		.stabn	68,0,202,.LM120-.LFBB6
+ 956               	.LM120:
+ 957 0424 2111      		cpse r18,__zero_reg__
+ 958 0426 00C0      		rjmp .L102
+ 959               		.stabn	68,0,202,.LM121-.LFBB6
+ 960               	.LM121:
+ 961 0428 9111      		cpse r25,__zero_reg__
+ 962 042a 00C0      		rjmp .L102
+ 963               		.stabn	68,0,202,.LM122-.LFBB6
+ 964               	.LM122:
+ 965 042c 8111      		cpse r24,__zero_reg__
+ 966 042e 00C0      		rjmp .L102
+ 203:main.cpp      **** 		moteur.Tourner_GaucheInt(95);
+ 967               		.stabn	68,0,203,.LM123-.LFBB6
+ 968               	.LM123:
+ 969 0430 6FE5      		ldi r22,lo8(95)
+ 970 0432 70E0      		ldi r23,0
+ 971 0434 80E0      		ldi r24,lo8(moteur)
+ 972 0436 90E0      		ldi r25,hi8(moteur)
+ 973 0438 0E94 0000 		call _ZN3Pwm17Tourner_GaucheIntEj
+ 974 043c 00C0      		rjmp .L112
+ 975               	.L122:
+ 204:main.cpp      **** 		
+ 205:main.cpp      ****             else
+GAS LISTING /tmp/cccQHSrn.s 			page 25
+
+
+ 206:main.cpp      **** 		moteur.Avance(95);
+ 207:main.cpp      ****         }
+ 208:main.cpp      **** 	moteur.pivotGauche(95);
+ 976               		.stabn	68,0,208,.LM124-.LFBB6
+ 977               	.LM124:
+ 978 043e 6FE5      		ldi r22,lo8(95)
+ 979 0440 70E0      		ldi r23,0
+ 980 0442 80E0      		ldi r24,lo8(moteur)
+ 981 0444 90E0      		ldi r25,hi8(moteur)
+ 982 0446 0E94 0000 		call _ZN3Pwm11pivotGaucheEj
+ 983               	.L120:
+ 984               	.LBB102:
+ 985               	.LBB103:
+ 986               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext9
+ 987               	.Ltext9:
+ 988               		.stabn	68,0,164,.LM125-.LFBB6
+ 989               	.LM125:
+ 990 044a 2FEF      		ldi r18,lo8(159999)
+ 991 044c 80E7      		ldi r24,hi8(159999)
+ 992 044e 92E0      		ldi r25,hlo8(159999)
+ 993 0450 2150      		1: subi r18,1
+ 994 0452 8040      		sbci r24,0
+ 995 0454 9040      		sbci r25,0
+ 996 0456 01F4      		brne 1b
+ 997 0458 00C0      		rjmp .
+ 998 045a 0000      		nop
+ 999               	.LBE103:
+ 1000               	.LBE102:
+ 1001               		.stabs	"main.cpp",132,0,0,.Ltext10
+ 1002               	.Ltext10:
+ 209:main.cpp      **** 	_delay_ms(100);
+ 210:main.cpp      ****         moteur.Avance(95);
+ 1003               		.stabn	68,0,210,.LM126-.LFBB6
+ 1004               	.LM126:
+ 1005 045c 6FE5      		ldi r22,lo8(95)
+ 1006 045e 70E0      		ldi r23,0
+ 1007 0460 80E0      		ldi r24,lo8(moteur)
+ 1008 0462 90E0      		ldi r25,hi8(moteur)
+ 1009 0464 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 1010               	.LBB104:
+ 1011               	.LBB105:
+ 1012               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext11
+ 1013               	.Ltext11:
+ 1014               		.stabn	68,0,164,.LM127-.LFBB6
+ 1015               	.LM127:
+ 1016 0468 2FEF      		ldi r18,lo8(159999)
+ 1017 046a 80E7      		ldi r24,hi8(159999)
+ 1018 046c 92E0      		ldi r25,hlo8(159999)
+ 1019 046e 2150      		1: subi r18,1
+ 1020 0470 8040      		sbci r24,0
+ 1021 0472 9040      		sbci r25,0
+ 1022 0474 01F4      		brne 1b
+ 1023 0476 00C0      		rjmp .
+ 1024 0478 0000      		nop
+ 1025               	.L93:
+ 1026               	.LBE105:
+ 1027               	.LBE104:
+GAS LISTING /tmp/cccQHSrn.s 			page 26
+
+
+ 1028               		.stabs	"main.cpp",132,0,0,.Ltext12
+ 1029               	.Ltext12:
+ 211:main.cpp      ****         _delay_ms(100);
+ 212:main.cpp      **** 					
+ 213:main.cpp      ****     }
+ 214:main.cpp      ****     compteur++;
+ 1030               		.stabn	68,0,214,.LM128-.LFBB6
+ 1031               	.LM128:
+ 1032 047a 8091 0000 		lds r24,compteur
+ 1033 047e 8F5F      		subi r24,lo8(-(1))
+ 1034 0480 8093 0000 		sts compteur,r24
+ 1035 0484 0895      		ret
+ 1036               		.size	_Z17faireIntersectionv, .-_Z17faireIntersectionv
+ 1037               	.Lscope6:
+ 1038               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 1039               		.stabd	78,0,0
+ 1040               		.stabs	"_Z25faireIntersectionTrianglev:F(0,4)",36,0,218,_Z25faireIntersectionTrianglev
+ 1041               	.global	_Z25faireIntersectionTrianglev
+ 1042               		.type	_Z25faireIntersectionTrianglev, @function
+ 1043               	_Z25faireIntersectionTrianglev:
+ 1044               		.stabd	46,0,0
+ 215:main.cpp      ****     
+ 216:main.cpp      **** }
+ 217:main.cpp      **** 
+ 218:main.cpp      **** void faireIntersectionTriangle() // Fonction permettant au robot de gérer l'intersection en triang
+ 219:main.cpp      **** {
+ 1045               		.stabn	68,0,219,.LM129-.LFBB7
+ 1046               	.LM129:
+ 1047               	.LFBB7:
+ 1048               	/* prologue: function */
+ 1049               	/* frame size = 0 */
+ 1050               	/* stack size = 0 */
+ 1051               	.L__stack_usage = 0
+ 220:main.cpp      ****     if (directions[compteur] == 'd')
+ 1052               		.stabn	68,0,220,.LM130-.LFBB7
+ 1053               	.LM130:
+ 1054 0486 E091 0000 		lds r30,compteur
+ 1055 048a F0E0      		ldi r31,0
+ 1056 048c E050      		subi r30,lo8(-(directions))
+ 1057 048e F040      		sbci r31,hi8(-(directions))
+ 1058 0490 8081      		ld r24,Z
+ 1059 0492 8436      		cpi r24,lo8(100)
+ 1060 0494 01F0      		breq .+2
+ 1061 0496 00C0      		rjmp .L168
+ 1062               	.L124:
+ 221:main.cpp      ****     {
+ 222:main.cpp      ****         while(bit1 || bit2 || bit3 || bit4 || bit5)
+ 1063               		.stabn	68,0,222,.LM131-.LFBB7
+ 1064               	.LM131:
+ 1065 0498 8091 0000 		lds r24,bit1
+ 1066 049c 8823      		tst r24
+ 1067 049e 01F0      		breq .L172
+ 1068               	.L126:
+ 223:main.cpp      ****         {
+ 224:main.cpp      ****            moteur.pivotDroit(95);
+ 1069               		.stabn	68,0,224,.LM132-.LFBB7
+ 1070               	.LM132:
+GAS LISTING /tmp/cccQHSrn.s 			page 27
+
+
+ 1071 04a0 6FE5      		ldi r22,lo8(95)
+ 1072 04a2 70E0      		ldi r23,0
+ 1073 04a4 80E0      		ldi r24,lo8(moteur)
+ 1074 04a6 90E0      		ldi r25,hi8(moteur)
+ 1075 04a8 0E94 0000 		call _ZN3Pwm10pivotDroitEj
+ 225:main.cpp      ****            lireDirection();
+ 1076               		.stabn	68,0,225,.LM133-.LFBB7
+ 1077               	.LM133:
+ 1078 04ac 0E94 0000 		call _Z13lireDirectionv
+ 1079 04b0 00C0      		rjmp .L124
+ 1080               	.L172:
+ 222:main.cpp      ****         {
+ 1081               		.stabn	68,0,222,.LM134-.LFBB7
+ 1082               	.LM134:
+ 1083 04b2 8091 0000 		lds r24,bit2
+ 1084 04b6 8111      		cpse r24,__zero_reg__
+ 1085 04b8 00C0      		rjmp .L126
+ 222:main.cpp      ****         {
+ 1086               		.stabn	68,0,222,.LM135-.LFBB7
+ 1087               	.LM135:
+ 1088 04ba 8091 0000 		lds r24,bit3
+ 1089 04be 8111      		cpse r24,__zero_reg__
+ 1090 04c0 00C0      		rjmp .L126
+ 222:main.cpp      ****         {
+ 1091               		.stabn	68,0,222,.LM136-.LFBB7
+ 1092               	.LM136:
+ 1093 04c2 8091 0000 		lds r24,bit4
+ 1094 04c6 8111      		cpse r24,__zero_reg__
+ 1095 04c8 00C0      		rjmp .L126
+ 222:main.cpp      ****         {
+ 1096               		.stabn	68,0,222,.LM137-.LFBB7
+ 1097               	.LM137:
+ 1098 04ca 8091 0000 		lds r24,bit5
+ 1099 04ce 8111      		cpse r24,__zero_reg__
+ 1100 04d0 00C0      		rjmp .L126
+ 226:main.cpp      ****         }
+ 227:main.cpp      ****         moteur.Avance(95);
+ 1101               		.stabn	68,0,227,.LM138-.LFBB7
+ 1102               	.LM138:
+ 1103 04d2 6FE5      		ldi r22,lo8(95)
+ 1104 04d4 70E0      		ldi r23,0
+ 1105 04d6 80E0      		ldi r24,lo8(moteur)
+ 1106 04d8 90E0      		ldi r25,hi8(moteur)
+ 1107 04da 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 1108               	.LBB106:
+ 1109               	.LBB107:
+ 1110               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext13
+ 1111               	.Ltext13:
+ 1112               		.stabn	68,0,164,.LM139-.LFBB7
+ 1113               	.LM139:
+ 1114 04de 2FEF      		ldi r18,lo8(1599999)
+ 1115 04e0 89E6      		ldi r24,hi8(1599999)
+ 1116 04e2 98E1      		ldi r25,hlo8(1599999)
+ 1117 04e4 2150      		1: subi r18,1
+ 1118 04e6 8040      		sbci r24,0
+ 1119 04e8 9040      		sbci r25,0
+ 1120 04ea 01F4      		brne 1b
+GAS LISTING /tmp/cccQHSrn.s 			page 28
+
+
+ 1121 04ec 00C0      		rjmp .
+ 1122 04ee 0000      		nop
+ 1123               	.L127:
+ 1124               	.LBE107:
+ 1125               	.LBE106:
+ 1126               		.stabs	"main.cpp",132,0,0,.Ltext14
+ 1127               	.Ltext14:
+ 228:main.cpp      ****         _delay_ms(1000);
+ 229:main.cpp      ****         while(!bit2)
+ 1128               		.stabn	68,0,229,.LM140-.LFBB7
+ 1129               	.LM140:
+ 1130 04f0 8091 0000 		lds r24,bit2
+ 1131 04f4 8111      		cpse r24,__zero_reg__
+ 1132 04f6 00C0      		rjmp .L160
+ 230:main.cpp      ****         {
+ 231:main.cpp      ****             lireDirection();
+ 1133               		.stabn	68,0,231,.LM141-.LFBB7
+ 1134               	.LM141:
+ 1135 04f8 0E94 0000 		call _Z13lireDirectionv
+ 232:main.cpp      ****             moteur.Tourner_Gauche(95);
+ 1136               		.stabn	68,0,232,.LM142-.LFBB7
+ 1137               	.LM142:
+ 1138 04fc 6FE5      		ldi r22,lo8(95)
+ 1139 04fe 70E0      		ldi r23,0
+ 1140 0500 80E0      		ldi r24,lo8(moteur)
+ 1141 0502 90E0      		ldi r25,hi8(moteur)
+ 1142 0504 0E94 0000 		call _ZN3Pwm14Tourner_GaucheEj
+ 1143 0508 00C0      		rjmp .L127
+ 1144               	.L174:
+ 233:main.cpp      ****         }
+ 234:main.cpp      ****        
+ 235:main.cpp      ****         while(bit1 || bit2 || bit3 || bit4 || bit5)
+ 1145               		.stabn	68,0,235,.LM143-.LFBB7
+ 1146               	.LM143:
+ 1147 050a 8091 0000 		lds r24,bit2
+ 1148 050e 8823      		tst r24
+ 1149 0510 01F4      		brne .+2
+ 1150 0512 00C0      		rjmp .L173
+ 1151               	.L134:
+ 236:main.cpp      ****         {
+ 237:main.cpp      ****             lireDirection();
+ 1152               		.stabn	68,0,237,.LM144-.LFBB7
+ 1153               	.LM144:
+ 1154 0514 0E94 0000 		call _Z13lireDirectionv
+ 238:main.cpp      ****             
+ 239:main.cpp      ****             if(!bit1 && bit2 && !bit3)	// 0 1 0 X X
+ 1155               		.stabn	68,0,239,.LM145-.LFBB7
+ 1156               	.LM145:
+ 1157 0518 9091 0000 		lds r25,bit1
+ 1158 051c 8091 0000 		lds r24,bit2
+ 1159 0520 9111      		cpse r25,__zero_reg__
+ 1160 0522 00C0      		rjmp .L130
+ 1161               		.stabn	68,0,239,.LM146-.LFBB7
+ 1162               	.LM146:
+ 1163 0524 8823      		tst r24
+ 1164 0526 01F0      		breq .L131
+ 1165               		.stabn	68,0,239,.LM147-.LFBB7
+GAS LISTING /tmp/cccQHSrn.s 			page 29
+
+
+ 1166               	.LM147:
+ 1167 0528 2091 0000 		lds r18,bit3
+ 1168 052c 2111      		cpse r18,__zero_reg__
+ 1169 052e 00C0      		rjmp .L131
+ 240:main.cpp      **** 		moteur.Avance(95);
+ 1170               		.stabn	68,0,240,.LM148-.LFBB7
+ 1171               	.LM148:
+ 1172 0530 6FE5      		ldi r22,lo8(95)
+ 1173 0532 70E0      		ldi r23,0
+ 1174 0534 80E0      		ldi r24,lo8(moteur)
+ 1175 0536 90E0      		ldi r25,hi8(moteur)
+ 1176 0538 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 1177               	.L160:
+ 235:main.cpp      ****         {
+ 1178               		.stabn	68,0,235,.LM149-.LFBB7
+ 1179               	.LM149:
+ 1180 053c 8091 0000 		lds r24,bit1
+ 1181 0540 8823      		tst r24
+ 1182 0542 01F0      		breq .L174
+ 1183 0544 00C0      		rjmp .L134
+ 1184               	.L130:
+ 241:main.cpp      **** 
+ 242:main.cpp      ****             else if (bit1 && !bit2 && !bit3) // 1 0 0 X X
+ 1185               		.stabn	68,0,242,.LM150-.LFBB7
+ 1186               	.LM150:
+ 1187 0546 8111      		cpse r24,__zero_reg__
+ 1188 0548 00C0      		rjmp .L131
+ 1189               		.stabn	68,0,242,.LM151-.LFBB7
+ 1190               	.LM151:
+ 1191 054a 2091 0000 		lds r18,bit3
+ 1192 054e 2111      		cpse r18,__zero_reg__
+ 1193 0550 00C0      		rjmp .L131
+ 243:main.cpp      **** 		moteur.Tourner_GaucheInt(95);
+ 1194               		.stabn	68,0,243,.LM152-.LFBB7
+ 1195               	.LM152:
+ 1196 0552 6FE5      		ldi r22,lo8(95)
+ 1197 0554 70E0      		ldi r23,0
+ 1198 0556 80E0      		ldi r24,lo8(moteur)
+ 1199 0558 90E0      		ldi r25,hi8(moteur)
+ 1200 055a 0E94 0000 		call _ZN3Pwm17Tourner_GaucheIntEj
+ 1201 055e 00C0      		rjmp .L160
+ 1202               	.L131:
+ 244:main.cpp      **** 
+ 245:main.cpp      ****             else if ((bit4) || (bit4 && bit1))	// X X X 1 X ou 1 X X 1 X
+ 1203               		.stabn	68,0,245,.LM153-.LFBB7
+ 1204               	.LM153:
+ 1205 0560 2091 0000 		lds r18,bit4
+ 1206 0564 2223      		tst r18
+ 1207 0566 01F0      		breq .L133
+ 246:main.cpp      **** 		moteur.pivotDroit(95);
+ 1208               		.stabn	68,0,246,.LM154-.LFBB7
+ 1209               	.LM154:
+ 1210 0568 6FE5      		ldi r22,lo8(95)
+ 1211 056a 70E0      		ldi r23,0
+ 1212 056c 80E0      		ldi r24,lo8(moteur)
+ 1213 056e 90E0      		ldi r25,hi8(moteur)
+ 1214 0570 0E94 0000 		call _ZN3Pwm10pivotDroitEj
+GAS LISTING /tmp/cccQHSrn.s 			page 30
+
+
+ 1215 0574 00C0      		rjmp .L160
+ 1216               	.L133:
+ 247:main.cpp      **** 
+ 248:main.cpp      ****             else if (!bit1 && !bit2 && bit3) // 0 0 1 X X
+ 1217               		.stabn	68,0,248,.LM155-.LFBB7
+ 1218               	.LM155:
+ 1219 0576 9111      		cpse r25,__zero_reg__
+ 1220 0578 00C0      		rjmp .L160
+ 1221               		.stabn	68,0,248,.LM156-.LFBB7
+ 1222               	.LM156:
+ 1223 057a 8111      		cpse r24,__zero_reg__
+ 1224 057c 00C0      		rjmp .L160
+ 1225               		.stabn	68,0,248,.LM157-.LFBB7
+ 1226               	.LM157:
+ 1227 057e 8091 0000 		lds r24,bit3
+ 1228 0582 8823      		tst r24
+ 1229 0584 01F0      		breq .L160
+ 249:main.cpp      **** 		moteur.Tourner_DroiteInt(95);
+ 1230               		.stabn	68,0,249,.LM158-.LFBB7
+ 1231               	.LM158:
+ 1232 0586 6FE5      		ldi r22,lo8(95)
+ 1233 0588 70E0      		ldi r23,0
+ 1234 058a 80E0      		ldi r24,lo8(moteur)
+ 1235 058c 90E0      		ldi r25,hi8(moteur)
+ 1236 058e 0E94 0000 		call _ZN3Pwm17Tourner_DroiteIntEj
+ 1237 0592 00C0      		rjmp .L160
+ 1238               	.L173:
+ 235:main.cpp      ****         {
+ 1239               		.stabn	68,0,235,.LM159-.LFBB7
+ 1240               	.LM159:
+ 1241 0594 8091 0000 		lds r24,bit3
+ 1242 0598 8111      		cpse r24,__zero_reg__
+ 1243 059a 00C0      		rjmp .L134
+ 235:main.cpp      ****         {
+ 1244               		.stabn	68,0,235,.LM160-.LFBB7
+ 1245               	.LM160:
+ 1246 059c 8091 0000 		lds r24,bit4
+ 1247 05a0 8111      		cpse r24,__zero_reg__
+ 1248 05a2 00C0      		rjmp .L134
+ 235:main.cpp      ****         {
+ 1249               		.stabn	68,0,235,.LM161-.LFBB7
+ 1250               	.LM161:
+ 1251 05a4 8091 0000 		lds r24,bit5
+ 1252 05a8 8111      		cpse r24,__zero_reg__
+ 1253 05aa 00C0      		rjmp .L134
+ 250:main.cpp      ****         }
+ 251:main.cpp      **** 
+ 252:main.cpp      **** 	moteur.Avance(95);
+ 1254               		.stabn	68,0,252,.LM162-.LFBB7
+ 1255               	.LM162:
+ 1256 05ac 6FE5      		ldi r22,lo8(95)
+ 1257 05ae 70E0      		ldi r23,0
+ 1258 05b0 80E0      		ldi r24,lo8(moteur)
+ 1259 05b2 90E0      		ldi r25,hi8(moteur)
+ 1260 05b4 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 1261               	.LBB108:
+ 1262               	.LBB109:
+GAS LISTING /tmp/cccQHSrn.s 			page 31
+
+
+ 1263               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext15
+ 1264               	.Ltext15:
+ 1265               		.stabn	68,0,164,.LM163-.LFBB7
+ 1266               	.LM163:
+ 1267 05b8 2FEF      		ldi r18,lo8(799999)
+ 1268 05ba 84E3      		ldi r24,hi8(799999)
+ 1269 05bc 9CE0      		ldi r25,hlo8(799999)
+ 1270 05be 2150      		1: subi r18,1
+ 1271 05c0 8040      		sbci r24,0
+ 1272 05c2 9040      		sbci r25,0
+ 1273 05c4 01F4      		brne 1b
+ 1274 05c6 00C0      		rjmp .
+ 1275 05c8 0000      		nop
+ 1276               	.L135:
+ 1277               	.LBE109:
+ 1278               	.LBE108:
+ 1279               		.stabs	"main.cpp",132,0,0,.Ltext16
+ 1280               	.Ltext16:
+ 253:main.cpp      **** 	_delay_ms(500);
+ 254:main.cpp      **** 		
+ 255:main.cpp      ****         while(!bit3)
+ 1281               		.stabn	68,0,255,.LM164-.LFBB7
+ 1282               	.LM164:
+ 1283 05ca 8091 0000 		lds r24,bit3
+ 1284 05ce 8111      		cpse r24,__zero_reg__
+ 1285 05d0 00C0      		rjmp .L138
+ 256:main.cpp      ****         {
+ 257:main.cpp      ****             lireDirection();
+ 1286               		.stabn	68,0,257,.LM165-.LFBB7
+ 1287               	.LM165:
+ 1288 05d2 0E94 0000 		call _Z13lireDirectionv
+ 258:main.cpp      ****             moteur.Tourner_Gauche(95);
+ 1289               		.stabn	68,0,258,.LM166-.LFBB7
+ 1290               	.LM166:
+ 1291 05d6 6FE5      		ldi r22,lo8(95)
+ 1292 05d8 70E0      		ldi r23,0
+ 1293 05da 80E0      		ldi r24,lo8(moteur)
+ 1294 05dc 90E0      		ldi r25,hi8(moteur)
+ 1295 05de 0E94 0000 		call _ZN3Pwm14Tourner_GaucheEj
+ 1296 05e2 00C0      		rjmp .L135
+ 1297               	.L168:
+ 259:main.cpp      ****         }                                    
+ 260:main.cpp      ****     }
+ 261:main.cpp      ****     else if (directions[compteur] == 'g')
+ 1298               		.stabn	68,0,261,.LM167-.LFBB7
+ 1299               	.LM167:
+ 1300 05e4 8736      		cpi r24,lo8(103)
+ 1301 05e6 01F0      		breq .L137
+ 1302               	.L138:
+ 262:main.cpp      ****     {
+ 263:main.cpp      ****         while(bit1 || bit2 || bit3 || bit4 || bit5)
+ 264:main.cpp      ****         {
+ 265:main.cpp      ****            moteur.pivotGauche(95);
+ 266:main.cpp      ****            lireDirection();
+ 267:main.cpp      ****         }
+ 268:main.cpp      ****         moteur.Avance(95);
+ 269:main.cpp      ****         _delay_ms(1000);
+GAS LISTING /tmp/cccQHSrn.s 			page 32
+
+
+ 270:main.cpp      ****         while(!bit4)
+ 271:main.cpp      ****         {
+ 272:main.cpp      ****             lireDirection();
+ 273:main.cpp      ****             moteur.Tourner_Droite(95);
+ 274:main.cpp      ****         }
+ 275:main.cpp      ****        
+ 276:main.cpp      ****         while(bit1 || bit2 || bit3 || bit4 || bit5)
+ 277:main.cpp      **** 	{
+ 278:main.cpp      ****             lireDirection();
+ 279:main.cpp      ****             
+ 280:main.cpp      ****             if(!bit3 && bit4 && !bit5)	// X X 0 1 0
+ 281:main.cpp      **** 		moteur.Avance(95);
+ 282:main.cpp      **** 
+ 283:main.cpp      ****             else if (bit3 && !bit4 && !bit5) // X X 1 0 0 
+ 284:main.cpp      ****                 moteur.Tourner_Gauche(95);
+ 285:main.cpp      **** 
+ 286:main.cpp      ****             else if ((bit2) || (bit2 && bit5))	// X 1 X X X ou X 1 X X 1
+ 287:main.cpp      **** 		moteur.pivotGauche(95);
+ 288:main.cpp      **** 
+ 289:main.cpp      ****             else if (!bit3 && !bit4 && bit5) // X X 0 0 1
+ 290:main.cpp      **** 		moteur.Tourner_Droite(95);
+ 291:main.cpp      **** 
+ 292:main.cpp      **** 
+ 293:main.cpp      **** 	}
+ 294:main.cpp      **** 	moteur.Avance(95);
+ 295:main.cpp      **** 	_delay_ms(500);
+ 296:main.cpp      **** 		
+ 297:main.cpp      ****         while(!bit3)
+ 298:main.cpp      ****         {
+ 299:main.cpp      ****             lireDirection();
+ 300:main.cpp      ****             moteur.Tourner_Droite(95);
+ 301:main.cpp      ****         }
+ 302:main.cpp      ****    
+ 303:main.cpp      ****     }               
+ 304:main.cpp      ****     compteur++;
+ 1303               		.stabn	68,0,304,.LM168-.LFBB7
+ 1304               	.LM168:
+ 1305 05e8 8091 0000 		lds r24,compteur
+ 1306 05ec 8F5F      		subi r24,lo8(-(1))
+ 1307 05ee 8093 0000 		sts compteur,r24
+ 305:main.cpp      ****     aFaitTriangle = true;
+ 1308               		.stabn	68,0,305,.LM169-.LFBB7
+ 1309               	.LM169:
+ 1310 05f2 81E0      		ldi r24,lo8(1)
+ 1311 05f4 8093 0000 		sts aFaitTriangle,r24
+ 306:main.cpp      ****     del.eteindreDel();
+ 1312               		.stabn	68,0,306,.LM170-.LFBB7
+ 1313               	.LM170:
+ 1314 05f8 80E0      		ldi r24,lo8(del)
+ 1315 05fa 90E0      		ldi r25,hi8(del)
+ 1316 05fc 0C94 0000 		jmp _ZN3Del11eteindreDelEv
+ 1317               	.L176:
+ 263:main.cpp      ****         {
+ 1318               		.stabn	68,0,263,.LM171-.LFBB7
+ 1319               	.LM171:
+ 1320 0600 8091 0000 		lds r24,bit2
+ 1321 0604 8823      		tst r24
+GAS LISTING /tmp/cccQHSrn.s 			page 33
+
+
+ 1322 0606 01F0      		breq .L175
+ 1323               	.L139:
+ 265:main.cpp      ****            lireDirection();
+ 1324               		.stabn	68,0,265,.LM172-.LFBB7
+ 1325               	.LM172:
+ 1326 0608 6FE5      		ldi r22,lo8(95)
+ 1327 060a 70E0      		ldi r23,0
+ 1328 060c 80E0      		ldi r24,lo8(moteur)
+ 1329 060e 90E0      		ldi r25,hi8(moteur)
+ 1330 0610 0E94 0000 		call _ZN3Pwm11pivotGaucheEj
+ 266:main.cpp      ****         }
+ 1331               		.stabn	68,0,266,.LM173-.LFBB7
+ 1332               	.LM173:
+ 1333 0614 0E94 0000 		call _Z13lireDirectionv
+ 1334               	.L137:
+ 263:main.cpp      ****         {
+ 1335               		.stabn	68,0,263,.LM174-.LFBB7
+ 1336               	.LM174:
+ 1337 0618 8091 0000 		lds r24,bit1
+ 1338 061c 8823      		tst r24
+ 1339 061e 01F0      		breq .L176
+ 1340 0620 00C0      		rjmp .L139
+ 1341               	.L175:
+ 263:main.cpp      ****         {
+ 1342               		.stabn	68,0,263,.LM175-.LFBB7
+ 1343               	.LM175:
+ 1344 0622 8091 0000 		lds r24,bit3
+ 1345 0626 8111      		cpse r24,__zero_reg__
+ 1346 0628 00C0      		rjmp .L139
+ 263:main.cpp      ****         {
+ 1347               		.stabn	68,0,263,.LM176-.LFBB7
+ 1348               	.LM176:
+ 1349 062a 8091 0000 		lds r24,bit4
+ 1350 062e 8111      		cpse r24,__zero_reg__
+ 1351 0630 00C0      		rjmp .L139
+ 263:main.cpp      ****         {
+ 1352               		.stabn	68,0,263,.LM177-.LFBB7
+ 1353               	.LM177:
+ 1354 0632 8091 0000 		lds r24,bit5
+ 1355 0636 8111      		cpse r24,__zero_reg__
+ 1356 0638 00C0      		rjmp .L139
+ 268:main.cpp      ****         _delay_ms(1000);
+ 1357               		.stabn	68,0,268,.LM178-.LFBB7
+ 1358               	.LM178:
+ 1359 063a 6FE5      		ldi r22,lo8(95)
+ 1360 063c 70E0      		ldi r23,0
+ 1361 063e 80E0      		ldi r24,lo8(moteur)
+ 1362 0640 90E0      		ldi r25,hi8(moteur)
+ 1363 0642 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 1364               	.LBB110:
+ 1365               	.LBB111:
+ 1366               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext17
+ 1367               	.Ltext17:
+ 1368               		.stabn	68,0,164,.LM179-.LFBB7
+ 1369               	.LM179:
+ 1370 0646 2FEF      		ldi r18,lo8(1599999)
+ 1371 0648 89E6      		ldi r24,hi8(1599999)
+GAS LISTING /tmp/cccQHSrn.s 			page 34
+
+
+ 1372 064a 98E1      		ldi r25,hlo8(1599999)
+ 1373 064c 2150      		1: subi r18,1
+ 1374 064e 8040      		sbci r24,0
+ 1375 0650 9040      		sbci r25,0
+ 1376 0652 01F4      		brne 1b
+ 1377 0654 00C0      		rjmp .
+ 1378 0656 0000      		nop
+ 1379               	.L140:
+ 1380               	.LBE111:
+ 1381               	.LBE110:
+ 1382               		.stabs	"main.cpp",132,0,0,.Ltext18
+ 1383               	.Ltext18:
+ 270:main.cpp      ****         {
+ 1384               		.stabn	68,0,270,.LM180-.LFBB7
+ 1385               	.LM180:
+ 1386 0658 8091 0000 		lds r24,bit4
+ 1387 065c 8111      		cpse r24,__zero_reg__
+ 1388 065e 00C0      		rjmp .L161
+ 272:main.cpp      ****             moteur.Tourner_Droite(95);
+ 1389               		.stabn	68,0,272,.LM181-.LFBB7
+ 1390               	.LM181:
+ 1391 0660 0E94 0000 		call _Z13lireDirectionv
+ 273:main.cpp      ****         }
+ 1392               		.stabn	68,0,273,.LM182-.LFBB7
+ 1393               	.LM182:
+ 1394 0664 6FE5      		ldi r22,lo8(95)
+ 1395 0666 70E0      		ldi r23,0
+ 1396 0668 80E0      		ldi r24,lo8(moteur)
+ 1397 066a 90E0      		ldi r25,hi8(moteur)
+ 1398 066c 0E94 0000 		call _ZN3Pwm14Tourner_DroiteEj
+ 1399 0670 00C0      		rjmp .L140
+ 1400               	.L178:
+ 276:main.cpp      **** 	{
+ 1401               		.stabn	68,0,276,.LM183-.LFBB7
+ 1402               	.LM183:
+ 1403 0672 8091 0000 		lds r24,bit2
+ 1404 0676 8823      		tst r24
+ 1405 0678 01F4      		brne .+2
+ 1406 067a 00C0      		rjmp .L177
+ 1407               	.L147:
+ 278:main.cpp      ****             
+ 1408               		.stabn	68,0,278,.LM184-.LFBB7
+ 1409               	.LM184:
+ 1410 067c 0E94 0000 		call _Z13lireDirectionv
+ 280:main.cpp      **** 		moteur.Avance(95);
+ 1411               		.stabn	68,0,280,.LM185-.LFBB7
+ 1412               	.LM185:
+ 1413 0680 9091 0000 		lds r25,bit3
+ 1414 0684 8091 0000 		lds r24,bit4
+ 1415 0688 9111      		cpse r25,__zero_reg__
+ 1416 068a 00C0      		rjmp .L143
+ 280:main.cpp      **** 		moteur.Avance(95);
+ 1417               		.stabn	68,0,280,.LM186-.LFBB7
+ 1418               	.LM186:
+ 1419 068c 8823      		tst r24
+ 1420 068e 01F0      		breq .L144
+ 280:main.cpp      **** 		moteur.Avance(95);
+GAS LISTING /tmp/cccQHSrn.s 			page 35
+
+
+ 1421               		.stabn	68,0,280,.LM187-.LFBB7
+ 1422               	.LM187:
+ 1423 0690 2091 0000 		lds r18,bit5
+ 1424 0694 2111      		cpse r18,__zero_reg__
+ 1425 0696 00C0      		rjmp .L144
+ 281:main.cpp      **** 
+ 1426               		.stabn	68,0,281,.LM188-.LFBB7
+ 1427               	.LM188:
+ 1428 0698 6FE5      		ldi r22,lo8(95)
+ 1429 069a 70E0      		ldi r23,0
+ 1430 069c 80E0      		ldi r24,lo8(moteur)
+ 1431 069e 90E0      		ldi r25,hi8(moteur)
+ 1432 06a0 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 1433               	.L161:
+ 276:main.cpp      **** 	{
+ 1434               		.stabn	68,0,276,.LM189-.LFBB7
+ 1435               	.LM189:
+ 1436 06a4 8091 0000 		lds r24,bit1
+ 1437 06a8 8823      		tst r24
+ 1438 06aa 01F0      		breq .L178
+ 1439 06ac 00C0      		rjmp .L147
+ 1440               	.L143:
+ 283:main.cpp      ****                 moteur.Tourner_Gauche(95);
+ 1441               		.stabn	68,0,283,.LM190-.LFBB7
+ 1442               	.LM190:
+ 1443 06ae 8111      		cpse r24,__zero_reg__
+ 1444 06b0 00C0      		rjmp .L144
+ 283:main.cpp      ****                 moteur.Tourner_Gauche(95);
+ 1445               		.stabn	68,0,283,.LM191-.LFBB7
+ 1446               	.LM191:
+ 1447 06b2 2091 0000 		lds r18,bit5
+ 1448 06b6 2111      		cpse r18,__zero_reg__
+ 1449 06b8 00C0      		rjmp .L144
+ 284:main.cpp      **** 
+ 1450               		.stabn	68,0,284,.LM192-.LFBB7
+ 1451               	.LM192:
+ 1452 06ba 6FE5      		ldi r22,lo8(95)
+ 1453 06bc 70E0      		ldi r23,0
+ 1454 06be 80E0      		ldi r24,lo8(moteur)
+ 1455 06c0 90E0      		ldi r25,hi8(moteur)
+ 1456 06c2 0E94 0000 		call _ZN3Pwm14Tourner_GaucheEj
+ 1457 06c6 00C0      		rjmp .L161
+ 1458               	.L144:
+ 286:main.cpp      **** 		moteur.pivotGauche(95);
+ 1459               		.stabn	68,0,286,.LM193-.LFBB7
+ 1460               	.LM193:
+ 1461 06c8 2091 0000 		lds r18,bit2
+ 1462 06cc 2223      		tst r18
+ 1463 06ce 01F0      		breq .L146
+ 287:main.cpp      **** 
+ 1464               		.stabn	68,0,287,.LM194-.LFBB7
+ 1465               	.LM194:
+ 1466 06d0 6FE5      		ldi r22,lo8(95)
+ 1467 06d2 70E0      		ldi r23,0
+ 1468 06d4 80E0      		ldi r24,lo8(moteur)
+ 1469 06d6 90E0      		ldi r25,hi8(moteur)
+ 1470 06d8 0E94 0000 		call _ZN3Pwm11pivotGaucheEj
+GAS LISTING /tmp/cccQHSrn.s 			page 36
+
+
+ 1471 06dc 00C0      		rjmp .L161
+ 1472               	.L146:
+ 289:main.cpp      **** 		moteur.Tourner_Droite(95);
+ 1473               		.stabn	68,0,289,.LM195-.LFBB7
+ 1474               	.LM195:
+ 1475 06de 9111      		cpse r25,__zero_reg__
+ 1476 06e0 00C0      		rjmp .L161
+ 289:main.cpp      **** 		moteur.Tourner_Droite(95);
+ 1477               		.stabn	68,0,289,.LM196-.LFBB7
+ 1478               	.LM196:
+ 1479 06e2 8111      		cpse r24,__zero_reg__
+ 1480 06e4 00C0      		rjmp .L161
+ 289:main.cpp      **** 		moteur.Tourner_Droite(95);
+ 1481               		.stabn	68,0,289,.LM197-.LFBB7
+ 1482               	.LM197:
+ 1483 06e6 8091 0000 		lds r24,bit5
+ 1484 06ea 8823      		tst r24
+ 1485 06ec 01F0      		breq .L161
+ 290:main.cpp      **** 
+ 1486               		.stabn	68,0,290,.LM198-.LFBB7
+ 1487               	.LM198:
+ 1488 06ee 6FE5      		ldi r22,lo8(95)
+ 1489 06f0 70E0      		ldi r23,0
+ 1490 06f2 80E0      		ldi r24,lo8(moteur)
+ 1491 06f4 90E0      		ldi r25,hi8(moteur)
+ 1492 06f6 0E94 0000 		call _ZN3Pwm14Tourner_DroiteEj
+ 1493 06fa 00C0      		rjmp .L161
+ 1494               	.L177:
+ 276:main.cpp      **** 	{
+ 1495               		.stabn	68,0,276,.LM199-.LFBB7
+ 1496               	.LM199:
+ 1497 06fc 8091 0000 		lds r24,bit3
+ 1498 0700 8111      		cpse r24,__zero_reg__
+ 1499 0702 00C0      		rjmp .L147
+ 276:main.cpp      **** 	{
+ 1500               		.stabn	68,0,276,.LM200-.LFBB7
+ 1501               	.LM200:
+ 1502 0704 8091 0000 		lds r24,bit4
+ 1503 0708 8111      		cpse r24,__zero_reg__
+ 1504 070a 00C0      		rjmp .L147
+ 276:main.cpp      **** 	{
+ 1505               		.stabn	68,0,276,.LM201-.LFBB7
+ 1506               	.LM201:
+ 1507 070c 8091 0000 		lds r24,bit5
+ 1508 0710 8111      		cpse r24,__zero_reg__
+ 1509 0712 00C0      		rjmp .L147
+ 294:main.cpp      **** 	_delay_ms(500);
+ 1510               		.stabn	68,0,294,.LM202-.LFBB7
+ 1511               	.LM202:
+ 1512 0714 6FE5      		ldi r22,lo8(95)
+ 1513 0716 70E0      		ldi r23,0
+ 1514 0718 80E0      		ldi r24,lo8(moteur)
+ 1515 071a 90E0      		ldi r25,hi8(moteur)
+ 1516 071c 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 1517               	.LBB112:
+ 1518               	.LBB113:
+ 1519               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext19
+GAS LISTING /tmp/cccQHSrn.s 			page 37
+
+
+ 1520               	.Ltext19:
+ 1521               		.stabn	68,0,164,.LM203-.LFBB7
+ 1522               	.LM203:
+ 1523 0720 2FEF      		ldi r18,lo8(799999)
+ 1524 0722 84E3      		ldi r24,hi8(799999)
+ 1525 0724 9CE0      		ldi r25,hlo8(799999)
+ 1526 0726 2150      		1: subi r18,1
+ 1527 0728 8040      		sbci r24,0
+ 1528 072a 9040      		sbci r25,0
+ 1529 072c 01F4      		brne 1b
+ 1530 072e 00C0      		rjmp .
+ 1531 0730 0000      		nop
+ 1532               	.L148:
+ 1533               	.LBE113:
+ 1534               	.LBE112:
+ 1535               		.stabs	"main.cpp",132,0,0,.Ltext20
+ 1536               	.Ltext20:
+ 297:main.cpp      ****         {
+ 1537               		.stabn	68,0,297,.LM204-.LFBB7
+ 1538               	.LM204:
+ 1539 0732 8091 0000 		lds r24,bit3
+ 1540 0736 8111      		cpse r24,__zero_reg__
+ 1541 0738 00C0      		rjmp .L138
+ 299:main.cpp      ****             moteur.Tourner_Droite(95);
+ 1542               		.stabn	68,0,299,.LM205-.LFBB7
+ 1543               	.LM205:
+ 1544 073a 0E94 0000 		call _Z13lireDirectionv
+ 300:main.cpp      ****         }
+ 1545               		.stabn	68,0,300,.LM206-.LFBB7
+ 1546               	.LM206:
+ 1547 073e 6FE5      		ldi r22,lo8(95)
+ 1548 0740 70E0      		ldi r23,0
+ 1549 0742 80E0      		ldi r24,lo8(moteur)
+ 1550 0744 90E0      		ldi r25,hi8(moteur)
+ 1551 0746 0E94 0000 		call _ZN3Pwm14Tourner_DroiteEj
+ 1552 074a 00C0      		rjmp .L148
+ 1553               		.size	_Z25faireIntersectionTrianglev, .-_Z25faireIntersectionTrianglev
+ 1554               	.Lscope7:
+ 1555               		.stabs	"",36,0,0,.Lscope7-.LFBB7
+ 1556               		.stabd	78,0,0
+ 1557               		.stabs	"_Z11suivreLignev:F(0,4)",36,0,309,_Z11suivreLignev
+ 1558               	.global	_Z11suivreLignev
+ 1559               		.type	_Z11suivreLignev, @function
+ 1560               	_Z11suivreLignev:
+ 1561               		.stabd	46,0,0
+ 307:main.cpp      **** }
+ 308:main.cpp      **** 
+ 309:main.cpp      **** void suivreLigne() // Fonction qui permet au robot de suivre la ligne
+ 310:main.cpp      **** {
+ 1562               		.stabn	68,0,310,.LM207-.LFBB8
+ 1563               	.LM207:
+ 1564               	.LFBB8:
+ 1565               	/* prologue: function */
+ 1566               	/* frame size = 0 */
+ 1567               	/* stack size = 0 */
+ 1568               	.L__stack_usage = 0
+ 311:main.cpp      **** 	
+GAS LISTING /tmp/cccQHSrn.s 			page 38
+
+
+ 312:main.cpp      ****     if(bit1 && bit2 && bit3 && bit4 && bit5) // 1 1 1 1 1
+ 1569               		.stabn	68,0,312,.LM208-.LFBB8
+ 1570               	.LM208:
+ 1571 074c 2091 0000 		lds r18,bit1
+ 1572 0750 9091 0000 		lds r25,bit2
+ 1573 0754 8091 0000 		lds r24,bit3
+ 1574 0758 2223      		tst r18
+ 1575 075a 01F4      		brne .+2
+ 1576 075c 00C0      		rjmp .L180
+ 1577               		.stabn	68,0,312,.LM209-.LFBB8
+ 1578               	.LM209:
+ 1579 075e 9923      		tst r25
+ 1580 0760 01F0      		breq .L181
+ 1581               		.stabn	68,0,312,.LM210-.LFBB8
+ 1582               	.LM210:
+ 1583 0762 8823      		tst r24
+ 1584 0764 01F4      		brne .+2
+ 1585 0766 00C0      		rjmp .L179
+ 1586               		.stabn	68,0,312,.LM211-.LFBB8
+ 1587               	.LM211:
+ 1588 0768 8091 0000 		lds r24,bit4
+ 1589 076c 8823      		tst r24
+ 1590 076e 01F4      		brne .+2
+ 1591 0770 00C0      		rjmp .L179
+ 1592               		.stabn	68,0,312,.LM212-.LFBB8
+ 1593               	.LM212:
+ 1594 0772 8091 0000 		lds r24,bit5
+ 1595 0776 8823      		tst r24
+ 1596 0778 01F4      		brne .+2
+ 1597 077a 00C0      		rjmp .L179
+ 313:main.cpp      ****     {
+ 314:main.cpp      ****  	if(compteur > 2)
+ 1598               		.stabn	68,0,314,.LM213-.LFBB8
+ 1599               	.LM213:
+ 1600 077c 8091 0000 		lds r24,compteur
+ 1601 0780 8330      		cpi r24,lo8(3)
+ 1602 0782 00F0      		brlo .L241
+ 315:main.cpp      ****         {
+ 316:main.cpp      ****             moteur.Avance(0);
+ 1603               		.stabn	68,0,316,.LM214-.LFBB8
+ 1604               	.LM214:
+ 1605 0784 60E0      		ldi r22,0
+ 1606 0786 70E0      		ldi r23,0
+ 1607 0788 80E0      		ldi r24,lo8(moteur)
+ 1608 078a 90E0      		ldi r25,hi8(moteur)
+ 1609 078c 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 317:main.cpp      ****             devraitFinir = true;
+ 1610               		.stabn	68,0,317,.LM215-.LFBB8
+ 1611               	.LM215:
+ 1612 0790 81E0      		ldi r24,lo8(1)
+ 1613 0792 8093 0000 		sts devraitFinir,r24
+ 318:main.cpp      ****             return;
+ 1614               		.stabn	68,0,318,.LM216-.LFBB8
+ 1615               	.LM216:
+ 1616 0796 0895      		ret
+ 1617               	.L268:
+ 319:main.cpp      ****         }
+GAS LISTING /tmp/cccQHSrn.s 			page 39
+
+
+ 320:main.cpp      **** 	while(bit1 && bit5)
+ 1618               		.stabn	68,0,320,.LM217-.LFBB8
+ 1619               	.LM217:
+ 1620 0798 8091 0000 		lds r24,bit5
+ 1621 079c 8823      		tst r24
+ 1622 079e 01F0      		breq .L187
+ 321:main.cpp      **** 	{
+ 322:main.cpp      ****             lireDirection();
+ 1623               		.stabn	68,0,322,.LM218-.LFBB8
+ 1624               	.LM218:
+ 1625 07a0 0E94 0000 		call _Z13lireDirectionv
+ 323:main.cpp      ****             moteur.Avance(95);
+ 1626               		.stabn	68,0,323,.LM219-.LFBB8
+ 1627               	.LM219:
+ 1628 07a4 6FE5      		ldi r22,lo8(95)
+ 1629 07a6 70E0      		ldi r23,0
+ 1630 07a8 80E0      		ldi r24,lo8(moteur)
+ 1631 07aa 90E0      		ldi r25,hi8(moteur)
+ 1632 07ac 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 1633               	.L241:
+ 320:main.cpp      **** 	{
+ 1634               		.stabn	68,0,320,.LM220-.LFBB8
+ 1635               	.LM220:
+ 1636 07b0 8091 0000 		lds r24,bit1
+ 1637 07b4 8111      		cpse r24,__zero_reg__
+ 1638 07b6 00C0      		rjmp .L268
+ 324:main.cpp      **** 	}
+ 325:main.cpp      ****        
+ 326:main.cpp      ****                 
+ 327:main.cpp      **** 	if(!bit1 && !bit2 && !bit3 && !bit4 && !bit5)
+ 1639               		.stabn	68,0,327,.LM221-.LFBB8
+ 1640               	.LM221:
+ 1641 07b8 8091 0000 		lds r24,bit2
+ 1642 07bc 8111      		cpse r24,__zero_reg__
+ 1643 07be 00C0      		rjmp .L187
+ 1644               		.stabn	68,0,327,.LM222-.LFBB8
+ 1645               	.LM222:
+ 1646 07c0 8091 0000 		lds r24,bit3
+ 1647 07c4 8823      		tst r24
+ 1648 07c6 01F4      		brne .+2
+ 1649 07c8 00C0      		rjmp .L269
+ 1650               	.L187:
+ 328:main.cpp      **** 	{
+ 329:main.cpp      ****             while(!bit3)
+ 330:main.cpp      ****             {
+ 331:main.cpp      **** 		lireDirection();
+ 332:main.cpp      **** 		moteur.pivotDroit(95);
+ 333:main.cpp      ****             }
+ 334:main.cpp      ****         }
+ 335:main.cpp      **** 
+ 336:main.cpp      ****         else
+ 337:main.cpp      ****            moteur.Avance(95);
+ 1651               		.stabn	68,0,337,.LM223-.LFBB8
+ 1652               	.LM223:
+ 1653 07ca 6FE5      		ldi r22,lo8(95)
+ 1654 07cc 70E0      		ldi r23,0
+ 1655 07ce 00C0      		rjmp .L266
+GAS LISTING /tmp/cccQHSrn.s 			page 40
+
+
+ 1656               	.L181:
+ 338:main.cpp      ****     }
+ 339:main.cpp      ****     else if(bit1 && !bit2 && !bit3 && !bit4 && !bit5) //1 0 0 0 0
+ 1657               		.stabn	68,0,339,.LM224-.LFBB8
+ 1658               	.LM224:
+ 1659 07d0 8111      		cpse r24,__zero_reg__
+ 1660 07d2 00C0      		rjmp .L179
+ 1661               		.stabn	68,0,339,.LM225-.LFBB8
+ 1662               	.LM225:
+ 1663 07d4 8091 0000 		lds r24,bit4
+ 1664 07d8 8111      		cpse r24,__zero_reg__
+ 1665 07da 00C0      		rjmp .L179
+ 1666               		.stabn	68,0,339,.LM226-.LFBB8
+ 1667               	.LM226:
+ 1668 07dc 8091 0000 		lds r24,bit5
+ 1669 07e0 8111      		cpse r24,__zero_reg__
+ 1670 07e2 00C0      		rjmp .L179
+ 340:main.cpp      ****     {
+ 341:main.cpp      ****         moteur.pivotGauche(95);
+ 1671               		.stabn	68,0,341,.LM227-.LFBB8
+ 1672               	.LM227:
+ 1673 07e4 6FE5      		ldi r22,lo8(95)
+ 1674 07e6 70E0      		ldi r23,0
+ 1675 07e8 80E0      		ldi r24,lo8(moteur)
+ 1676 07ea 90E0      		ldi r25,hi8(moteur)
+ 1677 07ec 0E94 0000 		call _ZN3Pwm11pivotGaucheEj
+ 1678               	.L267:
+ 1679               	.LBB114:
+ 1680               	.LBB115:
+ 1681               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext21
+ 1682               	.Ltext21:
+ 1683               		.stabn	68,0,164,.LM228-.LFBB8
+ 1684               	.LM228:
+ 1685 07f0 2FE7      		ldi r18,lo8(79999)
+ 1686 07f2 88E3      		ldi r24,hi8(79999)
+ 1687 07f4 91E0      		ldi r25,hlo8(79999)
+ 1688 07f6 2150      		1: subi r18,1
+ 1689 07f8 8040      		sbci r24,0
+ 1690 07fa 9040      		sbci r25,0
+ 1691 07fc 01F4      		brne 1b
+ 1692 07fe 00C0      		rjmp .
+ 1693 0800 0000      		nop
+ 1694               	.LBE115:
+ 1695               	.LBE114:
+ 1696               		.stabs	"main.cpp",132,0,0,.Ltext22
+ 1697               	.Ltext22:
+ 342:main.cpp      **** 	_delay_ms(50);
+ 343:main.cpp      **** 	moteur.Avance(200);
+ 1698               		.stabn	68,0,343,.LM229-.LFBB8
+ 1699               	.LM229:
+ 1700 0802 68EC      		ldi r22,lo8(-56)
+ 1701 0804 70E0      		ldi r23,0
+ 1702               	.L266:
+ 1703 0806 80E0      		ldi r24,lo8(moteur)
+ 1704 0808 90E0      		ldi r25,hi8(moteur)
+ 1705 080a 0C94 0000 		jmp _ZN3Pwm6AvanceEj
+ 1706               	.L180:
+GAS LISTING /tmp/cccQHSrn.s 			page 41
+
+
+ 344:main.cpp      **** 			
+ 345:main.cpp      ****     }
+ 346:main.cpp      ****     else if(!bit1 && bit2 && !bit3 && !bit4 && !bit5) // 0 1 0 0 0
+ 1707               		.stabn	68,0,346,.LM230-.LFBB8
+ 1708               	.LM230:
+ 1709 080e 9923      		tst r25
+ 1710 0810 01F0      		breq .L190
+ 1711               		.stabn	68,0,346,.LM231-.LFBB8
+ 1712               	.LM231:
+ 1713 0812 8111      		cpse r24,__zero_reg__
+ 1714 0814 00C0      		rjmp .L190
+ 1715               		.stabn	68,0,346,.LM232-.LFBB8
+ 1716               	.LM232:
+ 1717 0816 8091 0000 		lds r24,bit4
+ 1718 081a 8111      		cpse r24,__zero_reg__
+ 1719 081c 00C0      		rjmp .L191
+ 1720               		.stabn	68,0,346,.LM233-.LFBB8
+ 1721               	.LM233:
+ 1722 081e 8091 0000 		lds r24,bit5
+ 1723 0822 8111      		cpse r24,__zero_reg__
+ 1724 0824 00C0      		rjmp .L191
+ 1725               	.L203:
+ 347:main.cpp      ****     {
+ 348:main.cpp      ****         moteur.Tourner_Gauche(95);
+ 1726               		.stabn	68,0,348,.LM234-.LFBB8
+ 1727               	.LM234:
+ 1728 0826 6FE5      		ldi r22,lo8(95)
+ 1729 0828 70E0      		ldi r23,0
+ 1730 082a 80E0      		ldi r24,lo8(moteur)
+ 1731 082c 90E0      		ldi r25,hi8(moteur)
+ 1732 082e 0C94 0000 		jmp _ZN3Pwm14Tourner_GaucheEj
+ 1733               	.L190:
+ 349:main.cpp      ****     }
+ 350:main.cpp      ****     else if((!bit1 && !bit2 && bit3 && bit4 && bit5) || (!bit1 && bit2 && bit3 && bit4 && bit5)) //
+ 1734               		.stabn	68,0,350,.LM235-.LFBB8
+ 1735               	.LM235:
+ 1736 0832 8823      		tst r24
+ 1737 0834 01F4      		brne .+2
+ 1738 0836 00C0      		rjmp .L191
+ 1739               		.stabn	68,0,350,.LM236-.LFBB8
+ 1740               	.LM236:
+ 1741 0838 2091 0000 		lds r18,bit4
+ 1742 083c 2223      		tst r18
+ 1743 083e 01F4      		brne .+2
+ 1744 0840 00C0      		rjmp .L192
+ 1745               		.stabn	68,0,350,.LM237-.LFBB8
+ 1746               	.LM237:
+ 1747 0842 3091 0000 		lds r19,bit5
+ 1748 0846 3323      		tst r19
+ 1749 0848 01F4      		brne .+2
+ 1750 084a 00C0      		rjmp .L192
+ 351:main.cpp      ****     {
+ 352:main.cpp      ****            moteur.Avance(95);
+ 1751               		.stabn	68,0,352,.LM238-.LFBB8
+ 1752               	.LM238:
+ 1753 084c 6FE5      		ldi r22,lo8(95)
+ 1754 084e 70E0      		ldi r23,0
+GAS LISTING /tmp/cccQHSrn.s 			page 42
+
+
+ 1755 0850 80E0      		ldi r24,lo8(moteur)
+ 1756 0852 90E0      		ldi r25,hi8(moteur)
+ 1757 0854 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 1758               	.LBB116:
+ 1759               	.LBB117:
+ 1760               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext23
+ 1761               	.Ltext23:
+ 1762               		.stabn	68,0,164,.LM239-.LFBB8
+ 1763               	.LM239:
+ 1764 0858 2FE7      		ldi r18,lo8(1519999)
+ 1765 085a 81E3      		ldi r24,hi8(1519999)
+ 1766 085c 97E1      		ldi r25,hlo8(1519999)
+ 1767 085e 2150      		1: subi r18,1
+ 1768 0860 8040      		sbci r24,0
+ 1769 0862 9040      		sbci r25,0
+ 1770 0864 01F4      		brne 1b
+ 1771 0866 00C0      		rjmp .
+ 1772 0868 0000      		nop
+ 1773               	.LBE117:
+ 1774               	.LBE116:
+ 1775               		.stabs	"main.cpp",132,0,0,.Ltext24
+ 1776               	.Ltext24:
+ 353:main.cpp      ****            _delay_ms(950);
+ 354:main.cpp      ****            lireDirection();
+ 1777               		.stabn	68,0,354,.LM240-.LFBB8
+ 1778               	.LM240:
+ 1779 086a 0E94 0000 		call _Z13lireDirectionv
+ 355:main.cpp      ****            
+ 356:main.cpp      ****            if (bit1 || bit2 || bit3 || bit4 || bit5)	//Si tu vois la ligne, continue
+ 1780               		.stabn	68,0,356,.LM241-.LFBB8
+ 1781               	.LM241:
+ 1782 086e 8091 0000 		lds r24,bit1
+ 1783 0872 8111      		cpse r24,__zero_reg__
+ 1784 0874 00C0      		rjmp .L193
+ 1785               		.stabn	68,0,356,.LM242-.LFBB8
+ 1786               	.LM242:
+ 1787 0876 8091 0000 		lds r24,bit2
+ 1788 087a 8111      		cpse r24,__zero_reg__
+ 1789 087c 00C0      		rjmp .L193
+ 1790               		.stabn	68,0,356,.LM243-.LFBB8
+ 1791               	.LM243:
+ 1792 087e 8091 0000 		lds r24,bit3
+ 1793 0882 8111      		cpse r24,__zero_reg__
+ 1794 0884 00C0      		rjmp .L193
+ 1795               		.stabn	68,0,356,.LM244-.LFBB8
+ 1796               	.LM244:
+ 1797 0886 8091 0000 		lds r24,bit4
+ 1798 088a 8111      		cpse r24,__zero_reg__
+ 1799 088c 00C0      		rjmp .L193
+ 1800               		.stabn	68,0,356,.LM245-.LFBB8
+ 1801               	.LM245:
+ 1802 088e 8091 0000 		lds r24,bit5
+ 1803 0892 8823      		tst r24
+ 1804 0894 01F0      		breq .L194
+ 1805               	.L193:
+ 357:main.cpp      ****            {
+ 358:main.cpp      **** 		nbCarre++;
+GAS LISTING /tmp/cccQHSrn.s 			page 43
+
+
+ 1806               		.stabn	68,0,358,.LM246-.LFBB8
+ 1807               	.LM246:
+ 1808 0896 8091 0000 		lds r24,nbCarre
+ 1809 089a 8F5F      		subi r24,lo8(-(1))
+ 1810 089c 8093 0000 		sts nbCarre,r24
+ 359:main.cpp      **** 		if(nbCarre == 3)
+ 1811               		.stabn	68,0,359,.LM247-.LFBB8
+ 1812               	.LM247:
+ 1813 08a0 8330      		cpi r24,lo8(3)
+ 1814 08a2 01F0      		breq .+2
+ 1815 08a4 00C0      		rjmp .L179
+ 360:main.cpp      **** 		{
+ 361:main.cpp      **** 			moteur.pivotDroit(95);
+ 1816               		.stabn	68,0,361,.LM248-.LFBB8
+ 1817               	.LM248:
+ 1818 08a6 6FE5      		ldi r22,lo8(95)
+ 1819 08a8 70E0      		ldi r23,0
+ 1820 08aa 80E0      		ldi r24,lo8(moteur)
+ 1821 08ac 90E0      		ldi r25,hi8(moteur)
+ 1822 08ae 0E94 0000 		call _ZN3Pwm10pivotDroitEj
+ 1823               	.LBB118:
+ 1824               	.LBB119:
+ 1825               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext25
+ 1826               	.Ltext25:
+ 1827               		.stabn	68,0,164,.LM249-.LFBB8
+ 1828               	.LM249:
+ 1829 08b2 2FEF      		ldi r18,lo8(1599999)
+ 1830 08b4 89E6      		ldi r24,hi8(1599999)
+ 1831 08b6 98E1      		ldi r25,hlo8(1599999)
+ 1832 08b8 2150      		1: subi r18,1
+ 1833 08ba 8040      		sbci r24,0
+ 1834 08bc 9040      		sbci r25,0
+ 1835 08be 01F4      		brne 1b
+ 1836 08c0 00C0      		rjmp .
+ 1837 08c2 0000      		nop
+ 1838               	.L264:
+ 1839               	.LBE119:
+ 1840               	.LBE118:
+ 1841               		.stabs	"main.cpp",132,0,0,.Ltext26
+ 1842               	.Ltext26:
+ 362:main.cpp      **** 			_delay_ms(1000);
+ 363:main.cpp      ****                         lireDirection();
+ 364:main.cpp      **** 			while(!bit3)
+ 365:main.cpp      ****                         {
+ 366:main.cpp      ****                             moteur.pivotDroit(95);
+ 367:main.cpp      ****                             lireDirection();
+ 1843               		.stabn	68,0,367,.LM250-.LFBB8
+ 1844               	.LM250:
+ 1845 08c4 0E94 0000 		call _Z13lireDirectionv
+ 364:main.cpp      ****                         {
+ 1846               		.stabn	68,0,364,.LM251-.LFBB8
+ 1847               	.LM251:
+ 1848 08c8 8091 0000 		lds r24,bit3
+ 1849 08cc 8111      		cpse r24,__zero_reg__
+ 1850 08ce 00C0      		rjmp .L270
+ 366:main.cpp      ****                             lireDirection();
+ 1851               		.stabn	68,0,366,.LM252-.LFBB8
+GAS LISTING /tmp/cccQHSrn.s 			page 44
+
+
+ 1852               	.LM252:
+ 1853 08d0 6FE5      		ldi r22,lo8(95)
+ 1854 08d2 70E0      		ldi r23,0
+ 1855 08d4 80E0      		ldi r24,lo8(moteur)
+ 1856 08d6 90E0      		ldi r25,hi8(moteur)
+ 1857 08d8 0E94 0000 		call _ZN3Pwm10pivotDroitEj
+ 1858 08dc 00C0      		rjmp .L264
+ 1859               	.L270:
+ 368:main.cpp      ****                         }
+ 369:main.cpp      **** 			moteur.Avance(200);
+ 1860               		.stabn	68,0,369,.LM253-.LFBB8
+ 1861               	.LM253:
+ 1862 08de 68EC      		ldi r22,lo8(-56)
+ 1863 08e0 70E0      		ldi r23,0
+ 1864 08e2 80E0      		ldi r24,lo8(moteur)
+ 1865 08e4 90E0      		ldi r25,hi8(moteur)
+ 1866 08e6 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 1867               	.LBB120:
+ 1868               	.LBB121:
+ 1869               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext27
+ 1870               	.Ltext27:
+ 1871               		.stabn	68,0,164,.LM254-.LFBB8
+ 1872               	.LM254:
+ 1873 08ea 2FE7      		ldi r18,lo8(79999)
+ 1874 08ec 88E3      		ldi r24,hi8(79999)
+ 1875 08ee 91E0      		ldi r25,hlo8(79999)
+ 1876 08f0 2150      		1: subi r18,1
+ 1877 08f2 8040      		sbci r24,0
+ 1878 08f4 9040      		sbci r25,0
+ 1879 08f6 01F4      		brne 1b
+ 1880 08f8 00C0      		rjmp .
+ 1881 08fa 0000      		nop
+ 1882 08fc 0895      		ret
+ 1883               	.L194:
+ 1884               	.LBE121:
+ 1885               	.LBE120:
+ 1886               		.stabs	"main.cpp",132,0,0,.Ltext28
+ 1887               	.Ltext28:
+ 370:main.cpp      **** 			_delay_ms(50);
+ 371:main.cpp      **** 		}
+ 372:main.cpp      **** 				
+ 373:main.cpp      ****             }
+ 374:main.cpp      ****             else 		//Si tu vois rien, tourne le coin
+ 375:main.cpp      ****             {
+ 376:main.cpp      ****                nbCarre = 0;
+ 1888               		.stabn	68,0,376,.LM255-.LFBB8
+ 1889               	.LM255:
+ 1890 08fe 1092 0000 		sts nbCarre,__zero_reg__
+ 1891               	.L197:
+ 377:main.cpp      ****                 while(!bit3)
+ 1892               		.stabn	68,0,377,.LM256-.LFBB8
+ 1893               	.LM256:
+ 1894 0902 8091 0000 		lds r24,bit3
+ 1895 0906 8111      		cpse r24,__zero_reg__
+ 1896 0908 00C0      		rjmp .L271
+ 378:main.cpp      ****                 {
+ 379:main.cpp      ****                     moteur.pivotDroit(95);
+GAS LISTING /tmp/cccQHSrn.s 			page 45
+
+
+ 1897               		.stabn	68,0,379,.LM257-.LFBB8
+ 1898               	.LM257:
+ 1899 090a 6FE5      		ldi r22,lo8(95)
+ 1900 090c 70E0      		ldi r23,0
+ 1901 090e 80E0      		ldi r24,lo8(moteur)
+ 1902 0910 90E0      		ldi r25,hi8(moteur)
+ 1903 0912 0E94 0000 		call _ZN3Pwm10pivotDroitEj
+ 380:main.cpp      ****                     lireDirection();
+ 1904               		.stabn	68,0,380,.LM258-.LFBB8
+ 1905               	.LM258:
+ 1906 0916 0E94 0000 		call _Z13lireDirectionv
+ 1907 091a 00C0      		rjmp .L197
+ 1908               	.L271:
+ 381:main.cpp      ****                 }
+ 382:main.cpp      ****                 moteur.Avance(200);
+ 1909               		.stabn	68,0,382,.LM259-.LFBB8
+ 1910               	.LM259:
+ 1911 091c 68EC      		ldi r22,lo8(-56)
+ 1912 091e 70E0      		ldi r23,0
+ 1913 0920 80E0      		ldi r24,lo8(moteur)
+ 1914 0922 90E0      		ldi r25,hi8(moteur)
+ 1915 0924 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 1916               	.LBB122:
+ 1917               	.LBB123:
+ 1918               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext29
+ 1919               	.Ltext29:
+ 1920               		.stabn	68,0,164,.LM260-.LFBB8
+ 1921               	.LM260:
+ 1922 0928 2FE7      		ldi r18,lo8(79999)
+ 1923 092a 88E3      		ldi r24,hi8(79999)
+ 1924 092c 91E0      		ldi r25,hlo8(79999)
+ 1925 092e 2150      		1: subi r18,1
+ 1926 0930 8040      		sbci r24,0
+ 1927 0932 9040      		sbci r25,0
+ 1928 0934 01F4      		brne 1b
+ 1929 0936 00C0      		rjmp .
+ 1930 0938 0000      		nop
+ 1931               	.LBE123:
+ 1932               	.LBE122:
+ 1933               		.stabs	"main.cpp",132,0,0,.Ltext30
+ 1934               	.Ltext30:
+ 383:main.cpp      ****                 _delay_ms(50);
+ 384:main.cpp      ****                 petitSkip = 0;
+ 1935               		.stabn	68,0,384,.LM261-.LFBB8
+ 1936               	.LM261:
+ 1937 093a 1092 0000 		sts petitSkip,__zero_reg__
+ 1938 093e 0895      		ret
+ 1939               	.L269:
+ 327:main.cpp      **** 	{
+ 1940               		.stabn	68,0,327,.LM262-.LFBB8
+ 1941               	.LM262:
+ 1942 0940 8091 0000 		lds r24,bit4
+ 1943 0944 8111      		cpse r24,__zero_reg__
+ 1944 0946 00C0      		rjmp .L187
+ 327:main.cpp      **** 	{
+ 1945               		.stabn	68,0,327,.LM263-.LFBB8
+ 1946               	.LM263:
+GAS LISTING /tmp/cccQHSrn.s 			page 46
+
+
+ 1947 0948 8091 0000 		lds r24,bit5
+ 1948 094c 8111      		cpse r24,__zero_reg__
+ 1949 094e 00C0      		rjmp .L187
+ 1950               	.L188:
+ 329:main.cpp      ****             {
+ 1951               		.stabn	68,0,329,.LM264-.LFBB8
+ 1952               	.LM264:
+ 1953 0950 8091 0000 		lds r24,bit3
+ 1954 0954 8111      		cpse r24,__zero_reg__
+ 1955 0956 00C0      		rjmp .L272
+ 331:main.cpp      **** 		moteur.pivotDroit(95);
+ 1956               		.stabn	68,0,331,.LM265-.LFBB8
+ 1957               	.LM265:
+ 1958 0958 0E94 0000 		call _Z13lireDirectionv
+ 332:main.cpp      ****             }
+ 1959               		.stabn	68,0,332,.LM266-.LFBB8
+ 1960               	.LM266:
+ 1961 095c 6FE5      		ldi r22,lo8(95)
+ 1962 095e 70E0      		ldi r23,0
+ 1963 0960 80E0      		ldi r24,lo8(moteur)
+ 1964 0962 90E0      		ldi r25,hi8(moteur)
+ 1965 0964 0E94 0000 		call _ZN3Pwm10pivotDroitEj
+ 1966 0968 00C0      		rjmp .L188
+ 1967               	.L272:
+ 1968 096a 0895      		ret
+ 1969               	.L191:
+ 385:main.cpp      ****             }
+ 386:main.cpp      ****         }
+ 387:main.cpp      ****         else if (!bit1 && !bit2 && !bit3 && !bit4 && bit5) //0 0 0 0 1
+ 1970               		.stabn	68,0,387,.LM267-.LFBB8
+ 1971               	.LM267:
+ 1972 096c 9111      		cpse r25,__zero_reg__
+ 1973 096e 00C0      		rjmp .L179
+ 1974               		.stabn	68,0,387,.LM268-.LFBB8
+ 1975               	.LM268:
+ 1976 0970 8091 0000 		lds r24,bit4
+ 1977 0974 8111      		cpse r24,__zero_reg__
+ 1978 0976 00C0      		rjmp .L257
+ 1979               		.stabn	68,0,387,.LM269-.LFBB8
+ 1980               	.LM269:
+ 1981 0978 8091 0000 		lds r24,bit5
+ 1982 097c 8823      		tst r24
+ 1983 097e 01F0      		breq .L258
+ 388:main.cpp      ****         {
+ 389:main.cpp      ****             moteur.pivotDroit(95);
+ 1984               		.stabn	68,0,389,.LM270-.LFBB8
+ 1985               	.LM270:
+ 1986 0980 6FE5      		ldi r22,lo8(95)
+ 1987 0982 70E0      		ldi r23,0
+ 1988 0984 80E0      		ldi r24,lo8(moteur)
+ 1989 0986 90E0      		ldi r25,hi8(moteur)
+ 1990 0988 0E94 0000 		call _ZN3Pwm10pivotDroitEj
+ 1991 098c 00C0      		rjmp .L267
+ 1992               	.L192:
+ 387:main.cpp      ****         {
+ 1993               		.stabn	68,0,387,.LM271-.LFBB8
+ 1994               	.LM271:
+GAS LISTING /tmp/cccQHSrn.s 			page 47
+
+
+ 1995 098e 9111      		cpse r25,__zero_reg__
+ 1996 0990 00C0      		rjmp .L208
+ 390:main.cpp      **** 		_delay_ms(50);
+ 391:main.cpp      **** 		moteur.Avance(200);
+ 392:main.cpp      ****         }
+ 393:main.cpp      ****         else if (!bit1 && !bit2 && !bit3 && bit4 && !(bit5)) // 0 0 0 1 0
+ 394:main.cpp      ****         {
+ 395:main.cpp      ****             moteur.Tourner_Droite(95);
+ 396:main.cpp      ****         }
+ 397:main.cpp      ****         
+ 398:main.cpp      **** 	else if (!(bit1) && !(bit2) && bit3 && !bit4 && !bit5) // 0 0 1 0 0
+ 1997               		.stabn	68,0,398,.LM272-.LFBB8
+ 1998               	.LM272:
+ 1999 0992 2223      		tst r18
+ 2000 0994 01F4      		brne .+2
+ 2001 0996 00C0      		rjmp .L273
+ 2002               	.L257:
+ 393:main.cpp      ****         {
+ 2003               		.stabn	68,0,393,.LM273-.LFBB8
+ 2004               	.LM273:
+ 2005 0998 8091 0000 		lds r24,bit5
+ 2006 099c 8111      		cpse r24,__zero_reg__
+ 2007 099e 00C0      		rjmp .L179
+ 395:main.cpp      ****         }
+ 2008               		.stabn	68,0,395,.LM274-.LFBB8
+ 2009               	.LM274:
+ 2010 09a0 6FE5      		ldi r22,lo8(95)
+ 2011 09a2 70E0      		ldi r23,0
+ 2012 09a4 80E0      		ldi r24,lo8(moteur)
+ 2013 09a6 90E0      		ldi r25,hi8(moteur)
+ 2014 09a8 0C94 0000 		jmp _ZN3Pwm14Tourner_DroiteEj
+ 2015               	.L258:
+ 2016               	.LBB124:
+ 2017               	.LBB125:
+ 2018               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext31
+ 2019               	.Ltext31:
+ 2020               		.stabn	68,0,164,.LM275-.LFBB8
+ 2021               	.LM275:
+ 2022 09ac 2FEF      		ldi r18,lo8(319999)
+ 2023 09ae 81EE      		ldi r24,hi8(319999)
+ 2024 09b0 94E0      		ldi r25,hlo8(319999)
+ 2025 09b2 2150      		1: subi r18,1
+ 2026 09b4 8040      		sbci r24,0
+ 2027 09b6 9040      		sbci r25,0
+ 2028 09b8 01F4      		brne 1b
+ 2029 09ba 00C0      		rjmp .
+ 2030 09bc 0000      		nop
+ 2031               	.LBE125:
+ 2032               	.LBE124:
+ 2033               		.stabs	"main.cpp",132,0,0,.Ltext32
+ 2034               	.Ltext32:
+ 399:main.cpp      **** 	{
+ 400:main.cpp      **** 		moteur.Avance(95);
+ 401:main.cpp      **** 	}
+ 402:main.cpp      **** 	else if (!bit1 && bit2 && bit3 && !bit4 && !bit5) //0 1 1 0 0
+ 403:main.cpp      **** 	{
+ 404:main.cpp      **** 		moteur.Tourner_Gauche(95);
+GAS LISTING /tmp/cccQHSrn.s 			page 48
+
+
+ 405:main.cpp      **** 	}
+ 406:main.cpp      **** 	else if (!bit1 && !bit2 && bit3 && bit4 && !bit5) // 0 0 1 1 0
+ 407:main.cpp      **** 	{
+ 408:main.cpp      **** 		moteur.Tourner_Droite(95);
+ 409:main.cpp      **** 	}   
+ 410:main.cpp      ****         else if (!bit1 && !bit2 && !bit3 && !bit4 && !bit5)	// 0 0 0 0 0
+ 411:main.cpp      **** 	{
+ 412:main.cpp      **** 		_delay_ms(200);		//afin de s'assurer d'etre sur du blanc
+ 413:main.cpp      **** 		lireDirection();
+ 2035               		.stabn	68,0,413,.LM276-.LFBB8
+ 2036               	.LM276:
+ 2037 09be 0E94 0000 		call _Z13lireDirectionv
+ 414:main.cpp      **** 		
+ 415:main.cpp      **** 		if(!bit1 && !bit2 && !bit3 && !bit4 && !bit5)	//si toujours sur du blanc
+ 2038               		.stabn	68,0,415,.LM277-.LFBB8
+ 2039               	.LM277:
+ 2040 09c2 8091 0000 		lds r24,bit1
+ 2041 09c6 8111      		cpse r24,__zero_reg__
+ 2042 09c8 00C0      		rjmp .L179
+ 2043               		.stabn	68,0,415,.LM278-.LFBB8
+ 2044               	.LM278:
+ 2045 09ca 8091 0000 		lds r24,bit2
+ 2046 09ce 8111      		cpse r24,__zero_reg__
+ 2047 09d0 00C0      		rjmp .L179
+ 2048               		.stabn	68,0,415,.LM279-.LFBB8
+ 2049               	.LM279:
+ 2050 09d2 8091 0000 		lds r24,bit3
+ 2051 09d6 8111      		cpse r24,__zero_reg__
+ 2052 09d8 00C0      		rjmp .L179
+ 2053               		.stabn	68,0,415,.LM280-.LFBB8
+ 2054               	.LM280:
+ 2055 09da 8091 0000 		lds r24,bit4
+ 2056 09de 8111      		cpse r24,__zero_reg__
+ 2057 09e0 00C0      		rjmp .L179
+ 2058               		.stabn	68,0,415,.LM281-.LFBB8
+ 2059               	.LM281:
+ 2060 09e2 8091 0000 		lds r24,bit5
+ 2061 09e6 8111      		cpse r24,__zero_reg__
+ 2062 09e8 00C0      		rjmp .L179
+ 416:main.cpp      **** 		{
+ 417:main.cpp      **** 			moteur.Avance(95);
+ 2063               		.stabn	68,0,417,.LM282-.LFBB8
+ 2064               	.LM282:
+ 2065 09ea 6FE5      		ldi r22,lo8(95)
+ 2066 09ec 70E0      		ldi r23,0
+ 2067 09ee 80E0      		ldi r24,lo8(moteur)
+ 2068 09f0 90E0      		ldi r25,hi8(moteur)
+ 2069 09f2 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 2070               	.LBB126:
+ 2071               	.LBB127:
+ 2072               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext33
+ 2073               	.Ltext33:
+ 2074               		.stabn	68,0,164,.LM283-.LFBB8
+ 2075               	.LM283:
+ 2076 09f6 2FEF      		ldi r18,lo8(799999)
+ 2077 09f8 84E3      		ldi r24,hi8(799999)
+ 2078 09fa 9CE0      		ldi r25,hlo8(799999)
+GAS LISTING /tmp/cccQHSrn.s 			page 49
+
+
+ 2079 09fc 2150      		1: subi r18,1
+ 2080 09fe 8040      		sbci r24,0
+ 2081 0a00 9040      		sbci r25,0
+ 2082 0a02 01F4      		brne 1b
+ 2083 0a04 00C0      		rjmp .
+ 2084 0a06 0000      		nop
+ 2085               	.LBE127:
+ 2086               	.LBE126:
+ 2087               		.stabs	"main.cpp",132,0,0,.Ltext34
+ 2088               	.Ltext34:
+ 418:main.cpp      **** 			_delay_ms(500); 
+ 419:main.cpp      **** 			lireDirection();
+ 2089               		.stabn	68,0,419,.LM284-.LFBB8
+ 2090               	.LM284:
+ 2091 0a08 0E94 0000 		call _Z13lireDirectionv
+ 420:main.cpp      ****                         verifierLuminosite();
+ 2092               		.stabn	68,0,420,.LM285-.LFBB8
+ 2093               	.LM285:
+ 2094 0a0c 0E94 0000 		call _Z18verifierLuminositev
+ 421:main.cpp      ****             
+ 422:main.cpp      **** 			if ((!bit1 && !bit2 && !bit3 && !bit4 && !bit5) && rapport > 80) // INTERSECTION
+ 2095               		.stabn	68,0,422,.LM286-.LFBB8
+ 2096               	.LM286:
+ 2097 0a10 9091 0000 		lds r25,bit1
+ 2098 0a14 8091 0000 		lds r24,rapport
+ 2099 0a18 9111      		cpse r25,__zero_reg__
+ 2100 0a1a 00C0      		rjmp .L205
+ 2101               		.stabn	68,0,422,.LM287-.LFBB8
+ 2102               	.LM287:
+ 2103 0a1c 9091 0000 		lds r25,bit2
+ 2104 0a20 9111      		cpse r25,__zero_reg__
+ 2105 0a22 00C0      		rjmp .L205
+ 2106               		.stabn	68,0,422,.LM288-.LFBB8
+ 2107               	.LM288:
+ 2108 0a24 9091 0000 		lds r25,bit3
+ 2109 0a28 9111      		cpse r25,__zero_reg__
+ 2110 0a2a 00C0      		rjmp .L205
+ 2111               		.stabn	68,0,422,.LM289-.LFBB8
+ 2112               	.LM289:
+ 2113 0a2c 9091 0000 		lds r25,bit4
+ 2114 0a30 9111      		cpse r25,__zero_reg__
+ 2115 0a32 00C0      		rjmp .L205
+ 2116               		.stabn	68,0,422,.LM290-.LFBB8
+ 2117               	.LM290:
+ 2118 0a34 9091 0000 		lds r25,bit5
+ 2119 0a38 9111      		cpse r25,__zero_reg__
+ 2120 0a3a 00C0      		rjmp .L205
+ 2121               		.stabn	68,0,422,.LM291-.LFBB8
+ 2122               	.LM291:
+ 2123 0a3c 8135      		cpi r24,lo8(81)
+ 2124 0a3e 00F0      		brlo .L205
+ 423:main.cpp      **** 				faireIntersection();
+ 2125               		.stabn	68,0,423,.LM292-.LFBB8
+ 2126               	.LM292:
+ 2127 0a40 0C94 0000 		jmp _Z17faireIntersectionv
+ 2128               	.L205:
+ 424:main.cpp      **** 
+GAS LISTING /tmp/cccQHSrn.s 			page 50
+
+
+ 425:main.cpp      ****                         else if(rapport > 80 && aFaitTriangle)// POINTILLÉS
+ 2129               		.stabn	68,0,425,.LM293-.LFBB8
+ 2130               	.LM293:
+ 2131 0a44 8135      		cpi r24,lo8(81)
+ 2132 0a46 00F0      		brlo .L179
+ 2133               		.stabn	68,0,425,.LM294-.LFBB8
+ 2134               	.LM294:
+ 2135 0a48 8091 0000 		lds r24,aFaitTriangle
+ 2136 0a4c 8823      		tst r24
+ 2137 0a4e 01F0      		breq .L179
+ 426:main.cpp      ****                         {       
+ 427:main.cpp      ****                             petitSkip++; 
+ 2138               		.stabn	68,0,427,.LM295-.LFBB8
+ 2139               	.LM295:
+ 2140 0a50 8091 0000 		lds r24,petitSkip
+ 2141 0a54 8F5F      		subi r24,lo8(-(1))
+ 2142 0a56 8093 0000 		sts petitSkip,r24
+ 428:main.cpp      ****                             if(petitSkip == 2)	//si petitSkip est a 2, on passe aux pointilles cour
+ 2143               		.stabn	68,0,428,.LM296-.LFBB8
+ 2144               	.LM296:
+ 2145 0a5a 8230      		cpi r24,lo8(2)
+ 2146 0a5c 01F4      		brne .L179
+ 429:main.cpp      ****                                 fairePointilles();     
+ 2147               		.stabn	68,0,429,.LM297-.LFBB8
+ 2148               	.LM297:
+ 2149 0a5e 0C94 0000 		jmp _Z15fairePointillesv
+ 2150               	.L273:
+ 398:main.cpp      **** 	{
+ 2151               		.stabn	68,0,398,.LM298-.LFBB8
+ 2152               	.LM298:
+ 2153 0a62 8091 0000 		lds r24,bit5
+ 2154 0a66 8111      		cpse r24,__zero_reg__
+ 2155 0a68 00C0      		rjmp .L179
+ 2156 0a6a 00C0      		rjmp .L187
+ 2157               	.L208:
+ 402:main.cpp      **** 	{
+ 2158               		.stabn	68,0,402,.LM299-.LFBB8
+ 2159               	.LM299:
+ 2160 0a6c 8823      		tst r24
+ 2161 0a6e 01F0      		breq .L179
+ 402:main.cpp      **** 	{
+ 2162               		.stabn	68,0,402,.LM300-.LFBB8
+ 2163               	.LM300:
+ 2164 0a70 8091 0000 		lds r24,bit5
+ 2165 0a74 2111      		cpse r18,__zero_reg__
+ 2166 0a76 00C0      		rjmp .L260
+ 402:main.cpp      **** 	{
+ 2167               		.stabn	68,0,402,.LM301-.LFBB8
+ 2168               	.LM301:
+ 2169 0a78 8111      		cpse r24,__zero_reg__
+ 2170 0a7a 00C0      		rjmp .L179
+ 2171 0a7c 00C0      		rjmp .L203
+ 2172               	.L260:
+ 430:main.cpp      ****                         }
+ 431:main.cpp      ****                             
+ 432:main.cpp      ****                 }
+ 433:main.cpp      **** 			
+GAS LISTING /tmp/cccQHSrn.s 			page 51
+
+
+ 434:main.cpp      ****         }
+ 435:main.cpp      ****         else if(!bit1 && bit2 && bit3 && bit4 && !bit5) // Essai pour gerer l'intersection en trian
+ 2173               		.stabn	68,0,435,.LM302-.LFBB8
+ 2174               	.LM302:
+ 2175 0a7e 8111      		cpse r24,__zero_reg__
+ 2176 0a80 00C0      		rjmp .L179
+ 2177               	.LBB128:
+ 2178               	.LBB129:
+ 2179               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext35
+ 2180               	.Ltext35:
+ 2181               		.stabn	68,0,164,.LM303-.LFBB8
+ 2182               	.LM303:
+ 2183 0a82 2FE7      		ldi r18,lo8(79999)
+ 2184 0a84 88E3      		ldi r24,hi8(79999)
+ 2185 0a86 91E0      		ldi r25,hlo8(79999)
+ 2186 0a88 2150      		1: subi r18,1
+ 2187 0a8a 8040      		sbci r24,0
+ 2188 0a8c 9040      		sbci r25,0
+ 2189 0a8e 01F4      		brne 1b
+ 2190 0a90 00C0      		rjmp .
+ 2191 0a92 0000      		nop
+ 2192               	.LBE129:
+ 2193               	.LBE128:
+ 2194               		.stabs	"main.cpp",132,0,0,.Ltext36
+ 2195               	.Ltext36:
+ 436:main.cpp      ****         {
+ 437:main.cpp      ****             _delay_ms(50);
+ 438:main.cpp      ****             lireDirection();
+ 2196               		.stabn	68,0,438,.LM304-.LFBB8
+ 2197               	.LM304:
+ 2198 0a94 0E94 0000 		call _Z13lireDirectionv
+ 439:main.cpp      ****             if(!bit1 && bit2 && bit3 && bit4 && !bit5)
+ 2199               		.stabn	68,0,439,.LM305-.LFBB8
+ 2200               	.LM305:
+ 2201 0a98 8091 0000 		lds r24,bit1
+ 2202 0a9c 8111      		cpse r24,__zero_reg__
+ 2203 0a9e 00C0      		rjmp .L179
+ 2204               		.stabn	68,0,439,.LM306-.LFBB8
+ 2205               	.LM306:
+ 2206 0aa0 8091 0000 		lds r24,bit2
+ 2207 0aa4 8823      		tst r24
+ 2208 0aa6 01F0      		breq .L179
+ 2209               		.stabn	68,0,439,.LM307-.LFBB8
+ 2210               	.LM307:
+ 2211 0aa8 8091 0000 		lds r24,bit3
+ 2212 0aac 8823      		tst r24
+ 2213 0aae 01F0      		breq .L179
+ 2214               		.stabn	68,0,439,.LM308-.LFBB8
+ 2215               	.LM308:
+ 2216 0ab0 8091 0000 		lds r24,bit4
+ 2217 0ab4 8823      		tst r24
+ 2218 0ab6 01F0      		breq .L179
+ 2219               		.stabn	68,0,439,.LM309-.LFBB8
+ 2220               	.LM309:
+ 2221 0ab8 8091 0000 		lds r24,bit5
+ 2222 0abc 8111      		cpse r24,__zero_reg__
+ 2223 0abe 00C0      		rjmp .L179
+GAS LISTING /tmp/cccQHSrn.s 			page 52
+
+
+ 440:main.cpp      ****                 faireIntersectionTriangle();
+ 2224               		.stabn	68,0,440,.LM310-.LFBB8
+ 2225               	.LM310:
+ 2226 0ac0 0C94 0000 		jmp _Z25faireIntersectionTrianglev
+ 2227               	.L179:
+ 2228 0ac4 0895      		ret
+ 2229               		.size	_Z11suivreLignev, .-_Z11suivreLignev
+ 2230               	.Lscope8:
+ 2231               		.stabs	"",36,0,0,.Lscope8-.LFBB8
+ 2232               		.stabd	78,0,0
+ 2233               		.section	.text.startup,"ax",@progbits
+ 2234               		.stabs	"main:F(0,9)",36,0,446,main
+ 2235               	.global	main
+ 2236               		.type	main, @function
+ 2237               	main:
+ 2238               		.stabd	46,0,0
+ 441:main.cpp      ****         }
+ 442:main.cpp      **** }
+ 443:main.cpp      **** 
+ 444:main.cpp      **** 
+ 445:main.cpp      **** 
+ 446:main.cpp      **** int main()
+ 447:main.cpp      **** {
+ 2239               		.stabn	68,0,447,.LM311-.LFBB9
+ 2240               	.LM311:
+ 2241               	.LFBB9:
+ 2242               	/* prologue: function */
+ 2243               	/* frame size = 0 */
+ 2244               	/* stack size = 0 */
+ 2245               	.L__stack_usage = 0
+ 448:main.cpp      ****     DDRB = 0b11111100;
+ 2246               		.stabn	68,0,448,.LM312-.LFBB9
+ 2247               	.LM312:
+ 2248 0000 8CEF      		ldi r24,lo8(-4)
+ 2249 0002 84B9      		out 0x4,r24
+ 449:main.cpp      ****     DDRD = 0b11110000;
+ 2250               		.stabn	68,0,449,.LM313-.LFBB9
+ 2251               	.LM313:
+ 2252 0004 80EF      		ldi r24,lo8(-16)
+ 2253 0006 8AB9      		out 0xa,r24
+ 450:main.cpp      ****     DDRC = 0x00;
+ 2254               		.stabn	68,0,450,.LM314-.LFBB9
+ 2255               	.LM314:
+ 2256 0008 17B8      		out 0x7,__zero_reg__
+ 451:main.cpp      ****     DDRA = 0x0F;
+ 2257               		.stabn	68,0,451,.LM315-.LFBB9
+ 2258               	.LM315:
+ 2259 000a 8FE0      		ldi r24,lo8(15)
+ 2260 000c 81B9      		out 0x1,r24
+ 452:main.cpp      **** 
+ 453:main.cpp      ****     
+ 454:main.cpp      **** ///////////// BOUTONS DE DIRECTION ///////////////
+ 455:main.cpp      ****   
+ 456:main.cpp      ****     
+ 457:main.cpp      ****     
+ 458:main.cpp      **** 	while (compteur < 3) 
+ 459:main.cpp      ****         {
+GAS LISTING /tmp/cccQHSrn.s 			page 53
+
+
+ 460:main.cpp      ****             if (!(PINB & 0x01)) //bouton droit
+ 461:main.cpp      ****             { 	
+ 462:main.cpp      **** 		_delay_ms(10);
+ 463:main.cpp      **** 		if(!(PINB & 0x01))
+ 464:main.cpp      ****                 {
+ 465:main.cpp      ****                     enfonceDroit = true;
+ 466:main.cpp      ****                     PORTA = 0b1000;
+ 467:main.cpp      ****                     _delay_ms(10);
+ 468:main.cpp      ****                 }
+ 469:main.cpp      ****             }
+ 470:main.cpp      ****             else if (!(PINB & 0x02)) //bouton gauche
+ 471:main.cpp      ****             { 		
+ 472:main.cpp      **** 		_delay_ms(10);
+ 473:main.cpp      **** 		if(!(PINB & 0x02))
+ 474:main.cpp      ****                 {
+ 475:main.cpp      ****                     enfonceGauche = true;
+ 476:main.cpp      ****                     PORTA = 0b0100;
+ 477:main.cpp      ****                     _delay_ms(10);
+ 478:main.cpp      **** 		}
+ 479:main.cpp      ****             }
+ 480:main.cpp      ****             else if(enfonceDroit)
+ 481:main.cpp      ****             {
+ 482:main.cpp      ****                 enfonceDroit = false;
+ 483:main.cpp      ****                 PORTA = 0x00;
+ 484:main.cpp      ****                 directions[compteur] = 'g';
+ 485:main.cpp      ****                 compteur++;
+ 486:main.cpp      ****             }
+ 487:main.cpp      ****             else if(enfonceGauche)
+ 488:main.cpp      ****             {
+ 489:main.cpp      ****                enfonceGauche = false;
+ 490:main.cpp      ****                PORTA = 0x00;
+ 491:main.cpp      ****                directions[compteur] = 'd';
+ 2261               		.stabn	68,0,491,.LM316-.LFBB9
+ 2262               	.LM316:
+ 2263 000e 24E6      		ldi r18,lo8(100)
+ 484:main.cpp      ****                 compteur++;
+ 2264               		.stabn	68,0,484,.LM317-.LFBB9
+ 2265               	.LM317:
+ 2266 0010 37E6      		ldi r19,lo8(103)
+ 475:main.cpp      ****                     PORTA = 0b0100;
+ 2267               		.stabn	68,0,475,.LM318-.LFBB9
+ 2268               	.LM318:
+ 2269 0012 91E0      		ldi r25,lo8(1)
+ 476:main.cpp      ****                     _delay_ms(10);
+ 2270               		.stabn	68,0,476,.LM319-.LFBB9
+ 2271               	.LM319:
+ 2272 0014 44E0      		ldi r20,lo8(4)
+ 466:main.cpp      ****                     _delay_ms(10);
+ 2273               		.stabn	68,0,466,.LM320-.LFBB9
+ 2274               	.LM320:
+ 2275 0016 58E0      		ldi r21,lo8(8)
+ 2276               	.L275:
+ 458:main.cpp      ****         {
+ 2277               		.stabn	68,0,458,.LM321-.LFBB9
+ 2278               	.LM321:
+ 2279 0018 8091 0000 		lds r24,compteur
+ 2280 001c 8330      		cpi r24,lo8(3)
+GAS LISTING /tmp/cccQHSrn.s 			page 54
+
+
+ 2281 001e 00F0      		brlo .+2
+ 2282 0020 00C0      		rjmp .L290
+ 460:main.cpp      ****             { 	
+ 2283               		.stabn	68,0,460,.LM322-.LFBB9
+ 2284               	.LM322:
+ 2285 0022 1899      		sbic 0x3,0
+ 2286 0024 00C0      		rjmp .L276
+ 2287               	.LBB142:
+ 2288               	.LBB143:
+ 2289               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext37
+ 2290               	.Ltext37:
+ 2291               		.stabn	68,0,164,.LM323-.LFBB9
+ 2292               	.LM323:
+ 2293 0026 EFE1      		ldi r30,lo8(19999)
+ 2294 0028 FEE4      		ldi r31,hi8(19999)
+ 2295 002a 3197      		1: sbiw r30,1
+ 2296 002c 01F4      		brne 1b
+ 2297 002e 00C0      		rjmp .
+ 2298 0030 0000      		nop
+ 2299               	.LBE143:
+ 2300               	.LBE142:
+ 2301               		.stabs	"main.cpp",132,0,0,.Ltext38
+ 2302               	.Ltext38:
+ 463:main.cpp      ****                 {
+ 2303               		.stabn	68,0,463,.LM324-.LFBB9
+ 2304               	.LM324:
+ 2305 0032 1899      		sbic 0x3,0
+ 2306 0034 00C0      		rjmp .L275
+ 465:main.cpp      ****                     PORTA = 0b1000;
+ 2307               		.stabn	68,0,465,.LM325-.LFBB9
+ 2308               	.LM325:
+ 2309 0036 9093 0000 		sts enfonceDroit,r25
+ 466:main.cpp      ****                     _delay_ms(10);
+ 2310               		.stabn	68,0,466,.LM326-.LFBB9
+ 2311               	.LM326:
+ 2312 003a 52B9      		out 0x2,r21
+ 2313 003c 00C0      		rjmp .L288
+ 2314               	.L276:
+ 470:main.cpp      ****             { 		
+ 2315               		.stabn	68,0,470,.LM327-.LFBB9
+ 2316               	.LM327:
+ 2317 003e 1999      		sbic 0x3,1
+ 2318 0040 00C0      		rjmp .L279
+ 2319               	.LBB144:
+ 2320               	.LBB145:
+ 2321               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext39
+ 2322               	.Ltext39:
+ 2323               		.stabn	68,0,164,.LM328-.LFBB9
+ 2324               	.LM328:
+ 2325 0042 EFE1      		ldi r30,lo8(19999)
+ 2326 0044 FEE4      		ldi r31,hi8(19999)
+ 2327 0046 3197      		1: sbiw r30,1
+ 2328 0048 01F4      		brne 1b
+ 2329 004a 00C0      		rjmp .
+ 2330 004c 0000      		nop
+ 2331               	.LBE145:
+ 2332               	.LBE144:
+GAS LISTING /tmp/cccQHSrn.s 			page 55
+
+
+ 2333               		.stabs	"main.cpp",132,0,0,.Ltext40
+ 2334               	.Ltext40:
+ 473:main.cpp      ****                 {
+ 2335               		.stabn	68,0,473,.LM329-.LFBB9
+ 2336               	.LM329:
+ 2337 004e 1999      		sbic 0x3,1
+ 2338 0050 00C0      		rjmp .L275
+ 475:main.cpp      ****                     PORTA = 0b0100;
+ 2339               		.stabn	68,0,475,.LM330-.LFBB9
+ 2340               	.LM330:
+ 2341 0052 9093 0000 		sts enfonceGauche,r25
+ 476:main.cpp      ****                     _delay_ms(10);
+ 2342               		.stabn	68,0,476,.LM331-.LFBB9
+ 2343               	.LM331:
+ 2344 0056 42B9      		out 0x2,r20
+ 2345               	.L288:
+ 2346               	.LBB146:
+ 2347               	.LBB147:
+ 2348               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext41
+ 2349               	.Ltext41:
+ 2350               		.stabn	68,0,164,.LM332-.LFBB9
+ 2351               	.LM332:
+ 2352 0058 EFE1      		ldi r30,lo8(19999)
+ 2353 005a FEE4      		ldi r31,hi8(19999)
+ 2354 005c 3197      		1: sbiw r30,1
+ 2355 005e 01F4      		brne 1b
+ 2356 0060 00C0      		rjmp .
+ 2357 0062 0000      		nop
+ 2358 0064 00C0      		rjmp .L275
+ 2359               	.L279:
+ 2360               	.LBE147:
+ 2361               	.LBE146:
+ 2362               		.stabs	"main.cpp",132,0,0,.Ltext42
+ 2363               	.Ltext42:
+ 480:main.cpp      ****             {
+ 2364               		.stabn	68,0,480,.LM333-.LFBB9
+ 2365               	.LM333:
+ 2366 0066 8091 0000 		lds r24,enfonceDroit
+ 2367 006a 8823      		tst r24
+ 2368 006c 01F0      		breq .L281
+ 482:main.cpp      ****                 PORTA = 0x00;
+ 2369               		.stabn	68,0,482,.LM334-.LFBB9
+ 2370               	.LM334:
+ 2371 006e 1092 0000 		sts enfonceDroit,__zero_reg__
+ 483:main.cpp      ****                 directions[compteur] = 'g';
+ 2372               		.stabn	68,0,483,.LM335-.LFBB9
+ 2373               	.LM335:
+ 2374 0072 12B8      		out 0x2,__zero_reg__
+ 484:main.cpp      ****                 compteur++;
+ 2375               		.stabn	68,0,484,.LM336-.LFBB9
+ 2376               	.LM336:
+ 2377 0074 8091 0000 		lds r24,compteur
+ 2378 0078 E82F      		mov r30,r24
+ 2379 007a F0E0      		ldi r31,0
+ 2380 007c E050      		subi r30,lo8(-(directions))
+ 2381 007e F040      		sbci r31,hi8(-(directions))
+ 2382 0080 3083      		st Z,r19
+GAS LISTING /tmp/cccQHSrn.s 			page 56
+
+
+ 2383 0082 00C0      		rjmp .L289
+ 2384               	.L281:
+ 487:main.cpp      ****             {
+ 2385               		.stabn	68,0,487,.LM337-.LFBB9
+ 2386               	.LM337:
+ 2387 0084 8091 0000 		lds r24,enfonceGauche
+ 2388 0088 8823      		tst r24
+ 2389 008a 01F0      		breq .L275
+ 489:main.cpp      ****                PORTA = 0x00;
+ 2390               		.stabn	68,0,489,.LM338-.LFBB9
+ 2391               	.LM338:
+ 2392 008c 1092 0000 		sts enfonceGauche,__zero_reg__
+ 490:main.cpp      ****                directions[compteur] = 'd';
+ 2393               		.stabn	68,0,490,.LM339-.LFBB9
+ 2394               	.LM339:
+ 2395 0090 12B8      		out 0x2,__zero_reg__
+ 2396               		.stabn	68,0,491,.LM340-.LFBB9
+ 2397               	.LM340:
+ 2398 0092 8091 0000 		lds r24,compteur
+ 2399 0096 E82F      		mov r30,r24
+ 2400 0098 F0E0      		ldi r31,0
+ 2401 009a E050      		subi r30,lo8(-(directions))
+ 2402 009c F040      		sbci r31,hi8(-(directions))
+ 2403 009e 2083      		st Z,r18
+ 2404               	.L289:
+ 492:main.cpp      ****                compteur++;
+ 2405               		.stabn	68,0,492,.LM341-.LFBB9
+ 2406               	.LM341:
+ 2407 00a0 8F5F      		subi r24,lo8(-(1))
+ 2408 00a2 8093 0000 		sts compteur,r24
+ 2409 00a6 00C0      		rjmp .L275
+ 2410               	.L290:
+ 493:main.cpp      ****             }
+ 494:main.cpp      **** 				
+ 495:main.cpp      ****         }
+ 496:main.cpp      **** 
+ 497:main.cpp      **** ////////////// FIN DE DETECTION DE BOUTONS /////////////////////
+ 498:main.cpp      ****  
+ 499:main.cpp      ****     compteur = 0;
+ 2411               		.stabn	68,0,499,.LM342-.LFBB9
+ 2412               	.LM342:
+ 2413 00a8 1092 0000 		sts compteur,__zero_reg__
+ 500:main.cpp      ****     moteur.Avance(205);
+ 2414               		.stabn	68,0,500,.LM343-.LFBB9
+ 2415               	.LM343:
+ 2416 00ac 6DEC      		ldi r22,lo8(-51)
+ 2417 00ae 70E0      		ldi r23,0
+ 2418 00b0 80E0      		ldi r24,lo8(moteur)
+ 2419 00b2 90E0      		ldi r25,hi8(moteur)
+ 2420 00b4 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 2421               	.LBB148:
+ 2422               	.LBB149:
+ 2423               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext43
+ 2424               	.Ltext43:
+ 2425               		.stabn	68,0,164,.LM344-.LFBB9
+ 2426               	.LM344:
+ 2427 00b8 FFEF      		ldi r31,lo8(319999)
+GAS LISTING /tmp/cccQHSrn.s 			page 57
+
+
+ 2428 00ba 21EE      		ldi r18,hi8(319999)
+ 2429 00bc 84E0      		ldi r24,hlo8(319999)
+ 2430 00be F150      		1: subi r31,1
+ 2431 00c0 2040      		sbci r18,0
+ 2432 00c2 8040      		sbci r24,0
+ 2433 00c4 01F4      		brne 1b
+ 2434 00c6 00C0      		rjmp .
+ 2435 00c8 0000      		nop
+ 2436               	.L283:
+ 2437               	.LBE149:
+ 2438               	.LBE148:
+ 2439               		.stabs	"main.cpp",132,0,0,.Ltext44
+ 2440               	.Ltext44:
+ 501:main.cpp      ****     _delay_ms(200);
+ 502:main.cpp      ****     
+ 503:main.cpp      ****     while (!devraitFinir)
+ 2441               		.stabn	68,0,503,.LM345-.LFBB9
+ 2442               	.LM345:
+ 2443 00ca 8091 0000 		lds r24,devraitFinir
+ 2444 00ce 8111      		cpse r24,__zero_reg__
+ 2445 00d0 00C0      		rjmp .L291
+ 504:main.cpp      ****     {
+ 505:main.cpp      ****         verifierLuminosite();
+ 2446               		.stabn	68,0,505,.LM346-.LFBB9
+ 2447               	.LM346:
+ 2448 00d2 0E94 0000 		call _Z18verifierLuminositev
+ 506:main.cpp      ****         lireDirection();
+ 2449               		.stabn	68,0,506,.LM347-.LFBB9
+ 2450               	.LM347:
+ 2451 00d6 0E94 0000 		call _Z13lireDirectionv
+ 507:main.cpp      ****         suivreLigne();
+ 2452               		.stabn	68,0,507,.LM348-.LFBB9
+ 2453               	.LM348:
+ 2454 00da 0E94 0000 		call _Z11suivreLignev
+ 2455 00de 00C0      		rjmp .L283
+ 2456               	.L291:
+ 508:main.cpp      ****     }
+ 509:main.cpp      ****     moteur.Avance(0);
+ 2457               		.stabn	68,0,509,.LM349-.LFBB9
+ 2458               	.LM349:
+ 2459 00e0 60E0      		ldi r22,0
+ 2460 00e2 70E0      		ldi r23,0
+ 2461 00e4 80E0      		ldi r24,lo8(moteur)
+ 2462 00e6 90E0      		ldi r25,hi8(moteur)
+ 2463 00e8 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 510:main.cpp      ****     del.allumerVert(0);
+ 2464               		.stabn	68,0,510,.LM350-.LFBB9
+ 2465               	.LM350:
+ 2466 00ec 60E0      		ldi r22,0
+ 2467 00ee 80E0      		ldi r24,lo8(del)
+ 2468 00f0 90E0      		ldi r25,hi8(del)
+ 2469 00f2 0E94 0000 		call _ZN3Del11allumerVertEh
+ 2470               	.LBB150:
+ 2471               	.LBB151:
+  52:main.cpp      ****     }
+ 2472               		.stabn	68,0,52,.LM351-.LFBB9
+ 2473               	.LM351:
+GAS LISTING /tmp/cccQHSrn.s 			page 58
+
+
+ 2474 00f6 85B5      		in r24,0x25
+ 2475 00f8 15BC      		out 0x25,__zero_reg__
+ 2476               	.LBE151:
+ 2477               	.LBE150:
+ 511:main.cpp      ****     faireSon(0);
+ 512:main.cpp      ****     return 0;
+ 513:main.cpp      **** }
+ 2478               		.stabn	68,0,513,.LM352-.LFBB9
+ 2479               	.LM352:
+ 2480 00fa 80E0      		ldi r24,0
+ 2481 00fc 90E0      		ldi r25,0
+ 2482 00fe 0895      		ret
+ 2483               		.size	main, .-main
+ 2484               	.Lscope9:
+ 2485               		.stabs	"",36,0,0,.Lscope9-.LFBB9
+ 2486               		.stabd	78,0,0
+ 2487               		.stabs	"_GLOBAL__sub_I_bit1:f(0,4)",36,0,513,_GLOBAL__sub_I_bit1
+ 2488               		.type	_GLOBAL__sub_I_bit1, @function
+ 2489               	_GLOBAL__sub_I_bit1:
+ 2490               		.stabd	46,0,0
+ 2491               		.stabn	68,0,513,.LM353-.LFBB10
+ 2492               	.LM353:
+ 2493               	.LFBB10:
+ 2494               	/* prologue: function */
+ 2495               	/* frame size = 0 */
+ 2496               	/* stack size = 0 */
+ 2497               	.L__stack_usage = 0
+ 2498               	.LBB154:
+ 2499               	.LBB155:
+  23:main.cpp      **** Pwm moteur;
+ 2500               		.stabn	68,0,23,.LM354-.LFBB10
+ 2501               	.LM354:
+ 2502 0100 80E0      		ldi r24,lo8(del)
+ 2503 0102 90E0      		ldi r25,hi8(del)
+ 2504 0104 0E94 0000 		call _ZN3DelC1Ev
+  24:main.cpp      **** can intensite;
+ 2505               		.stabn	68,0,24,.LM355-.LFBB10
+ 2506               	.LM355:
+ 2507 0108 80E0      		ldi r24,lo8(moteur)
+ 2508 010a 90E0      		ldi r25,hi8(moteur)
+ 2509 010c 0E94 0000 		call _ZN3PwmC1Ev
+  25:main.cpp      **** 
+ 2510               		.stabn	68,0,25,.LM356-.LFBB10
+ 2511               	.LM356:
+ 2512 0110 80E0      		ldi r24,lo8(intensite)
+ 2513 0112 90E0      		ldi r25,hi8(intensite)
+ 2514 0114 0C94 0000 		jmp _ZN3canC1Ev
+ 2515               	.LBE155:
+ 2516               	.LBE154:
+ 2517               		.size	_GLOBAL__sub_I_bit1, .-_GLOBAL__sub_I_bit1
+ 2518               	.Lscope10:
+ 2519               		.stabs	"",36,0,0,.Lscope10-.LFBB10
+ 2520               		.stabd	78,0,0
+ 2521               		.global __do_global_ctors
+ 2522               		.section .ctors,"a",@progbits
+ 2523               		.p2align	1
+ 2524 0000 0000      		.word	gs(_GLOBAL__sub_I_bit1)
+GAS LISTING /tmp/cccQHSrn.s 			page 59
+
+
+ 2525               		.section	.text.exit,"ax",@progbits
+ 2526               		.stabs	"_GLOBAL__sub_D_bit1:f(0,4)",36,0,513,_GLOBAL__sub_D_bit1
+ 2527               		.type	_GLOBAL__sub_D_bit1, @function
+ 2528               	_GLOBAL__sub_D_bit1:
+ 2529               		.stabd	46,0,0
+ 2530               		.stabn	68,0,513,.LM357-.LFBB11
+ 2531               	.LM357:
+ 2532               	.LFBB11:
+ 2533               	/* prologue: function */
+ 2534               	/* frame size = 0 */
+ 2535               	/* stack size = 0 */
+ 2536               	.L__stack_usage = 0
+ 2537               	.LBB160:
+ 2538               	.LBB161:
+ 2539               	.LBB162:
+  25:main.cpp      **** 
+ 2540               		.stabn	68,0,25,.LM358-.LFBB11
+ 2541               	.LM358:
+ 2542 0000 80E0      		ldi r24,lo8(intensite)
+ 2543 0002 90E0      		ldi r25,hi8(intensite)
+ 2544 0004 0E94 0000 		call _ZN3canD1Ev
+  24:main.cpp      **** can intensite;
+ 2545               		.stabn	68,0,24,.LM359-.LFBB11
+ 2546               	.LM359:
+ 2547 0008 80E0      		ldi r24,lo8(moteur)
+ 2548 000a 90E0      		ldi r25,hi8(moteur)
+ 2549 000c 0E94 0000 		call _ZN3PwmD1Ev
+  23:main.cpp      **** Pwm moteur;
+ 2550               		.stabn	68,0,23,.LM360-.LFBB11
+ 2551               	.LM360:
+ 2552 0010 80E0      		ldi r24,lo8(del)
+ 2553 0012 90E0      		ldi r25,hi8(del)
+ 2554 0014 0C94 0000 		jmp _ZN3DelD1Ev
+ 2555               	.LBE162:
+ 2556               	.LBE161:
+ 2557               	.LBE160:
+ 2558               		.size	_GLOBAL__sub_D_bit1, .-_GLOBAL__sub_D_bit1
+ 2559               	.Lscope11:
+ 2560               		.stabs	"",36,0,0,.Lscope11-.LFBB11
+ 2561               		.stabd	78,0,0
+ 2562               		.global __do_global_dtors
+ 2563               		.section .dtors,"a",@progbits
+ 2564               		.p2align	1
+ 2565 0000 0000      		.word	gs(_GLOBAL__sub_D_bit1)
+ 2566               	.global	intensite
+ 2567               		.section .bss
+ 2568               		.type	intensite, @object
+ 2569               		.size	intensite, 1
+ 2570               	intensite:
+ 2571 0000 00        		.zero	1
+ 2572               	.global	moteur
+ 2573               		.type	moteur, @object
+ 2574               		.size	moteur, 1
+ 2575               	moteur:
+ 2576 0001 00        		.zero	1
+ 2577               	.global	del
+ 2578               		.type	del, @object
+GAS LISTING /tmp/cccQHSrn.s 			page 60
+
+
+ 2579               		.size	del, 1
+ 2580               	del:
+ 2581 0002 00        		.zero	1
+ 2582               	.global	directions
+ 2583               		.type	directions, @object
+ 2584               		.size	directions, 3
+ 2585               	directions:
+ 2586 0003 0000 00   		.zero	3
+ 2587               	.global	nbCarre
+ 2588               		.type	nbCarre, @object
+ 2589               		.size	nbCarre, 1
+ 2590               	nbCarre:
+ 2591 0006 00        		.zero	1
+ 2592               	.global	rapport
+ 2593               		.type	rapport, @object
+ 2594               		.size	rapport, 1
+ 2595               	rapport:
+ 2596 0007 00        		.zero	1
+ 2597               	.global	petitSkip
+ 2598               		.type	petitSkip, @object
+ 2599               		.size	petitSkip, 1
+ 2600               	petitSkip:
+ 2601 0008 00        		.zero	1
+ 2602               	.global	compteur
+ 2603               		.type	compteur, @object
+ 2604               		.size	compteur, 1
+ 2605               	compteur:
+ 2606 0009 00        		.zero	1
+ 2607               	.global	devraitFinir
+ 2608               		.type	devraitFinir, @object
+ 2609               		.size	devraitFinir, 1
+ 2610               	devraitFinir:
+ 2611 000a 00        		.zero	1
+ 2612               	.global	aFaitTriangle
+ 2613               		.type	aFaitTriangle, @object
+ 2614               		.size	aFaitTriangle, 1
+ 2615               	aFaitTriangle:
+ 2616 000b 00        		.zero	1
+ 2617               	.global	enfonceDroit
+ 2618               		.type	enfonceDroit, @object
+ 2619               		.size	enfonceDroit, 1
+ 2620               	enfonceDroit:
+ 2621 000c 00        		.zero	1
+ 2622               	.global	enfonceGauche
+ 2623               		.type	enfonceGauche, @object
+ 2624               		.size	enfonceGauche, 1
+ 2625               	enfonceGauche:
+ 2626 000d 00        		.zero	1
+ 2627               	.global	bit5
+ 2628               		.type	bit5, @object
+ 2629               		.size	bit5, 1
+ 2630               	bit5:
+ 2631 000e 00        		.zero	1
+ 2632               	.global	bit4
+ 2633               		.type	bit4, @object
+ 2634               		.size	bit4, 1
+ 2635               	bit4:
+GAS LISTING /tmp/cccQHSrn.s 			page 61
+
+
+ 2636 000f 00        		.zero	1
+ 2637               	.global	bit3
+ 2638               		.type	bit3, @object
+ 2639               		.size	bit3, 1
+ 2640               	bit3:
+ 2641 0010 00        		.zero	1
+ 2642               	.global	bit2
+ 2643               		.type	bit2, @object
+ 2644               		.size	bit2, 1
+ 2645               	bit2:
+ 2646 0011 00        		.zero	1
+ 2647               	.global	bit1
+ 2648               		.type	bit1, @object
+ 2649               		.size	bit1, 1
+ 2650               	bit1:
+ 2651 0012 00        		.zero	1
+ 2652               		.stabs	"bit1:G(0,54)",32,0,19,0
+ 2653               		.stabs	"bit2:G(0,54)",32,0,19,0
+ 2654               		.stabs	"bit3:G(0,54)",32,0,19,0
+ 2655               		.stabs	"bit4:G(0,54)",32,0,19,0
+ 2656               		.stabs	"bit5:G(0,54)",32,0,19,0
+ 2657               		.stabs	"enfonceGauche:G(0,54)",32,0,20,0
+ 2658               		.stabs	"enfonceDroit:G(0,54)",32,0,20,0
+ 2659               		.stabs	"aFaitTriangle:G(0,54)",32,0,20,0
+ 2660               		.stabs	"devraitFinir:G(0,54)",32,0,20,0
+ 2661               		.stabs	"compteur:G(0,59)",32,0,21,0
+ 2662               		.stabs	"petitSkip:G(0,59)",32,0,21,0
+ 2663               		.stabs	"rapport:G(0,59)",32,0,21,0
+ 2664               		.stabs	"nbCarre:G(0,59)",32,0,21,0
+ 2665               		.stabs	"directions:G(0,128)=ar(0,129)=r(0,129);0;0177777;;0;2;(0,17)",32,0,22,0
+ 2666               		.stabs	"del:G(0,98)",32,0,23,0
+ 2667               		.stabs	"moteur:G(0,123)",32,0,24,0
+ 2668               		.stabs	"intensite:G(0,105)",32,0,25,0
+ 2669               		.text
+ 2670               		.stabs	"",100,0,0,.Letext0
+ 2671               	.Letext0:
+ 2672               		.ident	"GCC: (Fedora 4.9.3-1.fc23) 4.9.3"
+ 2673               	.global __do_clear_bss
+GAS LISTING /tmp/cccQHSrn.s 			page 62
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 main.cpp
+     /tmp/cccQHSrn.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cccQHSrn.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cccQHSrn.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cccQHSrn.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cccQHSrn.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cccQHSrn.s:118    .text:0000000000000000 _Z8faireSonj.part.1
+     /tmp/cccQHSrn.s:176    .text:0000000000000054 _Z18verifierLuminositev
+     /tmp/cccQHSrn.s:2570   .bss:0000000000000000 intensite
+     /tmp/cccQHSrn.s:2595   .bss:0000000000000007 rapport
+     /tmp/cccQHSrn.s:218    .text:0000000000000078 _Z8faireSonj
+     /tmp/cccQHSrn.s:246    .text:0000000000000088 _Z13lireDirectionv
+     /tmp/cccQHSrn.s:2650   .bss:0000000000000012 bit1
+     /tmp/cccQHSrn.s:2645   .bss:0000000000000011 bit2
+     /tmp/cccQHSrn.s:2640   .bss:0000000000000010 bit3
+     /tmp/cccQHSrn.s:2635   .bss:000000000000000f bit4
+     /tmp/cccQHSrn.s:2630   .bss:000000000000000e bit5
+     /tmp/cccQHSrn.s:294    .text:00000000000000be _Z15fairePointillesv
+     /tmp/cccQHSrn.s:2575   .bss:0000000000000001 moteur
+     /tmp/cccQHSrn.s:2600   .bss:0000000000000008 petitSkip
+     /tmp/cccQHSrn.s:2615   .bss:000000000000000b aFaitTriangle
+     /tmp/cccQHSrn.s:2580   .bss:0000000000000002 del
+     /tmp/cccQHSrn.s:687    .text:00000000000002c2 _Z17faireIntersectionv
+     /tmp/cccQHSrn.s:2605   .bss:0000000000000009 compteur
+     /tmp/cccQHSrn.s:2585   .bss:0000000000000003 directions
+     /tmp/cccQHSrn.s:1043   .text:0000000000000486 _Z25faireIntersectionTrianglev
+     /tmp/cccQHSrn.s:1560   .text:000000000000074c _Z11suivreLignev
+     /tmp/cccQHSrn.s:2610   .bss:000000000000000a devraitFinir
+     /tmp/cccQHSrn.s:2590   .bss:0000000000000006 nbCarre
+     /tmp/cccQHSrn.s:2237   .text.startup:0000000000000000 main
+     /tmp/cccQHSrn.s:2620   .bss:000000000000000c enfonceDroit
+     /tmp/cccQHSrn.s:2625   .bss:000000000000000d enfonceGauche
+     /tmp/cccQHSrn.s:2489   .text.startup:0000000000000100 _GLOBAL__sub_I_bit1
+     /tmp/cccQHSrn.s:2528   .text.exit:0000000000000000 _GLOBAL__sub_D_bit1
+
+UNDEFINED SYMBOLS
+__floatunsisf
+__divsf3
+__mulsf3
+__fixunssfsi
+pow
+_ZN3can7lectureEh
+_ZN3Pwm14Tourner_GaucheEj
+_ZN3Pwm11pivotGaucheEj
+_ZN3Pwm10pivotDroitEj
+_ZN3Del11eteindreDelEv
+_ZN3Pwm6AvanceEj
+_ZN3Pwm14Tourner_DroiteEj
+_ZN3Pwm17Tourner_GaucheIntEj
+_ZN3Pwm17Tourner_DroiteIntEj
+_ZN3Del11allumerVertEh
+_ZN3DelC1Ev
+_ZN3PwmC1Ev
+_ZN3canC1Ev
+__do_global_ctors
+_ZN3canD1Ev
+GAS LISTING /tmp/cccQHSrn.s 			page 63
+
+
+_ZN3PwmD1Ev
+_ZN3DelD1Ev
+__do_global_dtors
+__do_clear_bss

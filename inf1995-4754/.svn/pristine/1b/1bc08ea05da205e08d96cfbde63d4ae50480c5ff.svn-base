@@ -1,0 +1,59 @@
+Équipe: 47-54
+Robot: Fidel Fiasco
+
+Le programme utilise les classes Pwm, Del et Can, déclarées et 
+implémentées dans leurs fichiers header et source respectifs.
+
+La fonction principale "main" se trouve dans le fichier "main.cpp" où 
+les fonctions verifierLuminosite, faireSon, lireDirection, 
+fairePointilles, faireIntersection, faireInstersectionTriangle et 
+suivreLigne sont implémentées.
+
+Note importante:
+Dans le fichier main, les commentaires du type "1 1 1 1 1" permettent
+d'indiquer quels bits doivent être lus pour entrer dans la boucle, if,
+etc. Un "x" signifie que le capteur à cette position n'est pas pris en
+compte.
+
+VerifierLuminosite:
+Cette fonction détermine si la luminosité est faible ou non, 
+c'est-à-dire si le robot est dans le tunnel ou non. Si c'est le cas, on 
+allume les dels rouge du breadbord connectées par le port A sur les 
+pins 3 et 4. Sinon, on les ferme.
+
+
+faireSon:
+Cette fonction prend une note MIDI en paramètre et envoit la fréquence 
+correspondante au speaker du robot. Une condition spéciale ferme le 
+speaker si on envoit 0 comme note MIDI.
+
+
+lireDirection:
+Cette fonction sauvegarde dans des variables booléennes les données que 
+le capteur Cytron LSS05 envoit au robot. Ainsi, les variables bit1, 
+bit2, bit3, bit4, bit5 représentent respectivement les capteurs de 
+gauche vers la droite et sont à true seulement lorsque le capteur 
+perçoit la ligne. 
+
+
+fairePointilles:
+
+
+faireIntersection
+
+
+faireIntersectionTriangle:
+
+
+suivreLigne: 
+C'est la fonction la plus importante pour le fonctionnement
+du robot. C'est à partir d'elle que les autres fonctions d'intersection sont appelées.
+En bref, cette fonction détermine quelle fonction appeler ou quelle action exécuter 
+dépendamment des valeurs de chaque bit du capteur.
+
+
+main:
+Cette fonction attend que les trois boutons aient été pesés,
+puis elle entre dans un while et n'en sort que quand le robot a
+fini le parcours. Dans ce while le robot lit continuellement lit continuellement les bits du capteur
+et l'intensité lumineuse et réagit en conséquence (avec la fontion suivreLigne).

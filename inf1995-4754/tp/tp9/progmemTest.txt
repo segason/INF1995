@@ -1,0 +1,51 @@
+
+DBT ;
+
+
+dbc 5;
+dal 32;
+att 10;
+det 32;
+att 10;
+fbc;
+
+mav 128;
+att 80;
+mar;
+
+sgo 69;
+att 10;
+
+
+trd;
+att 120;
+mar;
+trg;
+att 120;
+mar;
+
+mre 128;
+att 80;
+mar;
+sar;
+sgo 45;
+att 5;
+sgo 50;
+att 5;
+sgo 55;
+att 5;
+sgo 60;
+att 5;
+sgo 65;
+att 5;
+sgo 70;
+att 5;
+sgo 75;
+att 5;
+sar;
+
+
+
+
+FIN;
+

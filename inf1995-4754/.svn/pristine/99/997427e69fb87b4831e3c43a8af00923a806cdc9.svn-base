@@ -1,0 +1,996 @@
+GAS LISTING /tmp/cctdq3vt.s 			page 1
+
+
+   1               		.file	"PWMvitesse.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/AltairHandor/Documents/inf1995-4754/projet/",100,0,4,.Ltext0
+   8               		.stabs	"PWMvitesse.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/cctdq3vt.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,121,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,122,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,123,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,124,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,125,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,126,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,128,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,129,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,142,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,147,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,159,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,164,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,169,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,174,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,179,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,184,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,192,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,199,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,213,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,218,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,223,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,228,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,233,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,238,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,246,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,253,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,273,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,278,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
+ 104               		.stabs	"Moteur:Tt(0,89)=s1__base_ctor ::(0,90)=#(0,89),(0,4),(0,91)=*(0,89),(0,4);:_ZN6MoteurC2Ev;
+ 105               		.stabs	"_ZN6MoteurC2Ev:F(0,4)",36,0,44,_ZN6MoteurC2Ev
+ 106               		.stabs	"this:P(0,92)=k(0,91)",64,0,44,24
+ 107               	.global	_ZN6MoteurC2Ev
+ 108               		.type	_ZN6MoteurC2Ev, @function
+ 109               	_ZN6MoteurC2Ev:
+ 110               		.stabd	46,0,0
+   1:PWMvitesse.cpp ****  /*
+   2:PWMvitesse.cpp **** Fichier: TP3-1.cpp
+   3:PWMvitesse.cpp **** Auteur(s): Alexandre Vu, Louis-Philippe Chouinard
+   4:PWMvitesse.cpp **** Date de creation: 26 janvier 2016
+GAS LISTING /tmp/cctdq3vt.s 			page 3
+
+
+   5:PWMvitesse.cpp **** Date de modification: 26 janvier 2016
+   6:PWMvitesse.cpp **** Description: Programme permettant l'implementation de la machine a etat demandee dans le probleme 1
+   7:PWMvitesse.cpp **** */
+   8:PWMvitesse.cpp **** 
+   9:PWMvitesse.cpp **** 
+  10:PWMvitesse.cpp **** /*          TABLE D'ETATS
+  11:PWMvitesse.cpp ****  * 
+  12:PWMvitesse.cpp **** État présent	Entree(Bouton)	   État suivant	     Sortie(DELL)
+  13:PWMvitesse.cpp **** INIT	        0	           INIT	             Eteint(0x00)
+  14:PWMvitesse.cpp **** INIT	        1	           EA	             Eteint(0x00)
+  15:PWMvitesse.cpp **** EA	        0	           EB	             Eteint(0x00)
+  16:PWMvitesse.cpp **** EA	        1	           EA	             Eteint(0x00)
+  17:PWMvitesse.cpp **** EB	        0	           EB	             Eteint(0x00)
+  18:PWMvitesse.cpp **** EB	        1	           EC	             Eteint(0x00)
+  19:PWMvitesse.cpp **** EC	        0	           ED	             Eteint(0x00)
+  20:PWMvitesse.cpp **** EC	        1	           EC	             Eteint(0x00)
+  21:PWMvitesse.cpp **** ED	        0	           ED	             Eteint(0x00)
+  22:PWMvitesse.cpp **** ED	        1	           EE	             Eteint(0x00)
+  23:PWMvitesse.cpp **** EE	        0	           EF	             Eteint(0x00)
+  24:PWMvitesse.cpp **** EE	        1	           EE	             Eteint(0x00)
+  25:PWMvitesse.cpp **** EF	        0	           EF	             Eteint(0x00)
+  26:PWMvitesse.cpp **** EF	        1	           EG	             Eteint(0x00)
+  27:PWMvitesse.cpp **** EG	        0	           EH	             Eteint(0x00)
+  28:PWMvitesse.cpp **** EG	        1	           EG	             Eteint(0x00)
+  29:PWMvitesse.cpp **** EH	        0	           EH	             Eteint(0x00)
+  30:PWMvitesse.cpp **** EH	        1	           EI	             Eteint(0x00)
+  31:PWMvitesse.cpp **** EI	        0	           FINAL	     Eteint(0x00)
+  32:PWMvitesse.cpp **** EI	        1	           EI	             Eteint(0x00)
+  33:PWMvitesse.cpp **** FINAL	        X	           INIT	             Rouge(0x01)
+  34:PWMvitesse.cpp **** */
+  35:PWMvitesse.cpp **** 
+  36:PWMvitesse.cpp **** #define F_CPU 8000000L
+  37:PWMvitesse.cpp **** 
+  38:PWMvitesse.cpp **** #include <avr/io.h>
+  39:PWMvitesse.cpp **** #include <util/delay.h>
+  40:PWMvitesse.cpp **** #include "Moteur.h"
+  41:PWMvitesse.cpp **** 
+  42:PWMvitesse.cpp **** 
+  43:PWMvitesse.cpp **** 
+  44:PWMvitesse.cpp **** Moteur::Moteur()
+ 111               		.stabn	68,0,44,.LM0-.LFBB1
+ 112               	.LM0:
+ 113               	.LFBB1:
+ 114               	/* prologue: function */
+ 115               	/* frame size = 0 */
+ 116               	/* stack size = 0 */
+ 117               	.L__stack_usage = 0
+ 118               	.LBB50:
+  45:PWMvitesse.cpp **** {
+  46:PWMvitesse.cpp ****     DDRC = 0xFF;
+ 119               		.stabn	68,0,46,.LM1-.LFBB1
+ 120               	.LM1:
+ 121 0000 8FEF      		ldi r24,lo8(-1)
+ 122 0002 87B9      		out 0x7,r24
+ 123 0004 0895      		ret
+ 124               	.LBE50:
+ 125               		.size	_ZN6MoteurC2Ev, .-_ZN6MoteurC2Ev
+GAS LISTING /tmp/cctdq3vt.s 			page 4
+
+
+ 126               	.Lscope1:
+ 127               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 128               		.stabd	78,0,0
+ 129               	.global	_ZN6MoteurC1Ev
+ 130               		.set	_ZN6MoteurC1Ev,_ZN6MoteurC2Ev
+ 131               		.stabs	"_ZN6MoteurD2Ev:F(0,4)",36,0,49,_ZN6MoteurD2Ev
+ 132               		.stabs	"this:P(0,92)",64,0,49,24
+ 133               	.global	_ZN6MoteurD2Ev
+ 134               		.type	_ZN6MoteurD2Ev, @function
+ 135               	_ZN6MoteurD2Ev:
+ 136               		.stabd	46,0,0
+  47:PWMvitesse.cpp **** }
+  48:PWMvitesse.cpp **** 
+  49:PWMvitesse.cpp **** Moteur::~Moteur()
+ 137               		.stabn	68,0,49,.LM2-.LFBB2
+ 138               	.LM2:
+ 139               	.LFBB2:
+ 140               	/* prologue: function */
+ 141               	/* frame size = 0 */
+ 142               	/* stack size = 0 */
+ 143               	.L__stack_usage = 0
+ 144 0006 0895      		ret
+ 145               		.size	_ZN6MoteurD2Ev, .-_ZN6MoteurD2Ev
+ 146               	.Lscope2:
+ 147               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 148               		.stabd	78,0,0
+ 149               	.global	_ZN6MoteurD1Ev
+ 150               		.set	_ZN6MoteurD1Ev,_ZN6MoteurD2Ev
+ 151               		.stabs	"_ZN6Moteur6eteintEv:F(0,4)",36,0,52,_ZN6Moteur6eteintEv
+ 152               		.stabs	"this:P(0,92)",64,0,52,24
+ 153               	.global	_ZN6Moteur6eteintEv
+ 154               		.type	_ZN6Moteur6eteintEv, @function
+ 155               	_ZN6Moteur6eteintEv:
+ 156               		.stabd	46,0,0
+  50:PWMvitesse.cpp **** {}
+  51:PWMvitesse.cpp **** 
+  52:PWMvitesse.cpp **** void Moteur::eteint()
+  53:PWMvitesse.cpp **** {
+ 157               		.stabn	68,0,53,.LM3-.LFBB3
+ 158               	.LM3:
+ 159               	.LFBB3:
+ 160               	/* prologue: function */
+ 161               	/* frame size = 0 */
+ 162               	/* stack size = 0 */
+ 163               	.L__stack_usage = 0
+  54:PWMvitesse.cpp ****     PORTC = 0x00;
+ 164               		.stabn	68,0,54,.LM4-.LFBB3
+ 165               	.LM4:
+ 166 0008 18B8      		out 0x8,__zero_reg__
+ 167               	.LBB51:
+ 168               	.LBB52:
+ 169               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext1
+ 170               	.Ltext1:
+   1:/usr/avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:/usr/avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   4:/usr/avr/include/util/delay.h ****    All rights reserved.
+GAS LISTING /tmp/cctdq3vt.s 			page 5
+
+
+   5:/usr/avr/include/util/delay.h **** 
+   6:/usr/avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:/usr/avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:/usr/avr/include/util/delay.h **** 
+   9:/usr/avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+  10:/usr/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:/usr/avr/include/util/delay.h **** 
+  12:/usr/avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:/usr/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:/usr/avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  15:/usr/avr/include/util/delay.h ****      distribution.
+  16:/usr/avr/include/util/delay.h **** 
+  17:/usr/avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:/usr/avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  19:/usr/avr/include/util/delay.h ****      from this software without specific prior written permission.
+  20:/usr/avr/include/util/delay.h **** 
+  21:/usr/avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:/usr/avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:/usr/avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:/usr/avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:/usr/avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:/usr/avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:/usr/avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:/usr/avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:/usr/avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:/usr/avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:/usr/avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:/usr/avr/include/util/delay.h **** 
+  33:/usr/avr/include/util/delay.h **** /* $Id: delay.h.in 2251 2011-09-14 08:20:33Z joerg_wunsch $ */
+  34:/usr/avr/include/util/delay.h **** 
+  35:/usr/avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  36:/usr/avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+  37:/usr/avr/include/util/delay.h **** 
+  38:/usr/avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
+  39:/usr/avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 1
+  40:/usr/avr/include/util/delay.h **** #endif
+  41:/usr/avr/include/util/delay.h **** 
+  42:/usr/avr/include/util/delay.h **** #include <inttypes.h>
+  43:/usr/avr/include/util/delay.h **** #include <util/delay_basic.h>
+  44:/usr/avr/include/util/delay.h **** #include <math.h>
+  45:/usr/avr/include/util/delay.h **** 
+  46:/usr/avr/include/util/delay.h **** /** \file */
+  47:/usr/avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  48:/usr/avr/include/util/delay.h ****     \code
+  49:/usr/avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  50:/usr/avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  51:/usr/avr/include/util/delay.h ****     #include <util/delay.h>
+  52:/usr/avr/include/util/delay.h ****     \endcode
+  53:/usr/avr/include/util/delay.h **** 
+  54:/usr/avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  55:/usr/avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  56:/usr/avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  57:/usr/avr/include/util/delay.h ****     used.
+  58:/usr/avr/include/util/delay.h **** 
+  59:/usr/avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  60:/usr/avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  61:/usr/avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+GAS LISTING /tmp/cctdq3vt.s 			page 6
+
+
+  62:/usr/avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  63:/usr/avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  64:/usr/avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  65:/usr/avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  66:/usr/avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  67:/usr/avr/include/util/delay.h **** 
+  68:/usr/avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  69:/usr/avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  70:/usr/avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+  71:/usr/avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  72:/usr/avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  73:/usr/avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  74:/usr/avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  75:/usr/avr/include/util/delay.h ****     routines linked into the application.
+  76:/usr/avr/include/util/delay.h **** 
+  77:/usr/avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  78:/usr/avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  79:/usr/avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  80:/usr/avr/include/util/delay.h **** 
+  81:/usr/avr/include/util/delay.h **** */
+  82:/usr/avr/include/util/delay.h **** 
+  83:/usr/avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  84:/usr/avr/include/util/delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
+  85:/usr/avr/include/util/delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
+  86:/usr/avr/include/util/delay.h **** #endif
+  87:/usr/avr/include/util/delay.h **** 
+  88:/usr/avr/include/util/delay.h **** #ifndef F_CPU
+  89:/usr/avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  90:/usr/avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  91:/usr/avr/include/util/delay.h **** # define F_CPU 1000000UL
+  92:/usr/avr/include/util/delay.h **** #endif
+  93:/usr/avr/include/util/delay.h **** 
+  94:/usr/avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+  95:/usr/avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+  96:/usr/avr/include/util/delay.h **** #endif
+  97:/usr/avr/include/util/delay.h **** 
+  98:/usr/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+  99:/usr/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 100:/usr/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 101:/usr/avr/include/util/delay.h **** #  include <math.h>
+ 102:/usr/avr/include/util/delay.h **** #endif
+ 103:/usr/avr/include/util/delay.h **** 
+ 104:/usr/avr/include/util/delay.h **** /**
+ 105:/usr/avr/include/util/delay.h ****    \ingroup util_delay
+ 106:/usr/avr/include/util/delay.h **** 
+ 107:/usr/avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 108:/usr/avr/include/util/delay.h **** 
+ 109:/usr/avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 110:/usr/avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 111:/usr/avr/include/util/delay.h **** 
+ 112:/usr/avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 113:/usr/avr/include/util/delay.h **** 
+ 114:/usr/avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 115:/usr/avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 116:/usr/avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 117:/usr/avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 118:/usr/avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+GAS LISTING /tmp/cctdq3vt.s 			page 7
+
+
+ 119:/usr/avr/include/util/delay.h **** 
+ 120:/usr/avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 121:/usr/avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 122:/usr/avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 123:/usr/avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 124:/usr/avr/include/util/delay.h **** 
+ 125:/usr/avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 126:/usr/avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 127:/usr/avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+ 128:/usr/avr/include/util/delay.h **** 
+ 129:/usr/avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 130:/usr/avr/include/util/delay.h ****    to round down and round to closest integer.
+ 131:/usr/avr/include/util/delay.h **** 
+ 132:/usr/avr/include/util/delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
+ 133:/usr/avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
+ 134:/usr/avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 135:/usr/avr/include/util/delay.h ****    Also, the backward compatible
+ 136:/usr/avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 137:/usr/avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 138:/usr/avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
+ 139:/usr/avr/include/util/delay.h **** 
+ 140:/usr/avr/include/util/delay.h ****  */
+ 141:/usr/avr/include/util/delay.h **** void
+ 142:/usr/avr/include/util/delay.h **** _delay_ms(double __ms)
+ 143:/usr/avr/include/util/delay.h **** {
+ 144:/usr/avr/include/util/delay.h **** 	uint16_t __ticks;
+ 145:/usr/avr/include/util/delay.h **** 	double __tmp ; 
+ 146:/usr/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 147:/usr/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 148:/usr/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 149:/usr/avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 150:/usr/avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 151:/usr/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 152:/usr/avr/include/util/delay.h **** 
+ 153:/usr/avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 154:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 155:/usr/avr/include/util/delay.h **** 
+ 156:/usr/avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 157:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 158:/usr/avr/include/util/delay.h **** 
+ 159:/usr/avr/include/util/delay.h **** 	#else
+ 160:/usr/avr/include/util/delay.h **** 		//round up by default
+ 161:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 162:/usr/avr/include/util/delay.h **** 	#endif
+ 163:/usr/avr/include/util/delay.h **** 
+ 164:/usr/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 171               		.stabn	68,0,164,.LM5-.LFBB3
+ 172               	.LM5:
+ 173 000a 8FEF      		ldi r24,lo8(31999)
+ 174 000c 9CE7      		ldi r25,hi8(31999)
+ 175 000e 0197      		1: sbiw r24,1
+ 176 0010 01F4      		brne 1b
+ 177 0012 00C0      		rjmp .
+ 178 0014 0000      		nop
+ 179 0016 0895      		ret
+ 180               	.LBE52:
+ 181               	.LBE51:
+GAS LISTING /tmp/cctdq3vt.s 			page 8
+
+
+ 182               		.size	_ZN6Moteur6eteintEv, .-_ZN6Moteur6eteintEv
+ 183               	.Lscope3:
+ 184               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 185               		.stabd	78,0,0
+ 186               		.stabs	"_ZN6Moteur15premiereVitesseEv:F(0,4)",36,0,57,_ZN6Moteur15premiereVitesseEv
+ 187               		.stabs	"this:P(0,92)",64,0,57,24
+ 188               	.global	_ZN6Moteur15premiereVitesseEv
+ 189               		.type	_ZN6Moteur15premiereVitesseEv, @function
+ 190               	_ZN6Moteur15premiereVitesseEv:
+ 191               		.stabd	46,0,0
+ 192               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext2
+ 193               	.Ltext2:
+  55:PWMvitesse.cpp ****     _delay_ms(50/3);
+  56:PWMvitesse.cpp **** }
+  57:PWMvitesse.cpp **** void Moteur::premiereVitesse()
+  58:PWMvitesse.cpp **** {
+ 194               		.stabn	68,0,58,.LM6-.LFBB4
+ 195               	.LM6:
+ 196               	.LFBB4:
+ 197               	/* prologue: function */
+ 198               	/* frame size = 0 */
+ 199               	/* stack size = 0 */
+ 200               	.L__stack_usage = 0
+  59:PWMvitesse.cpp ****     PORTC = 0x00;
+ 201               		.stabn	68,0,59,.LM7-.LFBB4
+ 202               	.LM7:
+ 203 0018 18B8      		out 0x8,__zero_reg__
+ 204               	.LBB53:
+ 205               	.LBB54:
+ 206               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext3
+ 207               	.Ltext3:
+ 208               		.stabn	68,0,164,.LM8-.LFBB4
+ 209               	.LM8:
+ 210 001a 87EA      		ldi r24,lo8(24999)
+ 211 001c 91E6      		ldi r25,hi8(24999)
+ 212 001e 0197      		1: sbiw r24,1
+ 213 0020 01F4      		brne 1b
+ 214 0022 00C0      		rjmp .
+ 215 0024 0000      		nop
+ 216               	.LBE54:
+ 217               	.LBE53:
+ 218               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext4
+ 219               	.Ltext4:
+  60:PWMvitesse.cpp ****     _delay_ms(12.5);
+  61:PWMvitesse.cpp ****     PORTC = 0x03;
+ 220               		.stabn	68,0,61,.LM9-.LFBB4
+ 221               	.LM9:
+ 222 0026 83E0      		ldi r24,lo8(3)
+ 223 0028 88B9      		out 0x8,r24
+ 224               	.LBB55:
+ 225               	.LBB56:
+ 226               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext5
+ 227               	.Ltext5:
+ 228               		.stabn	68,0,164,.LM10-.LFBB4
+ 229               	.LM10:
+ 230 002a 8FE3      		ldi r24,lo8(7999)
+ 231 002c 9FE1      		ldi r25,hi8(7999)
+GAS LISTING /tmp/cctdq3vt.s 			page 9
+
+
+ 232 002e 0197      		1: sbiw r24,1
+ 233 0030 01F4      		brne 1b
+ 234 0032 00C0      		rjmp .
+ 235 0034 0000      		nop
+ 236 0036 0895      		ret
+ 237               	.LBE56:
+ 238               	.LBE55:
+ 239               		.size	_ZN6Moteur15premiereVitesseEv, .-_ZN6Moteur15premiereVitesseEv
+ 240               	.Lscope4:
+ 241               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 242               		.stabd	78,0,0
+ 243               		.stabs	"_ZN6Moteur15deuxiemeVitesseEv:F(0,4)",36,0,64,_ZN6Moteur15deuxiemeVitesseEv
+ 244               		.stabs	"this:P(0,92)",64,0,64,24
+ 245               	.global	_ZN6Moteur15deuxiemeVitesseEv
+ 246               		.type	_ZN6Moteur15deuxiemeVitesseEv, @function
+ 247               	_ZN6Moteur15deuxiemeVitesseEv:
+ 248               		.stabd	46,0,0
+ 249               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext6
+ 250               	.Ltext6:
+  62:PWMvitesse.cpp ****     _delay_ms(25/6);
+  63:PWMvitesse.cpp **** }
+  64:PWMvitesse.cpp **** void Moteur::deuxiemeVitesse()
+  65:PWMvitesse.cpp **** {
+ 251               		.stabn	68,0,65,.LM11-.LFBB5
+ 252               	.LM11:
+ 253               	.LFBB5:
+ 254               	/* prologue: function */
+ 255               	/* frame size = 0 */
+ 256               	/* stack size = 0 */
+ 257               	.L__stack_usage = 0
+  66:PWMvitesse.cpp ****     PORTC = 0x00;
+ 258               		.stabn	68,0,66,.LM12-.LFBB5
+ 259               	.LM12:
+ 260 0038 18B8      		out 0x8,__zero_reg__
+ 261               	.LBB57:
+ 262               	.LBB58:
+ 263               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext7
+ 264               	.Ltext7:
+ 265               		.stabn	68,0,164,.LM13-.LFBB5
+ 266               	.LM13:
+ 267 003a 8FE7      		ldi r24,lo8(15999)
+ 268 003c 9EE3      		ldi r25,hi8(15999)
+ 269 003e 0197      		1: sbiw r24,1
+ 270 0040 01F4      		brne 1b
+ 271 0042 00C0      		rjmp .
+ 272 0044 0000      		nop
+ 273               	.LBE58:
+ 274               	.LBE57:
+ 275               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext8
+ 276               	.Ltext8:
+  67:PWMvitesse.cpp ****     _delay_ms(25/3);
+  68:PWMvitesse.cpp ****     PORTC = 0x03;
+ 277               		.stabn	68,0,68,.LM14-.LFBB5
+ 278               	.LM14:
+ 279 0046 83E0      		ldi r24,lo8(3)
+ 280 0048 88B9      		out 0x8,r24
+ 281               	.LBB59:
+GAS LISTING /tmp/cctdq3vt.s 			page 10
+
+
+ 282               	.LBB60:
+ 283               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext9
+ 284               	.Ltext9:
+ 285               		.stabn	68,0,164,.LM15-.LFBB5
+ 286               	.LM15:
+ 287 004a 8FE7      		ldi r24,lo8(15999)
+ 288 004c 9EE3      		ldi r25,hi8(15999)
+ 289 004e 0197      		1: sbiw r24,1
+ 290 0050 01F4      		brne 1b
+ 291 0052 00C0      		rjmp .
+ 292 0054 0000      		nop
+ 293 0056 0895      		ret
+ 294               	.LBE60:
+ 295               	.LBE59:
+ 296               		.size	_ZN6Moteur15deuxiemeVitesseEv, .-_ZN6Moteur15deuxiemeVitesseEv
+ 297               	.Lscope5:
+ 298               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 299               		.stabd	78,0,0
+ 300               		.stabs	"_ZN6Moteur16troisiemeVitesseEv:F(0,4)",36,0,71,_ZN6Moteur16troisiemeVitesseEv
+ 301               		.stabs	"this:P(0,92)",64,0,71,24
+ 302               	.global	_ZN6Moteur16troisiemeVitesseEv
+ 303               		.type	_ZN6Moteur16troisiemeVitesseEv, @function
+ 304               	_ZN6Moteur16troisiemeVitesseEv:
+ 305               		.stabd	46,0,0
+ 306               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext10
+ 307               	.Ltext10:
+  69:PWMvitesse.cpp ****     _delay_ms(25/3);
+  70:PWMvitesse.cpp **** }
+  71:PWMvitesse.cpp **** void Moteur::troisiemeVitesse()
+  72:PWMvitesse.cpp **** {
+ 308               		.stabn	68,0,72,.LM16-.LFBB6
+ 309               	.LM16:
+ 310               	.LFBB6:
+ 311               	/* prologue: function */
+ 312               	/* frame size = 0 */
+ 313               	/* stack size = 0 */
+ 314               	.L__stack_usage = 0
+  73:PWMvitesse.cpp ****     PORTC = 0x00;
+ 315               		.stabn	68,0,73,.LM17-.LFBB6
+ 316               	.LM17:
+ 317 0058 18B8      		out 0x8,__zero_reg__
+ 318               	.LBB61:
+ 319               	.LBB62:
+ 320               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext11
+ 321               	.Ltext11:
+ 322               		.stabn	68,0,164,.LM18-.LFBB6
+ 323               	.LM18:
+ 324 005a 8FE3      		ldi r24,lo8(7999)
+ 325 005c 9FE1      		ldi r25,hi8(7999)
+ 326 005e 0197      		1: sbiw r24,1
+ 327 0060 01F4      		brne 1b
+ 328 0062 00C0      		rjmp .
+ 329 0064 0000      		nop
+ 330               	.LBE62:
+ 331               	.LBE61:
+ 332               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext12
+ 333               	.Ltext12:
+GAS LISTING /tmp/cctdq3vt.s 			page 11
+
+
+  74:PWMvitesse.cpp ****     _delay_ms(25/6);
+  75:PWMvitesse.cpp ****     PORTC = 0x03;
+ 334               		.stabn	68,0,75,.LM19-.LFBB6
+ 335               	.LM19:
+ 336 0066 83E0      		ldi r24,lo8(3)
+ 337 0068 88B9      		out 0x8,r24
+ 338               	.LBB63:
+ 339               	.LBB64:
+ 340               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext13
+ 341               	.Ltext13:
+ 342               		.stabn	68,0,164,.LM20-.LFBB6
+ 343               	.LM20:
+ 344 006a 87EA      		ldi r24,lo8(24999)
+ 345 006c 91E6      		ldi r25,hi8(24999)
+ 346 006e 0197      		1: sbiw r24,1
+ 347 0070 01F4      		brne 1b
+ 348 0072 00C0      		rjmp .
+ 349 0074 0000      		nop
+ 350 0076 0895      		ret
+ 351               	.LBE64:
+ 352               	.LBE63:
+ 353               		.size	_ZN6Moteur16troisiemeVitesseEv, .-_ZN6Moteur16troisiemeVitesseEv
+ 354               	.Lscope6:
+ 355               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 356               		.stabd	78,0,0
+ 357               		.stabs	"_ZN6Moteur16quatriemeVitesseEv:F(0,4)",36,0,78,_ZN6Moteur16quatriemeVitesseEv
+ 358               		.stabs	"this:P(0,92)",64,0,78,24
+ 359               	.global	_ZN6Moteur16quatriemeVitesseEv
+ 360               		.type	_ZN6Moteur16quatriemeVitesseEv, @function
+ 361               	_ZN6Moteur16quatriemeVitesseEv:
+ 362               		.stabd	46,0,0
+ 363               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext14
+ 364               	.Ltext14:
+  76:PWMvitesse.cpp ****     _delay_ms(12.5);
+  77:PWMvitesse.cpp **** }
+  78:PWMvitesse.cpp **** void Moteur::quatriemeVitesse()
+  79:PWMvitesse.cpp **** {
+ 365               		.stabn	68,0,79,.LM21-.LFBB7
+ 366               	.LM21:
+ 367               	.LFBB7:
+ 368               	/* prologue: function */
+ 369               	/* frame size = 0 */
+ 370               	/* stack size = 0 */
+ 371               	.L__stack_usage = 0
+  80:PWMvitesse.cpp ****     PORTC = 0x03;
+ 372               		.stabn	68,0,80,.LM22-.LFBB7
+ 373               	.LM22:
+ 374 0078 83E0      		ldi r24,lo8(3)
+ 375 007a 88B9      		out 0x8,r24
+ 376               	.LBB65:
+ 377               	.LBB66:
+ 378               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext15
+ 379               	.Ltext15:
+ 380               		.stabn	68,0,164,.LM23-.LFBB7
+ 381               	.LM23:
+ 382 007c 8FEF      		ldi r24,lo8(31999)
+ 383 007e 9CE7      		ldi r25,hi8(31999)
+GAS LISTING /tmp/cctdq3vt.s 			page 12
+
+
+ 384 0080 0197      		1: sbiw r24,1
+ 385 0082 01F4      		brne 1b
+ 386 0084 00C0      		rjmp .
+ 387 0086 0000      		nop
+ 388 0088 0895      		ret
+ 389               	.LBE66:
+ 390               	.LBE65:
+ 391               		.size	_ZN6Moteur16quatriemeVitesseEv, .-_ZN6Moteur16quatriemeVitesseEv
+ 392               	.Lscope7:
+ 393               		.stabs	"",36,0,0,.Lscope7-.LFBB7
+ 394               		.stabd	78,0,0
+ 395               		.stabs	"_ZN6Moteur8eteintQCEv:F(0,4)",36,0,84,_ZN6Moteur8eteintQCEv
+ 396               		.stabs	"this:P(0,92)",64,0,84,24
+ 397               	.global	_ZN6Moteur8eteintQCEv
+ 398               		.type	_ZN6Moteur8eteintQCEv, @function
+ 399               	_ZN6Moteur8eteintQCEv:
+ 400               		.stabd	46,0,0
+ 401               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext16
+ 402               	.Ltext16:
+  81:PWMvitesse.cpp ****     _delay_ms(50/3);
+  82:PWMvitesse.cpp **** }
+  83:PWMvitesse.cpp **** 
+  84:PWMvitesse.cpp **** void Moteur::eteintQC()
+  85:PWMvitesse.cpp **** {
+ 403               		.stabn	68,0,85,.LM24-.LFBB8
+ 404               	.LM24:
+ 405               	.LFBB8:
+ 406               	/* prologue: function */
+ 407               	/* frame size = 0 */
+ 408               	/* stack size = 0 */
+ 409               	.L__stack_usage = 0
+  86:PWMvitesse.cpp ****     PORTC = 0x00;
+ 410               		.stabn	68,0,86,.LM25-.LFBB8
+ 411               	.LM25:
+ 412 008a 18B8      		out 0x8,__zero_reg__
+ 413               	.LBB67:
+ 414               	.LBB68:
+ 415               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext17
+ 416               	.Ltext17:
+ 417               		.stabn	68,0,164,.LM26-.LFBB8
+ 418               	.LM26:
+ 419 008c 87E8      		ldi r24,lo8(4999)
+ 420 008e 93E1      		ldi r25,hi8(4999)
+ 421 0090 0197      		1: sbiw r24,1
+ 422 0092 01F4      		brne 1b
+ 423 0094 00C0      		rjmp .
+ 424 0096 0000      		nop
+ 425 0098 0895      		ret
+ 426               	.LBE68:
+ 427               	.LBE67:
+ 428               		.size	_ZN6Moteur8eteintQCEv, .-_ZN6Moteur8eteintQCEv
+ 429               	.Lscope8:
+ 430               		.stabs	"",36,0,0,.Lscope8-.LFBB8
+ 431               		.stabd	78,0,0
+ 432               		.stabs	"_ZN6Moteur17premiereVitesseQCEv:F(0,4)",36,0,89,_ZN6Moteur17premiereVitesseQCEv
+ 433               		.stabs	"this:P(0,92)",64,0,89,24
+ 434               	.global	_ZN6Moteur17premiereVitesseQCEv
+GAS LISTING /tmp/cctdq3vt.s 			page 13
+
+
+ 435               		.type	_ZN6Moteur17premiereVitesseQCEv, @function
+ 436               	_ZN6Moteur17premiereVitesseQCEv:
+ 437               		.stabd	46,0,0
+ 438               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext18
+ 439               	.Ltext18:
+  87:PWMvitesse.cpp ****     _delay_ms(2.5);
+  88:PWMvitesse.cpp **** }
+  89:PWMvitesse.cpp **** void Moteur::premiereVitesseQC()
+  90:PWMvitesse.cpp **** {
+ 440               		.stabn	68,0,90,.LM27-.LFBB9
+ 441               	.LM27:
+ 442               	.LFBB9:
+ 443               	/* prologue: function */
+ 444               	/* frame size = 0 */
+ 445               	/* stack size = 0 */
+ 446               	.L__stack_usage = 0
+  91:PWMvitesse.cpp ****     PORTC = 0x00;
+ 447               		.stabn	68,0,91,.LM28-.LFBB9
+ 448               	.LM28:
+ 449 009a 18B8      		out 0x8,__zero_reg__
+ 450               	.LBB69:
+ 451               	.LBB70:
+ 452               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext19
+ 453               	.Ltext19:
+ 454               		.stabn	68,0,164,.LM29-.LFBB9
+ 455               	.LM29:
+ 456 009c 85EA      		ldi r24,lo8(3749)
+ 457 009e 9EE0      		ldi r25,hi8(3749)
+ 458 00a0 0197      		1: sbiw r24,1
+ 459 00a2 01F4      		brne 1b
+ 460 00a4 00C0      		rjmp .
+ 461 00a6 0000      		nop
+ 462               	.LBE70:
+ 463               	.LBE69:
+ 464               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext20
+ 465               	.Ltext20:
+  92:PWMvitesse.cpp ****     _delay_ms(1.875);
+  93:PWMvitesse.cpp ****     PORTC = 0x03;
+ 466               		.stabn	68,0,93,.LM30-.LFBB9
+ 467               	.LM30:
+ 468 00a8 83E0      		ldi r24,lo8(3)
+ 469 00aa 88B9      		out 0x8,r24
+ 470               	.LBB71:
+ 471               	.LBB72:
+ 472               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext21
+ 473               	.Ltext21:
+ 474               		.stabn	68,0,164,.LM31-.LFBB9
+ 475               	.LM31:
+ 476 00ac 81EE      		ldi r24,lo8(1249)
+ 477 00ae 94E0      		ldi r25,hi8(1249)
+ 478 00b0 0197      		1: sbiw r24,1
+ 479 00b2 01F4      		brne 1b
+ 480 00b4 00C0      		rjmp .
+ 481 00b6 0000      		nop
+ 482 00b8 0895      		ret
+ 483               	.LBE72:
+ 484               	.LBE71:
+GAS LISTING /tmp/cctdq3vt.s 			page 14
+
+
+ 485               		.size	_ZN6Moteur17premiereVitesseQCEv, .-_ZN6Moteur17premiereVitesseQCEv
+ 486               	.Lscope9:
+ 487               		.stabs	"",36,0,0,.Lscope9-.LFBB9
+ 488               		.stabd	78,0,0
+ 489               		.stabs	"_ZN6Moteur17deuxiemeVitesseQCEv:F(0,4)",36,0,96,_ZN6Moteur17deuxiemeVitesseQCEv
+ 490               		.stabs	"this:P(0,92)",64,0,96,24
+ 491               	.global	_ZN6Moteur17deuxiemeVitesseQCEv
+ 492               		.type	_ZN6Moteur17deuxiemeVitesseQCEv, @function
+ 493               	_ZN6Moteur17deuxiemeVitesseQCEv:
+ 494               		.stabd	46,0,0
+ 495               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext22
+ 496               	.Ltext22:
+  94:PWMvitesse.cpp ****     _delay_ms(0.625);
+  95:PWMvitesse.cpp **** }
+  96:PWMvitesse.cpp **** void Moteur::deuxiemeVitesseQC()
+  97:PWMvitesse.cpp **** {
+ 497               		.stabn	68,0,97,.LM32-.LFBB10
+ 498               	.LM32:
+ 499               	.LFBB10:
+ 500               	/* prologue: function */
+ 501               	/* frame size = 0 */
+ 502               	/* stack size = 0 */
+ 503               	.L__stack_usage = 0
+  98:PWMvitesse.cpp ****     PORTC = 0x00;
+ 504               		.stabn	68,0,98,.LM33-.LFBB10
+ 505               	.LM33:
+ 506 00ba 18B8      		out 0x8,__zero_reg__
+ 507               	.LBB73:
+ 508               	.LBB74:
+ 509               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext23
+ 510               	.Ltext23:
+ 511               		.stabn	68,0,164,.LM34-.LFBB10
+ 512               	.LM34:
+ 513 00bc 89EC      		ldi r24,lo8(2249)
+ 514 00be 98E0      		ldi r25,hi8(2249)
+ 515 00c0 0197      		1: sbiw r24,1
+ 516 00c2 01F4      		brne 1b
+ 517 00c4 00C0      		rjmp .
+ 518 00c6 0000      		nop
+ 519               	.LBE74:
+ 520               	.LBE73:
+ 521               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext24
+ 522               	.Ltext24:
+  99:PWMvitesse.cpp ****     _delay_ms(1.125);
+ 100:PWMvitesse.cpp ****     PORTC = 0x03;
+ 523               		.stabn	68,0,100,.LM35-.LFBB10
+ 524               	.LM35:
+ 525 00c8 83E0      		ldi r24,lo8(3)
+ 526 00ca 88B9      		out 0x8,r24
+ 527               	.LBB75:
+ 528               	.LBB76:
+ 529               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext25
+ 530               	.Ltext25:
+ 531               		.stabn	68,0,164,.LM36-.LFBB10
+ 532               	.LM36:
+ 533 00cc 89EC      		ldi r24,lo8(2249)
+ 534 00ce 98E0      		ldi r25,hi8(2249)
+GAS LISTING /tmp/cctdq3vt.s 			page 15
+
+
+ 535 00d0 0197      		1: sbiw r24,1
+ 536 00d2 01F4      		brne 1b
+ 537 00d4 00C0      		rjmp .
+ 538 00d6 0000      		nop
+ 539 00d8 0895      		ret
+ 540               	.LBE76:
+ 541               	.LBE75:
+ 542               		.size	_ZN6Moteur17deuxiemeVitesseQCEv, .-_ZN6Moteur17deuxiemeVitesseQCEv
+ 543               	.Lscope10:
+ 544               		.stabs	"",36,0,0,.Lscope10-.LFBB10
+ 545               		.stabd	78,0,0
+ 546               		.stabs	"_ZN6Moteur18troisiemeVitesseQCEv:F(0,4)",36,0,103,_ZN6Moteur18troisiemeVitesseQCEv
+ 547               		.stabs	"this:P(0,92)",64,0,103,24
+ 548               	.global	_ZN6Moteur18troisiemeVitesseQCEv
+ 549               		.type	_ZN6Moteur18troisiemeVitesseQCEv, @function
+ 550               	_ZN6Moteur18troisiemeVitesseQCEv:
+ 551               		.stabd	46,0,0
+ 552               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext26
+ 553               	.Ltext26:
+ 101:PWMvitesse.cpp ****     _delay_ms(1.125);
+ 102:PWMvitesse.cpp **** }
+ 103:PWMvitesse.cpp **** void Moteur::troisiemeVitesseQC()
+ 104:PWMvitesse.cpp **** {
+ 554               		.stabn	68,0,104,.LM37-.LFBB11
+ 555               	.LM37:
+ 556               	.LFBB11:
+ 557               	/* prologue: function */
+ 558               	/* frame size = 0 */
+ 559               	/* stack size = 0 */
+ 560               	.L__stack_usage = 0
+ 105:PWMvitesse.cpp ****     PORTC = 0x00;
+ 561               		.stabn	68,0,105,.LM38-.LFBB11
+ 562               	.LM38:
+ 563 00da 18B8      		out 0x8,__zero_reg__
+ 564               	.LBB77:
+ 565               	.LBB78:
+ 566               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext27
+ 567               	.Ltext27:
+ 568               		.stabn	68,0,164,.LM39-.LFBB11
+ 569               	.LM39:
+ 570 00dc 81EE      		ldi r24,lo8(1249)
+ 571 00de 94E0      		ldi r25,hi8(1249)
+ 572 00e0 0197      		1: sbiw r24,1
+ 573 00e2 01F4      		brne 1b
+ 574 00e4 00C0      		rjmp .
+ 575 00e6 0000      		nop
+ 576               	.LBE78:
+ 577               	.LBE77:
+ 578               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext28
+ 579               	.Ltext28:
+ 106:PWMvitesse.cpp ****     _delay_ms(0.625);
+ 107:PWMvitesse.cpp ****     PORTC = 0x03;
+ 580               		.stabn	68,0,107,.LM40-.LFBB11
+ 581               	.LM40:
+ 582 00e8 83E0      		ldi r24,lo8(3)
+ 583 00ea 88B9      		out 0x8,r24
+ 584               	.LBB79:
+GAS LISTING /tmp/cctdq3vt.s 			page 16
+
+
+ 585               	.LBB80:
+ 586               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext29
+ 587               	.Ltext29:
+ 588               		.stabn	68,0,164,.LM41-.LFBB11
+ 589               	.LM41:
+ 590 00ec 85EA      		ldi r24,lo8(3749)
+ 591 00ee 9EE0      		ldi r25,hi8(3749)
+ 592 00f0 0197      		1: sbiw r24,1
+ 593 00f2 01F4      		brne 1b
+ 594 00f4 00C0      		rjmp .
+ 595 00f6 0000      		nop
+ 596 00f8 0895      		ret
+ 597               	.LBE80:
+ 598               	.LBE79:
+ 599               		.size	_ZN6Moteur18troisiemeVitesseQCEv, .-_ZN6Moteur18troisiemeVitesseQCEv
+ 600               	.Lscope11:
+ 601               		.stabs	"",36,0,0,.Lscope11-.LFBB11
+ 602               		.stabd	78,0,0
+ 603               		.stabs	"_ZN6Moteur18quatriemeVitesseQCEv:F(0,4)",36,0,110,_ZN6Moteur18quatriemeVitesseQCEv
+ 604               		.stabs	"this:P(0,92)",64,0,110,24
+ 605               	.global	_ZN6Moteur18quatriemeVitesseQCEv
+ 606               		.type	_ZN6Moteur18quatriemeVitesseQCEv, @function
+ 607               	_ZN6Moteur18quatriemeVitesseQCEv:
+ 608               		.stabd	46,0,0
+ 609               		.stabs	"PWMvitesse.cpp",132,0,0,.Ltext30
+ 610               	.Ltext30:
+ 108:PWMvitesse.cpp ****     _delay_ms(1.875);
+ 109:PWMvitesse.cpp **** }
+ 110:PWMvitesse.cpp **** void Moteur::quatriemeVitesseQC()
+ 111:PWMvitesse.cpp **** {
+ 611               		.stabn	68,0,111,.LM42-.LFBB12
+ 612               	.LM42:
+ 613               	.LFBB12:
+ 614               	/* prologue: function */
+ 615               	/* frame size = 0 */
+ 616               	/* stack size = 0 */
+ 617               	.L__stack_usage = 0
+ 112:PWMvitesse.cpp ****     PORTC = 0x03;
+ 618               		.stabn	68,0,112,.LM43-.LFBB12
+ 619               	.LM43:
+ 620 00fa 83E0      		ldi r24,lo8(3)
+ 621 00fc 88B9      		out 0x8,r24
+ 622               	.LBB81:
+ 623               	.LBB82:
+ 624               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext31
+ 625               	.Ltext31:
+ 626               		.stabn	68,0,164,.LM44-.LFBB12
+ 627               	.LM44:
+ 628 00fe 87E8      		ldi r24,lo8(4999)
+ 629 0100 93E1      		ldi r25,hi8(4999)
+ 630 0102 0197      		1: sbiw r24,1
+ 631 0104 01F4      		brne 1b
+ 632 0106 00C0      		rjmp .
+ 633 0108 0000      		nop
+ 634 010a 0895      		ret
+ 635               	.LBE82:
+ 636               	.LBE81:
+GAS LISTING /tmp/cctdq3vt.s 			page 17
+
+
+ 637               		.size	_ZN6Moteur18quatriemeVitesseQCEv, .-_ZN6Moteur18quatriemeVitesseQCEv
+ 638               	.Lscope12:
+ 639               		.stabs	"",36,0,0,.Lscope12-.LFBB12
+ 640               		.stabd	78,0,0
+ 641               		.stabs	"",100,0,0,.Letext0
+ 642               	.Letext0:
+ 643               		.ident	"GCC: (Fedora 4.9.3-1.fc23) 4.9.3"
+GAS LISTING /tmp/cctdq3vt.s 			page 18
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 PWMvitesse.cpp
+     /tmp/cctdq3vt.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cctdq3vt.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cctdq3vt.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cctdq3vt.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cctdq3vt.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cctdq3vt.s:109    .text:0000000000000000 _ZN6MoteurC2Ev
+     /tmp/cctdq3vt.s:109    .text:0000000000000000 _ZN6MoteurC1Ev
+     /tmp/cctdq3vt.s:135    .text:0000000000000006 _ZN6MoteurD2Ev
+     /tmp/cctdq3vt.s:135    .text:0000000000000006 _ZN6MoteurD1Ev
+     /tmp/cctdq3vt.s:155    .text:0000000000000008 _ZN6Moteur6eteintEv
+     /tmp/cctdq3vt.s:190    .text:0000000000000018 _ZN6Moteur15premiereVitesseEv
+     /tmp/cctdq3vt.s:247    .text:0000000000000038 _ZN6Moteur15deuxiemeVitesseEv
+     /tmp/cctdq3vt.s:304    .text:0000000000000058 _ZN6Moteur16troisiemeVitesseEv
+     /tmp/cctdq3vt.s:361    .text:0000000000000078 _ZN6Moteur16quatriemeVitesseEv
+     /tmp/cctdq3vt.s:399    .text:000000000000008a _ZN6Moteur8eteintQCEv
+     /tmp/cctdq3vt.s:436    .text:000000000000009a _ZN6Moteur17premiereVitesseQCEv
+     /tmp/cctdq3vt.s:493    .text:00000000000000ba _ZN6Moteur17deuxiemeVitesseQCEv
+     /tmp/cctdq3vt.s:550    .text:00000000000000da _ZN6Moteur18troisiemeVitesseQCEv
+     /tmp/cctdq3vt.s:607    .text:00000000000000fa _ZN6Moteur18quatriemeVitesseQCEv
+
+NO UNDEFINED SYMBOLS

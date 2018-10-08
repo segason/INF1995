@@ -1,0 +1,583 @@
+GAS LISTING /tmp/ccXElPLH.s 			page 1
+
+
+   1               		.file	"PWM.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/AltairHandor/Documents/inf1995-4754/projet/",100,0,4,.Ltext0
+   8               		.stabs	"PWM.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/ccXElPLH.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,121,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,122,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,123,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,124,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,125,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,126,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,128,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,129,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,142,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,147,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,159,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,164,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,169,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,174,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,179,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,184,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,192,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,199,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,213,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,218,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,223,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,228,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,233,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,238,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,246,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,253,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,273,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,278,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
+ 104               		.stabs	"Pwm:Tt(0,89)=s1__base_ctor ::(0,90)=#(0,89),(0,4),(0,91)=*(0,89),(0,4);:_ZN3PwmC2Ev;2A.;__
+ 105               		.stabs	"_ZN3PwmC2Ev:F(0,4)",36,0,7,_ZN3PwmC2Ev
+ 106               		.stabs	"this:P(0,94)=k(0,91)",64,0,7,24
+ 107               	.global	_ZN3PwmC2Ev
+ 108               		.type	_ZN3PwmC2Ev, @function
+ 109               	_ZN3PwmC2Ev:
+ 110               		.stabd	46,0,0
+   1:PWM.cpp       **** #include <avr/io.h>
+   2:PWM.cpp       **** #define F_CPU 8000000
+   3:PWM.cpp       **** #include <util/delay.h>
+   4:PWM.cpp       **** #include "PWM.h"
+GAS LISTING /tmp/ccXElPLH.s 			page 3
+
+
+   5:PWM.cpp       **** 
+   6:PWM.cpp       **** 
+   7:PWM.cpp       **** Pwm::Pwm()
+ 111               		.stabn	68,0,7,.LM0-.LFBB1
+ 112               	.LM0:
+ 113               	.LFBB1:
+ 114               	/* prologue: function */
+ 115               	/* frame size = 0 */
+ 116               	/* stack size = 0 */
+ 117               	.L__stack_usage = 0
+ 118               	.LBB2:
+   8:PWM.cpp       **** {
+   9:PWM.cpp       **** 		TCCR1A |= (1<<COM1A1) | (1<<COM1B1) | (1<<WGM10); 
+ 119               		.stabn	68,0,9,.LM1-.LFBB1
+ 120               	.LM1:
+ 121 0000 E0E8      		ldi r30,lo8(-128)
+ 122 0002 F0E0      		ldi r31,0
+ 123 0004 8081      		ld r24,Z
+ 124 0006 816A      		ori r24,lo8(-95)
+ 125 0008 8083      		st Z,r24
+  10:PWM.cpp       ****     
+  11:PWM.cpp       **** 		TCNT1 = 0;
+ 126               		.stabn	68,0,11,.LM2-.LFBB1
+ 127               	.LM2:
+ 128 000a 1092 8500 		sts 132+1,__zero_reg__
+ 129 000e 1092 8400 		sts 132,__zero_reg__
+  12:PWM.cpp       **** 
+  13:PWM.cpp       **** 		OCR1A = 0 ;
+ 130               		.stabn	68,0,13,.LM3-.LFBB1
+ 131               	.LM3:
+ 132 0012 1092 8900 		sts 136+1,__zero_reg__
+ 133 0016 1092 8800 		sts 136,__zero_reg__
+  14:PWM.cpp       **** 
+  15:PWM.cpp       **** 		OCR1B = 0 ;
+ 134               		.stabn	68,0,15,.LM4-.LFBB1
+ 135               	.LM4:
+ 136 001a 1092 8B00 		sts 138+1,__zero_reg__
+ 137 001e 1092 8A00 		sts 138,__zero_reg__
+  16:PWM.cpp       **** 
+  17:PWM.cpp       **** 		TCCR1B |= (1<<CS11) ;
+ 138               		.stabn	68,0,17,.LM5-.LFBB1
+ 139               	.LM5:
+ 140 0022 E1E8      		ldi r30,lo8(-127)
+ 141 0024 F0E0      		ldi r31,0
+ 142 0026 8081      		ld r24,Z
+ 143 0028 8260      		ori r24,lo8(2)
+ 144 002a 8083      		st Z,r24
+  18:PWM.cpp       **** 
+  19:PWM.cpp       **** 		TCCR1C = 0;
+ 145               		.stabn	68,0,19,.LM6-.LFBB1
+ 146               	.LM6:
+ 147 002c 1092 8200 		sts 130,__zero_reg__
+ 148 0030 0895      		ret
+ 149               	.LBE2:
+ 150               		.size	_ZN3PwmC2Ev, .-_ZN3PwmC2Ev
+ 151               	.Lscope1:
+ 152               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+GAS LISTING /tmp/ccXElPLH.s 			page 4
+
+
+ 153               		.stabd	78,0,0
+ 154               	.global	_ZN3PwmC1Ev
+ 155               		.set	_ZN3PwmC1Ev,_ZN3PwmC2Ev
+ 156               		.stabs	"_ZN3PwmD2Ev:F(0,4)",36,0,22,_ZN3PwmD2Ev
+ 157               		.stabs	"this:P(0,94)",64,0,22,24
+ 158               	.global	_ZN3PwmD2Ev
+ 159               		.type	_ZN3PwmD2Ev, @function
+ 160               	_ZN3PwmD2Ev:
+ 161               		.stabd	46,0,0
+  20:PWM.cpp       **** }
+  21:PWM.cpp       **** 
+  22:PWM.cpp       **** Pwm::~Pwm()
+ 162               		.stabn	68,0,22,.LM7-.LFBB2
+ 163               	.LM7:
+ 164               	.LFBB2:
+ 165               	/* prologue: function */
+ 166               	/* frame size = 0 */
+ 167               	/* stack size = 0 */
+ 168               	.L__stack_usage = 0
+ 169 0032 0895      		ret
+ 170               		.size	_ZN3PwmD2Ev, .-_ZN3PwmD2Ev
+ 171               	.Lscope2:
+ 172               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 173               		.stabd	78,0,0
+ 174               	.global	_ZN3PwmD1Ev
+ 175               		.set	_ZN3PwmD1Ev,_ZN3PwmD2Ev
+ 176               	.global	__floatunsisf
+ 177               	.global	__mulsf3
+ 178               	.global	__fixunssfsi
+ 179               		.stabs	"_ZN3Pwm6AvanceEj:F(0,4)",36,0,25,_ZN3Pwm6AvanceEj
+ 180               		.stabs	"this:P(0,94)",64,0,25,24
+ 181               		.stabs	"pwm:P(0,12)",64,0,25,28
+ 182               	.global	_ZN3Pwm6AvanceEj
+ 183               		.type	_ZN3Pwm6AvanceEj, @function
+ 184               	_ZN3Pwm6AvanceEj:
+ 185               		.stabd	46,0,0
+  23:PWM.cpp       **** {}
+  24:PWM.cpp       **** 
+  25:PWM.cpp       **** void Pwm::Avance(unsigned int pwm)
+  26:PWM.cpp       **** {
+ 186               		.stabn	68,0,26,.LM8-.LFBB3
+ 187               	.LM8:
+ 188               	.LFBB3:
+ 189               		.stabn	68,0,26,.LM9-.LFBB3
+ 190               	.LM9:
+ 191 0034 CF93      		push r28
+ 192 0036 DF93      		push r29
+ 193               	/* prologue: function */
+ 194               	/* frame size = 0 */
+ 195               	/* stack size = 2 */
+ 196               	.L__stack_usage = 2
+ 197 0038 EB01      		movw r28,r22
+  27:PWM.cpp       **** 	PORTD = 0x00;
+ 198               		.stabn	68,0,27,.LM10-.LFBB3
+ 199               	.LM10:
+ 200 003a 1BB8      		out 0xb,__zero_reg__
+  28:PWM.cpp       **** 	OCR1A = pwm * 1.025;
+GAS LISTING /tmp/ccXElPLH.s 			page 5
+
+
+ 201               		.stabn	68,0,28,.LM11-.LFBB3
+ 202               	.LM11:
+ 203 003c 80E0      		ldi r24,0
+ 204 003e 90E0      		ldi r25,0
+ 205 0040 0E94 0000 		call __floatunsisf
+ 206 0044 23E3      		ldi r18,lo8(51)
+ 207 0046 33E3      		ldi r19,lo8(51)
+ 208 0048 43E8      		ldi r20,lo8(-125)
+ 209 004a 5FE3      		ldi r21,lo8(63)
+ 210 004c 0E94 0000 		call __mulsf3
+ 211 0050 0E94 0000 		call __fixunssfsi
+ 212 0054 7093 8900 		sts 136+1,r23
+ 213 0058 6093 8800 		sts 136,r22
+  29:PWM.cpp       **** 	OCR1B = pwm;
+ 214               		.stabn	68,0,29,.LM12-.LFBB3
+ 215               	.LM12:
+ 216 005c D093 8B00 		sts 138+1,r29
+ 217 0060 C093 8A00 		sts 138,r28
+ 218               	/* epilogue start */
+  30:PWM.cpp       **** 
+  31:PWM.cpp       **** }
+ 219               		.stabn	68,0,31,.LM13-.LFBB3
+ 220               	.LM13:
+ 221 0064 DF91      		pop r29
+ 222 0066 CF91      		pop r28
+ 223 0068 0895      		ret
+ 224               		.size	_ZN3Pwm6AvanceEj, .-_ZN3Pwm6AvanceEj
+ 225               	.Lscope3:
+ 226               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 227               		.stabd	78,0,0
+ 228               		.stabs	"_ZN3Pwm7reculerEj:F(0,4)",36,0,33,_ZN3Pwm7reculerEj
+ 229               		.stabs	"this:P(0,94)",64,0,33,24
+ 230               		.stabs	"pwm:P(0,12)",64,0,33,22
+ 231               	.global	_ZN3Pwm7reculerEj
+ 232               		.type	_ZN3Pwm7reculerEj, @function
+ 233               	_ZN3Pwm7reculerEj:
+ 234               		.stabd	46,0,0
+  32:PWM.cpp       **** 
+  33:PWM.cpp       **** void Pwm::reculer(unsigned int pwm)
+  34:PWM.cpp       **** {
+ 235               		.stabn	68,0,34,.LM14-.LFBB4
+ 236               	.LM14:
+ 237               	.LFBB4:
+ 238               	/* prologue: function */
+ 239               	/* frame size = 0 */
+ 240               	/* stack size = 0 */
+ 241               	.L__stack_usage = 0
+  35:PWM.cpp       **** 	PORTD = 0xc0;
+ 242               		.stabn	68,0,35,.LM15-.LFBB4
+ 243               	.LM15:
+ 244 006a 80EC      		ldi r24,lo8(-64)
+ 245 006c 8BB9      		out 0xb,r24
+  36:PWM.cpp       **** 	OCR1A = OCR1B = pwm;
+ 246               		.stabn	68,0,36,.LM16-.LFBB4
+ 247               	.LM16:
+ 248 006e 7093 8B00 		sts 138+1,r23
+ 249 0072 6093 8A00 		sts 138,r22
+GAS LISTING /tmp/ccXElPLH.s 			page 6
+
+
+ 250 0076 7093 8900 		sts 136+1,r23
+ 251 007a 6093 8800 		sts 136,r22
+ 252 007e 0895      		ret
+ 253               		.size	_ZN3Pwm7reculerEj, .-_ZN3Pwm7reculerEj
+ 254               	.Lscope4:
+ 255               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 256               		.stabd	78,0,0
+ 257               		.stabs	"_ZN3Pwm14Tourner_GaucheEj:F(0,4)",36,0,40,_ZN3Pwm14Tourner_GaucheEj
+ 258               		.stabs	"this:P(0,94)",64,0,40,24
+ 259               		.stabs	"pwm:P(0,12)",64,0,40,28
+ 260               	.global	_ZN3Pwm14Tourner_GaucheEj
+ 261               		.type	_ZN3Pwm14Tourner_GaucheEj, @function
+ 262               	_ZN3Pwm14Tourner_GaucheEj:
+ 263               		.stabd	46,0,0
+  37:PWM.cpp       **** 
+  38:PWM.cpp       **** }
+  39:PWM.cpp       **** 
+  40:PWM.cpp       **** void Pwm::Tourner_Gauche(unsigned int pwm)
+  41:PWM.cpp       **** {
+ 264               		.stabn	68,0,41,.LM17-.LFBB5
+ 265               	.LM17:
+ 266               	.LFBB5:
+ 267 0080 CF93      		push r28
+ 268 0082 DF93      		push r29
+ 269               	/* prologue: function */
+ 270               	/* frame size = 0 */
+ 271               	/* stack size = 2 */
+ 272               	.L__stack_usage = 2
+ 273 0084 EB01      		movw r28,r22
+  42:PWM.cpp       ****     PORTD = 0x00;
+ 274               		.stabn	68,0,42,.LM18-.LFBB5
+ 275               	.LM18:
+ 276 0086 1BB8      		out 0xb,__zero_reg__
+  43:PWM.cpp       **** 	OCR1A = pwm * 1.05 / 2;
+ 277               		.stabn	68,0,43,.LM19-.LFBB5
+ 278               	.LM19:
+ 279 0088 80E0      		ldi r24,0
+ 280 008a 90E0      		ldi r25,0
+ 281 008c 0E94 0000 		call __floatunsisf
+ 282 0090 26E6      		ldi r18,lo8(102)
+ 283 0092 36E6      		ldi r19,lo8(102)
+ 284 0094 46E8      		ldi r20,lo8(-122)
+ 285 0096 5FE3      		ldi r21,lo8(63)
+ 286 0098 0E94 0000 		call __mulsf3
+ 287 009c 20E0      		ldi r18,0
+ 288 009e 30E0      		ldi r19,0
+ 289 00a0 40E0      		ldi r20,0
+ 290 00a2 5FE3      		ldi r21,lo8(63)
+ 291 00a4 0E94 0000 		call __mulsf3
+ 292 00a8 0E94 0000 		call __fixunssfsi
+ 293 00ac 7093 8900 		sts 136+1,r23
+ 294 00b0 6093 8800 		sts 136,r22
+  44:PWM.cpp       **** 	OCR1B = pwm;
+ 295               		.stabn	68,0,44,.LM20-.LFBB5
+ 296               	.LM20:
+ 297 00b4 D093 8B00 		sts 138+1,r29
+ 298 00b8 C093 8A00 		sts 138,r28
+GAS LISTING /tmp/ccXElPLH.s 			page 7
+
+
+ 299               	/* epilogue start */
+  45:PWM.cpp       ****     //PORTD = 0x80;
+  46:PWM.cpp       ****     //OCR1B = pwm;
+  47:PWM.cpp       ****     //OCR1A = pwm;
+  48:PWM.cpp       **** }
+ 300               		.stabn	68,0,48,.LM21-.LFBB5
+ 301               	.LM21:
+ 302 00bc DF91      		pop r29
+ 303 00be CF91      		pop r28
+ 304 00c0 0895      		ret
+ 305               		.size	_ZN3Pwm14Tourner_GaucheEj, .-_ZN3Pwm14Tourner_GaucheEj
+ 306               	.Lscope5:
+ 307               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 308               		.stabd	78,0,0
+ 309               		.stabs	"_ZN3Pwm14Tourner_DroiteEj:F(0,4)",36,0,50,_ZN3Pwm14Tourner_DroiteEj
+ 310               		.stabs	"this:P(0,94)",64,0,50,24
+ 311               		.stabs	"pwm:P(0,12)",64,0,50,28
+ 312               	.global	_ZN3Pwm14Tourner_DroiteEj
+ 313               		.type	_ZN3Pwm14Tourner_DroiteEj, @function
+ 314               	_ZN3Pwm14Tourner_DroiteEj:
+ 315               		.stabd	46,0,0
+  49:PWM.cpp       **** 
+  50:PWM.cpp       **** void Pwm::Tourner_Droite(unsigned int pwm)
+  51:PWM.cpp       **** {
+ 316               		.stabn	68,0,51,.LM22-.LFBB6
+ 317               	.LM22:
+ 318               	.LFBB6:
+ 319 00c2 CF93      		push r28
+ 320 00c4 DF93      		push r29
+ 321               	/* prologue: function */
+ 322               	/* frame size = 0 */
+ 323               	/* stack size = 2 */
+ 324               	.L__stack_usage = 2
+ 325 00c6 EB01      		movw r28,r22
+  52:PWM.cpp       ****     PORTD = 0x00;
+ 326               		.stabn	68,0,52,.LM23-.LFBB6
+ 327               	.LM23:
+ 328 00c8 1BB8      		out 0xb,__zero_reg__
+  53:PWM.cpp       **** 	OCR1A = pwm * 1.05;
+ 329               		.stabn	68,0,53,.LM24-.LFBB6
+ 330               	.LM24:
+ 331 00ca 80E0      		ldi r24,0
+ 332 00cc 90E0      		ldi r25,0
+ 333 00ce 0E94 0000 		call __floatunsisf
+ 334 00d2 26E6      		ldi r18,lo8(102)
+ 335 00d4 36E6      		ldi r19,lo8(102)
+ 336 00d6 46E8      		ldi r20,lo8(-122)
+ 337 00d8 5FE3      		ldi r21,lo8(63)
+ 338 00da 0E94 0000 		call __mulsf3
+ 339 00de 0E94 0000 		call __fixunssfsi
+ 340 00e2 7093 8900 		sts 136+1,r23
+ 341 00e6 6093 8800 		sts 136,r22
+  54:PWM.cpp       **** 	OCR1B = pwm / 2;
+ 342               		.stabn	68,0,54,.LM25-.LFBB6
+ 343               	.LM25:
+ 344 00ea D695      		lsr r29
+ 345 00ec C795      		ror r28
+GAS LISTING /tmp/ccXElPLH.s 			page 8
+
+
+ 346 00ee D093 8B00 		sts 138+1,r29
+ 347 00f2 C093 8A00 		sts 138,r28
+ 348               	/* epilogue start */
+  55:PWM.cpp       ****     //PORTD = 0x40;
+  56:PWM.cpp       ****     //OCR1A = pwm;
+  57:PWM.cpp       ****     //OCR1B = pwm;
+  58:PWM.cpp       **** }
+ 349               		.stabn	68,0,58,.LM26-.LFBB6
+ 350               	.LM26:
+ 351 00f6 DF91      		pop r29
+ 352 00f8 CF91      		pop r28
+ 353 00fa 0895      		ret
+ 354               		.size	_ZN3Pwm14Tourner_DroiteEj, .-_ZN3Pwm14Tourner_DroiteEj
+ 355               	.Lscope6:
+ 356               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 357               		.stabd	78,0,0
+ 358               		.stabs	"_ZN3Pwm10pivotDroitEj:F(0,4)",36,0,60,_ZN3Pwm10pivotDroitEj
+ 359               		.stabs	"this:P(0,94)",64,0,60,24
+ 360               		.stabs	"pwm:P(0,12)",64,0,60,28
+ 361               	.global	_ZN3Pwm10pivotDroitEj
+ 362               		.type	_ZN3Pwm10pivotDroitEj, @function
+ 363               	_ZN3Pwm10pivotDroitEj:
+ 364               		.stabd	46,0,0
+  59:PWM.cpp       **** 
+  60:PWM.cpp       **** void Pwm::pivotDroit(unsigned int pwm)
+  61:PWM.cpp       **** {
+ 365               		.stabn	68,0,61,.LM27-.LFBB7
+ 366               	.LM27:
+ 367               	.LFBB7:
+ 368 00fc CF93      		push r28
+ 369 00fe DF93      		push r29
+ 370               	/* prologue: function */
+ 371               	/* frame size = 0 */
+ 372               	/* stack size = 2 */
+ 373               	.L__stack_usage = 2
+ 374 0100 EB01      		movw r28,r22
+  62:PWM.cpp       **** 	PORTD = 0x40;
+ 375               		.stabn	68,0,62,.LM28-.LFBB7
+ 376               	.LM28:
+ 377 0102 80E4      		ldi r24,lo8(64)
+ 378 0104 8BB9      		out 0xb,r24
+  63:PWM.cpp       ****     OCR1A = pwm * 1.05;
+ 379               		.stabn	68,0,63,.LM29-.LFBB7
+ 380               	.LM29:
+ 381 0106 80E0      		ldi r24,0
+ 382 0108 90E0      		ldi r25,0
+ 383 010a 0E94 0000 		call __floatunsisf
+ 384 010e 26E6      		ldi r18,lo8(102)
+ 385 0110 36E6      		ldi r19,lo8(102)
+ 386 0112 46E8      		ldi r20,lo8(-122)
+ 387 0114 5FE3      		ldi r21,lo8(63)
+ 388 0116 0E94 0000 		call __mulsf3
+ 389 011a 0E94 0000 		call __fixunssfsi
+ 390 011e 7093 8900 		sts 136+1,r23
+ 391 0122 6093 8800 		sts 136,r22
+  64:PWM.cpp       ****     OCR1B = pwm;
+ 392               		.stabn	68,0,64,.LM30-.LFBB7
+GAS LISTING /tmp/ccXElPLH.s 			page 9
+
+
+ 393               	.LM30:
+ 394 0126 D093 8B00 		sts 138+1,r29
+ 395 012a C093 8A00 		sts 138,r28
+ 396               	/* epilogue start */
+  65:PWM.cpp       **** }
+ 397               		.stabn	68,0,65,.LM31-.LFBB7
+ 398               	.LM31:
+ 399 012e DF91      		pop r29
+ 400 0130 CF91      		pop r28
+ 401 0132 0895      		ret
+ 402               		.size	_ZN3Pwm10pivotDroitEj, .-_ZN3Pwm10pivotDroitEj
+ 403               	.Lscope7:
+ 404               		.stabs	"",36,0,0,.Lscope7-.LFBB7
+ 405               		.stabd	78,0,0
+ 406               		.stabs	"_ZN3Pwm11pivotGaucheEj:F(0,4)",36,0,67,_ZN3Pwm11pivotGaucheEj
+ 407               		.stabs	"this:P(0,94)",64,0,67,24
+ 408               		.stabs	"pwm:P(0,12)",64,0,67,28
+ 409               	.global	_ZN3Pwm11pivotGaucheEj
+ 410               		.type	_ZN3Pwm11pivotGaucheEj, @function
+ 411               	_ZN3Pwm11pivotGaucheEj:
+ 412               		.stabd	46,0,0
+  66:PWM.cpp       **** 
+  67:PWM.cpp       **** void Pwm::pivotGauche(unsigned int pwm)
+  68:PWM.cpp       **** {
+ 413               		.stabn	68,0,68,.LM32-.LFBB8
+ 414               	.LM32:
+ 415               	.LFBB8:
+ 416 0134 CF93      		push r28
+ 417 0136 DF93      		push r29
+ 418               	/* prologue: function */
+ 419               	/* frame size = 0 */
+ 420               	/* stack size = 2 */
+ 421               	.L__stack_usage = 2
+ 422 0138 EB01      		movw r28,r22
+  69:PWM.cpp       **** 	PORTD = 0x80;
+ 423               		.stabn	68,0,69,.LM33-.LFBB8
+ 424               	.LM33:
+ 425 013a 80E8      		ldi r24,lo8(-128)
+ 426 013c 8BB9      		out 0xb,r24
+  70:PWM.cpp       ****     OCR1A = pwm * 1.05;
+ 427               		.stabn	68,0,70,.LM34-.LFBB8
+ 428               	.LM34:
+ 429 013e 80E0      		ldi r24,0
+ 430 0140 90E0      		ldi r25,0
+ 431 0142 0E94 0000 		call __floatunsisf
+ 432 0146 26E6      		ldi r18,lo8(102)
+ 433 0148 36E6      		ldi r19,lo8(102)
+ 434 014a 46E8      		ldi r20,lo8(-122)
+ 435 014c 5FE3      		ldi r21,lo8(63)
+ 436 014e 0E94 0000 		call __mulsf3
+ 437 0152 0E94 0000 		call __fixunssfsi
+ 438 0156 7093 8900 		sts 136+1,r23
+ 439 015a 6093 8800 		sts 136,r22
+  71:PWM.cpp       ****     OCR1B = pwm;
+ 440               		.stabn	68,0,71,.LM35-.LFBB8
+ 441               	.LM35:
+ 442 015e D093 8B00 		sts 138+1,r29
+GAS LISTING /tmp/ccXElPLH.s 			page 10
+
+
+ 443 0162 C093 8A00 		sts 138,r28
+ 444               	/* epilogue start */
+  72:PWM.cpp       **** }
+ 445               		.stabn	68,0,72,.LM36-.LFBB8
+ 446               	.LM36:
+ 447 0166 DF91      		pop r29
+ 448 0168 CF91      		pop r28
+ 449 016a 0895      		ret
+ 450               		.size	_ZN3Pwm11pivotGaucheEj, .-_ZN3Pwm11pivotGaucheEj
+ 451               	.Lscope8:
+ 452               		.stabs	"",36,0,0,.Lscope8-.LFBB8
+ 453               		.stabd	78,0,0
+ 454               		.stabs	"",100,0,0,.Letext0
+ 455               	.Letext0:
+ 456               		.ident	"GCC: (Fedora 4.9.3-1.fc23) 4.9.3"
+GAS LISTING /tmp/ccXElPLH.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 PWM.cpp
+     /tmp/ccXElPLH.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccXElPLH.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccXElPLH.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccXElPLH.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccXElPLH.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccXElPLH.s:109    .text:0000000000000000 _ZN3PwmC2Ev
+     /tmp/ccXElPLH.s:109    .text:0000000000000000 _ZN3PwmC1Ev
+     /tmp/ccXElPLH.s:160    .text:0000000000000032 _ZN3PwmD2Ev
+     /tmp/ccXElPLH.s:160    .text:0000000000000032 _ZN3PwmD1Ev
+     /tmp/ccXElPLH.s:184    .text:0000000000000034 _ZN3Pwm6AvanceEj
+     /tmp/ccXElPLH.s:233    .text:000000000000006a _ZN3Pwm7reculerEj
+     /tmp/ccXElPLH.s:262    .text:0000000000000080 _ZN3Pwm14Tourner_GaucheEj
+     /tmp/ccXElPLH.s:314    .text:00000000000000c2 _ZN3Pwm14Tourner_DroiteEj
+     /tmp/ccXElPLH.s:363    .text:00000000000000fc _ZN3Pwm10pivotDroitEj
+     /tmp/ccXElPLH.s:411    .text:0000000000000134 _ZN3Pwm11pivotGaucheEj
+
+UNDEFINED SYMBOLS
+__floatunsisf
+__mulsf3
+__fixunssfsi

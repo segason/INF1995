@@ -1,0 +1,24 @@
+
+DBT ;
+
+SGO 69;
+ATT 10;
+SGO 66;
+ATT 5;
+SGO 69;
+ATT 10;
+SAR;
+
+DAL 32;
+ATT 40; 
+DET 32;
+     
+
+MAV  67;
+mre 9;
+TRD;
+trg;
+
+
+FIN;
+

@@ -1,0 +1,142 @@
+#include "Memoire24CXXX.h"
+#include "delControl.h" 
+#include "Moteur.h" 
+#include "can.h"
+#include "minuterie.h" 
+#include "Memoire24CXXX.h" 
+#include "PWM.h"
+#include <avr/io.h>
+#include <avr/interrupt.h> 
+#define F_CPU 8000000
+#include <util/delay.h>
+using namespace std;
+
+uint8_t lecture(const Memoire24CXXX& memoire, uint8_t& adresse)
+{
+	_delay__ms(5);
+	uint8_t instruction[2] = {};
+	memoire.lecture(adresse, instruction, 2);
+	adresse += 2;
+	
+	return instruction[2];
+}
+
+void switchCase(uint
+
+
+
+int main()
+{
+	DDRB = 0xFF;
+	Memoire24CXXX memoire;
+	uint8_t adresse = 0x02;
+	uint8_t inst[2];
+	enum Etat{ON, OFF, END};
+	Etat monEtat = OFF;
+	Del del;
+	Pwm moteur(1);
+	Pwm son(2);
+	
+	//Sequence de demarrage
+	for(uint8_t i = 0; i < 3; i++)
+	{
+		del.allumerRouge(0);
+		_delay_ms(500);
+		del.allumerVert(0);
+		_delay_ms(500);
+	}
+	//ECRITURE
+	
+	while(etat != END)
+        {
+            inst = lecture(memoire, adresse);
+            switch (inst[0])
+            { //Utiliser element 2 au besoin
+                    case (0x01):
+                            monEtat = ON;
+                            break;
+                            
+                    case (0x02):
+                            if(monEtat == ON)
+                                for(uint8_t i = 0; i < inst[1]; i++)
+                                    _delay_ms(10);
+                    break;
+                    
+                    case (0x44):
+                            if(monEtat == ON)
+                                    del.allumerVert(0);
+                    break;
+                    
+                    case (0x45):
+                            if(monEtat == ON)
+                                del.eteindreDel();
+                    break;
+                    
+                    case (0x48):
+                            if(monEtat == ON)
+                                son == ON;
+                    break;
+                    
+                    case (0x09):
+                            if(monEtat == ON)
+   
+                    break;
+                    
+                    case (0x60):
+                            if(monEtat == ON)
+                                
+                    break;
+                    
+                    case (0x62):
+                            if(monEtat == ON)
+                            {
+                                    
+                            }
+                    break;
+                    
+                    case (0x63):
+                            if(monEtat == ON)
+                            {
+                                    
+                            }
+                    break;
+                    
+                    case (0x64):
+                            if(monEtat == ON)
+                            {
+                                    
+                            }
+                    break;
+                    
+                    case (0x65):
+                            if(monEtat == ON)
+                            {
+                                    
+                            }
+                    break;
+                    
+                    case (0xC0):
+                            if(monEtat == ON)
+                            {
+                                    
+                            }
+                    break;
+                    
+                    case (0xC1):
+                            if(monEtat == ON)
+                            {
+                                    
+                            }
+                    break;
+                    
+                    case (0xFF):
+                            monEtat = END;
+                    break;
+            }
+            
+
+        }	
+	
+	
+	return 0;
+}

@@ -1,0 +1,51 @@
+Polytechnique Montréal
+
+Département de génie informatique et génie logiciel
+
+INF1995: Projet initial en ingénierie informatique 
+         et travail en équipe
+
+Grille de correction des programmes:
+
+Identification:
+  Travail Pratique # : 8 
+  Section #  : 04
+  Équipe #   : 4754
+  Correcteur : Frédéric Fortier
+
+
+Rapport: 6 /7
+  Explications cohérentes par rapport au code
+  retenu pour former la librairie                  (2 points): 2
+  Explications cohérentes par rapport aux Makefiles(2 points): 2
+  Explications claires aec un bon niveau de détails(2 points): 1
+  Qualité du français                              (1 point): 1
+
+Fonctionnalité: 6  /13
+  Soumission réussie sous SVN (bon endroit, 
+        sans fichiers inutiles)                    (3 points): 0
+  Qualité des portions de code choisies            (5 points): 5
+  Qualité des modifications aux Makefiles          (5 points): 1
+
+
+Total:  13.0 /20
+
+
+Commentaires du correcteur:
+Soumission:
+ - Il faut que je modifie manuellement le nom des Makefiles pour compiler, vous
+   avez du code éparpillé partout sans indication claire sur lequel prendre
+   (ex. tp/tp8 vs codeCommun/lib, ce n'est pas évident étant donné que codeCommun
+   a un fichier appellé Makefile, au contraire de tp, j'ai supposé tp/tp8) (-3)
+Makefiles
+ - Pas de Makefile commun (-3)
+ - La librairie est dans le même dossier que le code de la démo (-1)
+   
+Rapport:
+ - La section sur le Makefile est très courte, surtout lorsque l'on prend en
+   compte l'interligne double utilisé. (-1)
+
+
+
+
+

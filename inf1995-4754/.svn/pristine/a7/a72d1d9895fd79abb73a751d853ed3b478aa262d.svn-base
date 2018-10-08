@@ -1,0 +1,32 @@
+
+DBT ;
+
+SGO 69;	#Son
+ATT 20;
+SGO 57;
+ATT 10;
+SGO 69;
+ATT 20;
+SAR;
+
+MAV  128;	#moteur
+ATT 40;
+MAR;
+MRE 128;
+ATT 40;
+MAR;
+TRD;
+ATT 40;
+TRG;
+ATT 40;
+MAR;
+
+DBC 3;	#boucle et del
+DAL 32;
+ATT 30;
+DET 32;
+FBC;
+
+
+FIN;
+

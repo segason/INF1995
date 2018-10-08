@@ -1,0 +1,697 @@
+GAS LISTING /tmp/ccpC5Ro6.s 			page 1
+
+
+   1               		.file	"main.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/olstob/Documents/inf1995-4754/projet/",100,0,4,.Ltext0
+   8               		.stabs	"main.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/ccpC5Ro6.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,121,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,122,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,123,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,124,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,125,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,126,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,128,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,129,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,142,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,147,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,159,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,164,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,169,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,174,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,179,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,184,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,192,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,199,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,213,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,218,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,223,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,228,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,233,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,238,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,246,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,253,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,273,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,278,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
+ 104               		.stabs	"Memoire24CXXX:Tt(0,89)=s1m_adresse_peripherique:/0(0,59):_ZN13Memoire24CXXX22m_adresse_per
+ 105               		.stabs	"Del:Tt(0,98)=s1__base_ctor ::(0,99)=#(0,98),(0,4),(0,100)=*(0,98),(0,4);:_ZN3DelC2Ev;2A.;_
+ 106               		.stabs	"Moteur:Tt(0,102)=s1__base_ctor ::(0,103)=#(0,102),(0,4),(0,104)=*(0,102),(0,4);:_ZN6Moteur
+ 107               		.stabs	"can:Tt(0,105)=s1__base_ctor ::(0,106)=#(0,105),(0,4),(0,107)=*(0,105),(0,4);:_ZN3canC2Ev;2
+ 108               		.stabs	"Minuterie:Tt(0,109)=s4minuterieExpiree_:/0(0,110)=B(0,59),0,8;duree_:/0(0,61),8,16;boutonP
+ 109               		.stabs	"PwmSon:Tt(0,119)=s1__base_ctor ::(0,120)=#(0,119),(0,4),(0,121)=*(0,119),(0,4);:_ZN6PwmSon
+ 110               		.stabs	"Pwm:Tt(0,123)=s1__base_ctor ::(0,124)=#(0,123),(0,4),(0,125)=*(0,123),(0,4);:_ZN3PwmC2Ev;2
+ 111               		.section	.text.startup,"ax",@progbits
+ 112               		.stabs	"main:F(0,9)",36,0,27,main
+ 113               	.global	main
+ 114               		.type	main, @function
+GAS LISTING /tmp/ccpC5Ro6.s 			page 3
+
+
+ 115               	main:
+ 116               		.stabd	46,0,0
+   1:main.cpp      **** #include "Memoire24CXXX.h"
+   2:main.cpp      **** #include "delControl.h" 
+   3:main.cpp      **** #include "Moteur.h" 
+   4:main.cpp      **** #include "can.h"
+   5:main.cpp      **** #include "minuterie.h" 
+   6:main.cpp      **** #include "Memoire24CXXX.h" 
+   7:main.cpp      **** #include "PwmSon.h"
+   8:main.cpp      **** #include "PWM.h"
+   9:main.cpp      **** #include <avr/io.h>
+  10:main.cpp      **** #include <avr/interrupt.h> 
+  11:main.cpp      **** #define F_CPU 8000000
+  12:main.cpp      **** #include <util/delay.h>
+  13:main.cpp      **** using namespace std;
+  14:main.cpp      **** 
+  15:main.cpp      **** 
+  16:main.cpp      **** 
+  17:main.cpp      **** /*Capteurs:
+  18:main.cpp      **** PINC & 0b00010000   capteur_droit
+  19:main.cpp      **** PINC & 0b00000001   capteur_gauche
+  20:main.cpp      **** PINC & 0b00000010   centre capteur_gauche
+  21:main.cpp      **** PINC & 0b00001000   centre droit
+  22:main.cpp      **** PINC & 0b00000100   centre
+  23:main.cpp      ****  
+  24:main.cpp      ****  */
+  25:main.cpp      **** 
+  26:main.cpp      **** //!(x^y) 00011111   00011111 & 0x01  0z02
+  27:main.cpp      **** int main()
+  28:main.cpp      **** {
+ 117               		.stabn	68,0,28,.LM0-.LFBB1
+ 118               	.LM0:
+ 119               	.LFBB1:
+ 120 0000 CF93      		push r28
+ 121 0002 DF93      		push r29
+ 122 0004 00D0      		rcall .
+ 123 0006 CDB7      		in r28,__SP_L__
+ 124 0008 DEB7      		in r29,__SP_H__
+ 125               	/* prologue: function */
+ 126               	/* frame size = 2 */
+ 127               	/* stack size = 4 */
+ 128               	.L__stack_usage = 4
+ 129               	.LBB15:
+  29:main.cpp      ****     
+  30:main.cpp      ****     DDRA = 0xff;
+ 130               		.stabn	68,0,30,.LM1-.LFBB1
+ 131               	.LM1:
+ 132 000a 8FEF      		ldi r24,lo8(-1)
+ 133 000c 81B9      		out 0x1,r24
+  31:main.cpp      ****     DDRD = 0b11110000;
+ 134               		.stabn	68,0,31,.LM2-.LFBB1
+ 135               	.LM2:
+ 136 000e 80EF      		ldi r24,lo8(-16)
+ 137 0010 8AB9      		out 0xa,r24
+  32:main.cpp      ****     DDRC = 0x00;
+ 138               		.stabn	68,0,32,.LM3-.LFBB1
+ 139               	.LM3:
+GAS LISTING /tmp/ccpC5Ro6.s 			page 4
+
+
+ 140 0012 17B8      		out 0x7,__zero_reg__
+  33:main.cpp      ****     Del del;
+ 141               		.stabn	68,0,33,.LM4-.LFBB1
+ 142               	.LM4:
+ 143 0014 CE01      		movw r24,r28
+ 144 0016 0296      		adiw r24,2
+ 145 0018 0E94 0000 		call _ZN3DelC1Ev
+  34:main.cpp      ****     Pwm moteur;
+ 146               		.stabn	68,0,34,.LM5-.LFBB1
+ 147               	.LM5:
+ 148 001c CE01      		movw r24,r28
+ 149 001e 0196      		adiw r24,1
+ 150 0020 0E94 0000 		call _ZN3PwmC1Ev
+  35:main.cpp      ****     bool aTourneAGauche = false;
+  36:main.cpp      ****     bool aTourneADroite = false;
+  37:main.cpp      ****     bool bit1 = false, bit2 = false, bit3 = false, bit4 = false, bit5 = false;
+  38:main.cpp      ****     
+  39:main.cpp      ****     
+  40:main.cpp      **** ///////////// BOUTONS DE DIRECTION ///////////////
+  41:main.cpp      ****     char directions[3] = {};
+  42:main.cpp      ****     uint8_t compteur = 0;
+  43:main.cpp      ****     bool enfonceDroit = false;
+  44:main.cpp      ****     bool enfonceGauche = false;
+  45:main.cpp      ****     DDRB = 0b11111100;
+ 151               		.stabn	68,0,45,.LM6-.LFBB1
+ 152               	.LM6:
+ 153 0024 8CEF      		ldi r24,lo8(-4)
+ 154 0026 84B9      		out 0x4,r24
+  44:main.cpp      ****     DDRB = 0b11111100;
+ 155               		.stabn	68,0,44,.LM7-.LFBB1
+ 156               	.LM7:
+ 157 0028 20E0      		ldi r18,0
+  43:main.cpp      ****     bool enfonceGauche = false;
+ 158               		.stabn	68,0,43,.LM8-.LFBB1
+ 159               	.LM8:
+ 160 002a 90E0      		ldi r25,0
+  42:main.cpp      ****     bool enfonceDroit = false;
+ 161               		.stabn	68,0,42,.LM9-.LFBB1
+ 162               	.LM9:
+ 163 002c 80E0      		ldi r24,0
+ 164               	.L6:
+  46:main.cpp      ****     
+  47:main.cpp      **** 	while (compteur<3) {
+  48:main.cpp      **** 	
+  49:main.cpp      **** 		
+  50:main.cpp      **** 			if (!(PINB & 0x01)) { 	//bouton droit
+ 165               		.stabn	68,0,50,.LM10-.LFBB1
+ 166               	.LM10:
+ 167 002e 1899      		sbic 0x3,0
+ 168 0030 00C0      		rjmp .L2
+ 169               	.LBB16:
+ 170               	.LBB17:
+ 171               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext1
+ 172               	.Ltext1:
+   1:/usr/avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:/usr/avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+GAS LISTING /tmp/ccpC5Ro6.s 			page 5
+
+
+   4:/usr/avr/include/util/delay.h ****    All rights reserved.
+   5:/usr/avr/include/util/delay.h **** 
+   6:/usr/avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:/usr/avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:/usr/avr/include/util/delay.h **** 
+   9:/usr/avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+  10:/usr/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:/usr/avr/include/util/delay.h **** 
+  12:/usr/avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:/usr/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:/usr/avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  15:/usr/avr/include/util/delay.h ****      distribution.
+  16:/usr/avr/include/util/delay.h **** 
+  17:/usr/avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:/usr/avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  19:/usr/avr/include/util/delay.h ****      from this software without specific prior written permission.
+  20:/usr/avr/include/util/delay.h **** 
+  21:/usr/avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:/usr/avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:/usr/avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:/usr/avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:/usr/avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:/usr/avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:/usr/avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:/usr/avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:/usr/avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:/usr/avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:/usr/avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:/usr/avr/include/util/delay.h **** 
+  33:/usr/avr/include/util/delay.h **** /* $Id: delay.h.in 2251 2011-09-14 08:20:33Z joerg_wunsch $ */
+  34:/usr/avr/include/util/delay.h **** 
+  35:/usr/avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  36:/usr/avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+  37:/usr/avr/include/util/delay.h **** 
+  38:/usr/avr/include/util/delay.h **** #ifndef __HAS_DELAY_CYCLES
+  39:/usr/avr/include/util/delay.h **** #define __HAS_DELAY_CYCLES 1
+  40:/usr/avr/include/util/delay.h **** #endif
+  41:/usr/avr/include/util/delay.h **** 
+  42:/usr/avr/include/util/delay.h **** #include <inttypes.h>
+  43:/usr/avr/include/util/delay.h **** #include <util/delay_basic.h>
+  44:/usr/avr/include/util/delay.h **** #include <math.h>
+  45:/usr/avr/include/util/delay.h **** 
+  46:/usr/avr/include/util/delay.h **** /** \file */
+  47:/usr/avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  48:/usr/avr/include/util/delay.h ****     \code
+  49:/usr/avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  50:/usr/avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  51:/usr/avr/include/util/delay.h ****     #include <util/delay.h>
+  52:/usr/avr/include/util/delay.h ****     \endcode
+  53:/usr/avr/include/util/delay.h **** 
+  54:/usr/avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  55:/usr/avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  56:/usr/avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  57:/usr/avr/include/util/delay.h ****     used.
+  58:/usr/avr/include/util/delay.h **** 
+  59:/usr/avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  60:/usr/avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+GAS LISTING /tmp/ccpC5Ro6.s 			page 6
+
+
+  61:/usr/avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+  62:/usr/avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  63:/usr/avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  64:/usr/avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  65:/usr/avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  66:/usr/avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  67:/usr/avr/include/util/delay.h **** 
+  68:/usr/avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  69:/usr/avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  70:/usr/avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+  71:/usr/avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  72:/usr/avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  73:/usr/avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  74:/usr/avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  75:/usr/avr/include/util/delay.h ****     routines linked into the application.
+  76:/usr/avr/include/util/delay.h **** 
+  77:/usr/avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  78:/usr/avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  79:/usr/avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  80:/usr/avr/include/util/delay.h **** 
+  81:/usr/avr/include/util/delay.h **** */
+  82:/usr/avr/include/util/delay.h **** 
+  83:/usr/avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  84:/usr/avr/include/util/delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
+  85:/usr/avr/include/util/delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
+  86:/usr/avr/include/util/delay.h **** #endif
+  87:/usr/avr/include/util/delay.h **** 
+  88:/usr/avr/include/util/delay.h **** #ifndef F_CPU
+  89:/usr/avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  90:/usr/avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  91:/usr/avr/include/util/delay.h **** # define F_CPU 1000000UL
+  92:/usr/avr/include/util/delay.h **** #endif
+  93:/usr/avr/include/util/delay.h **** 
+  94:/usr/avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+  95:/usr/avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+  96:/usr/avr/include/util/delay.h **** #endif
+  97:/usr/avr/include/util/delay.h **** 
+  98:/usr/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+  99:/usr/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 100:/usr/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 101:/usr/avr/include/util/delay.h **** #  include <math.h>
+ 102:/usr/avr/include/util/delay.h **** #endif
+ 103:/usr/avr/include/util/delay.h **** 
+ 104:/usr/avr/include/util/delay.h **** /**
+ 105:/usr/avr/include/util/delay.h ****    \ingroup util_delay
+ 106:/usr/avr/include/util/delay.h **** 
+ 107:/usr/avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 108:/usr/avr/include/util/delay.h **** 
+ 109:/usr/avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 110:/usr/avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 111:/usr/avr/include/util/delay.h **** 
+ 112:/usr/avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 113:/usr/avr/include/util/delay.h **** 
+ 114:/usr/avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 115:/usr/avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 116:/usr/avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 117:/usr/avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+GAS LISTING /tmp/ccpC5Ro6.s 			page 7
+
+
+ 118:/usr/avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+ 119:/usr/avr/include/util/delay.h **** 
+ 120:/usr/avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 121:/usr/avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 122:/usr/avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 123:/usr/avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 124:/usr/avr/include/util/delay.h **** 
+ 125:/usr/avr/include/util/delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 126:/usr/avr/include/util/delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 127:/usr/avr/include/util/delay.h ****    the user gets atleast __us microseconds of delay.
+ 128:/usr/avr/include/util/delay.h **** 
+ 129:/usr/avr/include/util/delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 130:/usr/avr/include/util/delay.h ****    to round down and round to closest integer.
+ 131:/usr/avr/include/util/delay.h **** 
+ 132:/usr/avr/include/util/delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
+ 133:/usr/avr/include/util/delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
+ 134:/usr/avr/include/util/delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 135:/usr/avr/include/util/delay.h ****    Also, the backward compatible
+ 136:/usr/avr/include/util/delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 137:/usr/avr/include/util/delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 138:/usr/avr/include/util/delay.h ****    required for rounding are not available to the compiler then.
+ 139:/usr/avr/include/util/delay.h **** 
+ 140:/usr/avr/include/util/delay.h ****  */
+ 141:/usr/avr/include/util/delay.h **** void
+ 142:/usr/avr/include/util/delay.h **** _delay_ms(double __ms)
+ 143:/usr/avr/include/util/delay.h **** {
+ 144:/usr/avr/include/util/delay.h **** 	uint16_t __ticks;
+ 145:/usr/avr/include/util/delay.h **** 	double __tmp ; 
+ 146:/usr/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 147:/usr/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 148:/usr/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 149:/usr/avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 150:/usr/avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 151:/usr/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 152:/usr/avr/include/util/delay.h **** 
+ 153:/usr/avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 154:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 155:/usr/avr/include/util/delay.h **** 
+ 156:/usr/avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 157:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 158:/usr/avr/include/util/delay.h **** 
+ 159:/usr/avr/include/util/delay.h **** 	#else
+ 160:/usr/avr/include/util/delay.h **** 		//round up by default
+ 161:/usr/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 162:/usr/avr/include/util/delay.h **** 	#endif
+ 163:/usr/avr/include/util/delay.h **** 
+ 164:/usr/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 173               		.stabn	68,0,164,.LM11-.LFBB1
+ 174               	.LM11:
+ 175 0032 EFE1      		ldi r30,lo8(19999)
+ 176 0034 FEE4      		ldi r31,hi8(19999)
+ 177 0036 3197      		1: sbiw r30,1
+ 178 0038 01F4      		brne 1b
+ 179 003a 00C0      		rjmp .
+ 180 003c 0000      		nop
+ 181               	.LBE17:
+ 182               	.LBE16:
+GAS LISTING /tmp/ccpC5Ro6.s 			page 8
+
+
+ 183               		.stabs	"main.cpp",132,0,0,.Ltext2
+ 184               	.Ltext2:
+  51:main.cpp      **** 				_delay_ms(10);
+  52:main.cpp      **** 				if(!(PINB & 0x01)){
+ 185               		.stabn	68,0,52,.LM12-.LFBB1
+ 186               	.LM12:
+ 187 003e 1899      		sbic 0x3,0
+ 188 0040 00C0      		rjmp .L3
+ 189               	.LBB18:
+ 190               	.LBB19:
+ 191               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext3
+ 192               	.Ltext3:
+ 193               		.stabn	68,0,164,.LM13-.LFBB1
+ 194               	.LM13:
+ 195 0042 EFE1      		ldi r30,lo8(19999)
+ 196 0044 FEE4      		ldi r31,hi8(19999)
+ 197 0046 3197      		1: sbiw r30,1
+ 198 0048 01F4      		brne 1b
+ 199 004a 00C0      		rjmp .
+ 200 004c 0000      		nop
+ 201               	.LBE19:
+ 202               	.LBE18:
+ 203               		.stabs	"main.cpp",132,0,0,.Ltext4
+ 204               	.Ltext4:
+  53:main.cpp      **** 					enfonceDroit = true;
+ 205               		.stabn	68,0,53,.LM14-.LFBB1
+ 206               	.LM14:
+ 207 004e 91E0      		ldi r25,lo8(1)
+ 208 0050 00C0      		rjmp .L3
+ 209               	.L2:
+  54:main.cpp      **** 					_delay_ms(10);
+  55:main.cpp      **** 				}
+  56:main.cpp      **** 			}
+  57:main.cpp      **** 			else
+  58:main.cpp      **** 				if(enfonceDroit){
+ 210               		.stabn	68,0,58,.LM15-.LFBB1
+ 211               	.LM15:
+ 212 0052 9923      		tst r25
+ 213 0054 01F0      		breq .L3
+  59:main.cpp      **** 					enfonceDroit = false;
+  60:main.cpp      **** 					directions[compteur] = 'd';
+  61:main.cpp      **** 					compteur++;
+ 214               		.stabn	68,0,61,.LM16-.LFBB1
+ 215               	.LM16:
+ 216 0056 8F5F      		subi r24,lo8(-(1))
+  59:main.cpp      **** 					enfonceDroit = false;
+ 217               		.stabn	68,0,59,.LM17-.LFBB1
+ 218               	.LM17:
+ 219 0058 90E0      		ldi r25,0
+ 220               	.L3:
+  62:main.cpp      **** 				}
+  63:main.cpp      **** 				
+  64:main.cpp      **** 			if (!(PINB & 0x02)) { 		//bouton gauche
+ 221               		.stabn	68,0,64,.LM18-.LFBB1
+ 222               	.LM18:
+ 223 005a 1999      		sbic 0x3,1
+ 224 005c 00C0      		rjmp .L4
+GAS LISTING /tmp/ccpC5Ro6.s 			page 9
+
+
+ 225               	.LBB20:
+ 226               	.LBB21:
+ 227               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext5
+ 228               	.Ltext5:
+ 229               		.stabn	68,0,164,.LM19-.LFBB1
+ 230               	.LM19:
+ 231 005e EFE1      		ldi r30,lo8(19999)
+ 232 0060 FEE4      		ldi r31,hi8(19999)
+ 233 0062 3197      		1: sbiw r30,1
+ 234 0064 01F4      		brne 1b
+ 235 0066 00C0      		rjmp .
+ 236 0068 0000      		nop
+ 237               	.LBE21:
+ 238               	.LBE20:
+ 239               		.stabs	"main.cpp",132,0,0,.Ltext6
+ 240               	.Ltext6:
+  65:main.cpp      **** 				_delay_ms(10);
+  66:main.cpp      **** 				if(!(PINB & 0x02)){
+ 241               		.stabn	68,0,66,.LM20-.LFBB1
+ 242               	.LM20:
+ 243 006a 1999      		sbic 0x3,1
+ 244 006c 00C0      		rjmp .L5
+ 245               	.LBB22:
+ 246               	.LBB23:
+ 247               		.stabs	"/usr/avr/include/util/delay.h",132,0,0,.Ltext7
+ 248               	.Ltext7:
+ 249               		.stabn	68,0,164,.LM21-.LFBB1
+ 250               	.LM21:
+ 251 006e EFE1      		ldi r30,lo8(19999)
+ 252 0070 FEE4      		ldi r31,hi8(19999)
+ 253 0072 3197      		1: sbiw r30,1
+ 254 0074 01F4      		brne 1b
+ 255 0076 00C0      		rjmp .
+ 256 0078 0000      		nop
+ 257               	.LBE23:
+ 258               	.LBE22:
+ 259               		.stabs	"main.cpp",132,0,0,.Ltext8
+ 260               	.Ltext8:
+  67:main.cpp      **** 					enfonceGauche = true;
+ 261               		.stabn	68,0,67,.LM22-.LFBB1
+ 262               	.LM22:
+ 263 007a 21E0      		ldi r18,lo8(1)
+ 264 007c 00C0      		rjmp .L5
+ 265               	.L4:
+  68:main.cpp      **** 					_delay_ms(10);
+  69:main.cpp      **** 				}
+  70:main.cpp      **** 			}
+  71:main.cpp      **** 			else
+  72:main.cpp      **** 				if(enfonceGauche){
+ 266               		.stabn	68,0,72,.LM23-.LFBB1
+ 267               	.LM23:
+ 268 007e 2223      		tst r18
+ 269 0080 01F0      		breq .L5
+  73:main.cpp      **** 					enfonceGauche = false;
+  74:main.cpp      **** 					directions[compteur] = 'g';
+  75:main.cpp      **** 					compteur++;
+ 270               		.stabn	68,0,75,.LM24-.LFBB1
+GAS LISTING /tmp/ccpC5Ro6.s 			page 10
+
+
+ 271               	.LM24:
+ 272 0082 8F5F      		subi r24,lo8(-(1))
+  73:main.cpp      **** 					enfonceGauche = false;
+ 273               		.stabn	68,0,73,.LM25-.LFBB1
+ 274               	.LM25:
+ 275 0084 20E0      		ldi r18,0
+ 276               	.L5:
+  47:main.cpp      **** 	
+ 277               		.stabn	68,0,47,.LM26-.LFBB1
+ 278               	.LM26:
+ 279 0086 8330      		cpi r24,lo8(3)
+ 280 0088 00F0      		brlo .L6
+ 281               	.L7:
+  76:main.cpp      **** 				}
+  77:main.cpp      **** 				
+  78:main.cpp      ****         }
+  79:main.cpp      **** 
+  80:main.cpp      **** 	
+  81:main.cpp      **** 		
+  82:main.cpp      **** 	
+  83:main.cpp      **** ////////////// FIN DE DETECTION DE BOUTONS /////////////////////
+  84:main.cpp      ****     
+  85:main.cpp      ****  
+  86:main.cpp      ****  
+  87:main.cpp      ****  
+  88:main.cpp      ****  
+  89:main.cpp      ****     while (true)
+  90:main.cpp      ****     {
+  91:main.cpp      ****         bit1 = PINC & 0b00000001;
+ 282               		.stabn	68,0,91,.LM27-.LFBB1
+ 283               	.LM27:
+ 284 008a 46B1      		in r20,0x6
+  92:main.cpp      ****         bit2 = PINC & 0b00000010;
+ 285               		.stabn	68,0,92,.LM28-.LFBB1
+ 286               	.LM28:
+ 287 008c 36B1      		in r19,0x6
+  93:main.cpp      ****         bit3 = PINC & 0b00000100;
+ 288               		.stabn	68,0,93,.LM29-.LFBB1
+ 289               	.LM29:
+ 290 008e 26B1      		in r18,0x6
+  94:main.cpp      ****         bit4 = PINC & 0b00001000;
+ 291               		.stabn	68,0,94,.LM30-.LFBB1
+ 292               	.LM30:
+ 293 0090 96B1      		in r25,0x6
+  95:main.cpp      ****         bit5 = PINC & 0b00010000;
+ 294               		.stabn	68,0,95,.LM31-.LFBB1
+ 295               	.LM31:
+ 296 0092 86B1      		in r24,0x6
+ 297 0094 8295      		swap r24
+ 298 0096 8170      		andi r24,1
+  96:main.cpp      ****         
+  97:main.cpp      ****         if(bit1 && !(bit2 && bit3 && bit4 && bit5))
+ 299               		.stabn	68,0,97,.LM32-.LFBB1
+ 300               	.LM32:
+ 301 0098 40FF      		sbrs r20,0
+ 302 009a 00C0      		rjmp .L8
+ 303               		.stabn	68,0,97,.LM33-.LFBB1
+GAS LISTING /tmp/ccpC5Ro6.s 			page 11
+
+
+ 304               	.LM33:
+ 305 009c 31FF      		sbrs r19,1
+ 306 009e 00C0      		rjmp .L9
+ 307               		.stabn	68,0,97,.LM34-.LFBB1
+ 308               	.LM34:
+ 309 00a0 22FF      		sbrs r18,2
+ 310 00a2 00C0      		rjmp .L9
+ 311               		.stabn	68,0,97,.LM35-.LFBB1
+ 312               	.LM35:
+ 313 00a4 93FF      		sbrs r25,3
+ 314 00a6 00C0      		rjmp .L9
+ 315               		.stabn	68,0,97,.LM36-.LFBB1
+ 316               	.LM36:
+ 317 00a8 8111      		cpse r24,__zero_reg__
+ 318 00aa 00C0      		rjmp .L10
+ 319               	.L9:
+  98:main.cpp      ****         {
+  99:main.cpp      ****             moteur.Tourner_Gauche(120);
+ 320               		.stabn	68,0,99,.LM37-.LFBB1
+ 321               	.LM37:
+ 322 00ac 68E7      		ldi r22,lo8(120)
+ 323 00ae 70E0      		ldi r23,0
+ 324 00b0 CE01      		movw r24,r28
+ 325 00b2 0196      		adiw r24,1
+ 326 00b4 0E94 0000 		call _ZN3Pwm14Tourner_GaucheEj
+ 327 00b8 00C0      		rjmp .L7
+ 328               	.L8:
+ 100:main.cpp      ****         }
+ 101:main.cpp      ****         else if (!(bit1 && bit2 && bit3 && bit4) && bit5)
+ 329               		.stabn	68,0,101,.LM38-.LFBB1
+ 330               	.LM38:
+ 331 00ba 8823      		tst r24
+ 332 00bc 01F0      		breq .L10
+ 102:main.cpp      ****         {
+ 103:main.cpp      ****             moteur.Tourner_Droite(120);
+ 333               		.stabn	68,0,103,.LM39-.LFBB1
+ 334               	.LM39:
+ 335 00be 68E7      		ldi r22,lo8(120)
+ 336 00c0 70E0      		ldi r23,0
+ 337 00c2 CE01      		movw r24,r28
+ 338 00c4 0196      		adiw r24,1
+ 339 00c6 0E94 0000 		call _ZN3Pwm14Tourner_DroiteEj
+ 340 00ca 00C0      		rjmp .L7
+ 341               	.L10:
+ 104:main.cpp      ****         }
+ 105:main.cpp      ****         
+ 106:main.cpp      ****         else{
+ 107:main.cpp      ****             moteur.Avance(90);
+ 342               		.stabn	68,0,107,.LM40-.LFBB1
+ 343               	.LM40:
+ 344 00cc 6AE5      		ldi r22,lo8(90)
+ 345 00ce 70E0      		ldi r23,0
+ 346 00d0 CE01      		movw r24,r28
+ 347 00d2 0196      		adiw r24,1
+ 348 00d4 0E94 0000 		call _ZN3Pwm6AvanceEj
+ 349 00d8 00C0      		rjmp .L7
+ 350               	.LBE15:
+GAS LISTING /tmp/ccpC5Ro6.s 			page 12
+
+
+ 351               		.size	main, .-main
+ 352               		.stabs	"del:(0,98)",128,0,33,2
+ 353               		.stabs	"moteur:(0,123)",128,0,34,1
+ 354               		.stabs	"bit5:r(0,54)",64,0,37,24
+ 355               		.stabs	"compteur:r(0,59)",64,0,42,24
+ 356               		.stabs	"enfonceDroit:r(0,54)",64,0,43,25
+ 357               		.stabs	"enfonceGauche:r(0,54)",64,0,44,18
+ 358               		.stabn	192,0,0,.LBB15-.LFBB1
+ 359               		.stabn	224,0,0,.LBE15-.LFBB1
+ 360               	.Lscope1:
+ 361               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 362               		.stabd	78,0,0
+ 363               		.text
+ 364               		.stabs	"",100,0,0,.Letext0
+ 365               	.Letext0:
+ 366               		.ident	"GCC: (Fedora 4.9.3-1.fc23) 4.9.3"
+GAS LISTING /tmp/ccpC5Ro6.s 			page 13
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 main.cpp
+     /tmp/ccpC5Ro6.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccpC5Ro6.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccpC5Ro6.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccpC5Ro6.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccpC5Ro6.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccpC5Ro6.s:115    .text.startup:0000000000000000 main
+
+UNDEFINED SYMBOLS
+_ZN3DelC1Ev
+_ZN3PwmC1Ev
+_ZN3Pwm14Tourner_GaucheEj
+_ZN3Pwm14Tourner_DroiteEj
+_ZN3Pwm6AvanceEj
